@@ -1,0 +1,990 @@
+{
+  "templates": {
+    "failed_check": 73,
+    "ready": 134
+  },
+  "template_status": {
+    "judges_disagree": 6,
+    "complete": 41,
+    "skewed": 12,
+    "answerable_blind": 31,
+    "rarely_applies": 11,
+    "low_variance": 32,
+    "active": 1
+  },
+  "held_out_cells": [
+    "hassasiyet-noul",
+    "insan_destegi-choice",
+    "yanit_yeterliligi-choice",
+    "yanit_yeterliligi-score"
+  ],
+  "held_out_templates": 30,
+  "pair_outcomes": {
+    "labelled": 6241,
+    "out_of_scope": 853,
+    "failed:LowLabelMass": 64,
+    "no_fit": 52,
+    "low_mass": 4,
+    "failed:TypeError": 1
+  },
+  "pairs_labelled_or_judged": 7215,
+  "low_mass_by_judge": {
+    "C": 4
+  },
+  "retried_by_judge": {
+    "C": 16,
+    "A": 1
+  },
+  "transient_errors": 5,
+  "rows_by_split": {
+    "train": 3083,
+    "validation": 846,
+    "heldout_task": 766
+  },
+  "rows": 4695,
+  "surplus": 235,
+  "nofit": 52,
+  "unused_rows_of_stopped_templates": 1311,
+  "per_template": {
+    "0bc82134": {
+      "task": "yanit_yeterliligi-score",
+      "status": "judges_disagree",
+      "labelled": 48,
+      "top_share": 0.542,
+      "unanimous": 0.5
+    },
+    "6e45c40e": {
+      "task": "bilgi_turu-choice",
+      "status": "complete",
+      "labelled": 101,
+      "top_share": 0.396,
+      "unanimous": 0.832
+    },
+    "7a9ba20b": {
+      "task": "insan_destegi-choice",
+      "status": "skewed",
+      "labelled": 39,
+      "top_share": 0.641,
+      "unanimous": 0.744
+    },
+    "c4bdbbf5": {
+      "task": "hassasiyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.688,
+      "unanimous": 0.875
+    },
+    "8ada0c99": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "complete",
+      "labelled": 109,
+      "top_share": 0.486,
+      "unanimous": 0.725
+    },
+    "c828d4c5": {
+      "task": "aciliyet-choice",
+      "status": "rarely_applies",
+      "labelled": 3,
+      "top_share": 1.0,
+      "unanimous": 0.667
+    },
+    "f8b78405": {
+      "task": "niyet-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.625,
+      "unanimous": 0.75
+    },
+    "340d8c46": {
+      "task": "hedef_kitle-choice",
+      "status": "answerable_blind",
+      "labelled": 14,
+      "top_share": 0.571,
+      "unanimous": 0.571
+    },
+    "5f2ec3cd": {
+      "task": "insan_destegi-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 0.938
+    },
+    "0df404e5": {
+      "task": "konu-choice",
+      "status": "complete",
+      "labelled": 89,
+      "top_share": 0.494,
+      "unanimous": 0.798
+    },
+    "7924a359": {
+      "task": "insan_destegi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.642,
+      "unanimous": 0.842
+    },
+    "c03fec7c": {
+      "task": "bilgi_turu-score",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.375,
+      "unanimous": 0.675
+    },
+    "ba167d46": {
+      "task": "hedef_kitle-choice",
+      "status": "answerable_blind",
+      "labelled": 14,
+      "top_share": 0.643,
+      "unanimous": 0.857
+    },
+    "1a9801b5": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 1.0
+    },
+    "0dbd668a": {
+      "task": "insan_destegi-score",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.688,
+      "unanimous": 0.729
+    },
+    "03d61ada": {
+      "task": "insan_destegi-choice",
+      "status": "rarely_applies",
+      "labelled": 2,
+      "top_share": 0.5,
+      "unanimous": 1.0
+    },
+    "959477a0": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 1.0,
+      "unanimous": 1.0
+    },
+    "26d6e5d6": {
+      "task": "hassasiyet-score",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.812,
+      "unanimous": 0.792
+    },
+    "a0dd0d1f": {
+      "task": "konu-choice",
+      "status": "complete",
+      "labelled": 91,
+      "top_share": 0.407,
+      "unanimous": 0.967
+    },
+    "d8a56dc6": {
+      "task": "hassasiyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 1.0,
+      "unanimous": 1.0
+    },
+    "ba29aa4a": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "skewed",
+      "labelled": 37,
+      "top_share": 0.649,
+      "unanimous": 0.865
+    },
+    "5417389c": {
+      "task": "konu-score",
+      "status": "judges_disagree",
+      "labelled": 80,
+      "top_share": 0.362,
+      "unanimous": 0.562
+    },
+    "a42249f1": {
+      "task": "konu-choice",
+      "status": "complete",
+      "labelled": 89,
+      "top_share": 0.337,
+      "unanimous": 0.955
+    },
+    "10f53114": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 1.0,
+      "unanimous": 1.0
+    },
+    "e3a1bf22": {
+      "task": "bilgi_turu-score",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.433,
+      "unanimous": 0.742
+    },
+    "87cdd065": {
+      "task": "niyet-choice",
+      "status": "complete",
+      "labelled": 84,
+      "top_share": 0.381,
+      "unanimous": 0.774
+    },
+    "9ac1271f": {
+      "task": "insan_destegi-choice",
+      "status": "complete",
+      "labelled": 22,
+      "top_share": 0.5,
+      "unanimous": 0.636
+    },
+    "4dd186be": {
+      "task": "yanit_yeterliligi-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.562,
+      "unanimous": 0.875
+    },
+    "1d2981ab": {
+      "task": "bilgi_turu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.688,
+      "unanimous": 0.938
+    },
+    "1e13324b": {
+      "task": "insan_destegi-choice",
+      "status": "answerable_blind",
+      "labelled": 5,
+      "top_share": 0.8,
+      "unanimous": 0.6
+    },
+    "df7ed3b9": {
+      "task": "insan_destegi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.55,
+      "unanimous": 0.825
+    },
+    "54b9728b": {
+      "task": "konu-score",
+      "status": "complete",
+      "labelled": 119,
+      "top_share": 0.445,
+      "unanimous": 0.798
+    },
+    "483cbb20": {
+      "task": "hedef_kitle-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.812
+    },
+    "4ac3ba9b": {
+      "task": "hedef_kitle-score",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.75
+    },
+    "62839aa5": {
+      "task": "bilgi_turu-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 1.0
+    },
+    "81e31449": {
+      "task": "hedef_kitle-score",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.938
+    },
+    "ef477d29": {
+      "task": "yanit_yeterliligi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.517,
+      "unanimous": 0.75
+    },
+    "ad7c9b98": {
+      "task": "bilgi_turu-choice",
+      "status": "complete",
+      "labelled": 113,
+      "top_share": 0.345,
+      "unanimous": 0.77
+    },
+    "989a59e2": {
+      "task": "yanit_yeterliligi-score",
+      "status": "judges_disagree",
+      "labelled": 48,
+      "top_share": 0.646,
+      "unanimous": 0.396
+    },
+    "7ba23e82": {
+      "task": "insan_destegi-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 1.0
+    },
+    "b9454bcc": {
+      "task": "hassasiyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.625,
+      "unanimous": 0.812
+    },
+    "6dfaef19": {
+      "task": "hassasiyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.938
+    },
+    "867c01ba": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.75
+    },
+    "6ffb15e5": {
+      "task": "yanit_yeterliligi-score",
+      "status": "judges_disagree",
+      "labelled": 48,
+      "top_share": 0.312,
+      "unanimous": 0.479
+    },
+    "a34ab2ce": {
+      "task": "insan_destegi-choice",
+      "status": "rarely_applies",
+      "labelled": 0,
+      "top_share": null,
+      "unanimous": null
+    },
+    "86765d61": {
+      "task": "hassasiyet-score",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.812,
+      "unanimous": 0.771
+    },
+    "c4ff7aaa": {
+      "task": "hedef_kitle-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.692,
+      "unanimous": 0.892
+    },
+    "fdf97911": {
+      "task": "hassasiyet-choice",
+      "status": "rarely_applies",
+      "labelled": 2,
+      "top_share": 1.0,
+      "unanimous": 1.0
+    },
+    "79af23f3": {
+      "task": "bilgi_turu-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.675,
+      "unanimous": 0.792
+    },
+    "28b86c9b": {
+      "task": "hassasiyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.938
+    },
+    "0af5edf9": {
+      "task": "insan_destegi-score",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.625,
+      "unanimous": 0.688
+    },
+    "470ac0d2": {
+      "task": "aciliyet-choice",
+      "status": "rarely_applies",
+      "labelled": 2,
+      "top_share": 0.5,
+      "unanimous": 0.5
+    },
+    "38d8e6e4": {
+      "task": "bilgi_turu-choice",
+      "status": "complete",
+      "labelled": 107,
+      "top_share": 0.449,
+      "unanimous": 0.822
+    },
+    "a378f446": {
+      "task": "konu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.812,
+      "unanimous": 1.0
+    },
+    "173f5b51": {
+      "task": "aciliyet-choice",
+      "status": "rarely_applies",
+      "labelled": 0,
+      "top_share": null,
+      "unanimous": null
+    },
+    "79e42d28": {
+      "task": "yanit_yeterliligi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.717,
+      "unanimous": 0.917
+    },
+    "14bbe2ca": {
+      "task": "hedef_kitle-score",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.433,
+      "unanimous": 0.683
+    },
+    "2bd63dfa": {
+      "task": "bilgi_turu-choice",
+      "status": "complete",
+      "labelled": 108,
+      "top_share": 0.5,
+      "unanimous": 0.833
+    },
+    "d7efaf3d": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.938
+    },
+    "f933d6ca": {
+      "task": "aciliyet-choice",
+      "status": "rarely_applies",
+      "labelled": 0,
+      "top_share": null,
+      "unanimous": null
+    },
+    "6a332f36": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "complete",
+      "labelled": 113,
+      "top_share": 0.451,
+      "unanimous": 0.726
+    },
+    "99bc0746": {
+      "task": "hedef_kitle-score",
+      "status": "skewed",
+      "labelled": 80,
+      "top_share": 0.6,
+      "unanimous": 0.688
+    },
+    "ddfd07df": {
+      "task": "konu-choice",
+      "status": "complete",
+      "labelled": 26,
+      "top_share": 0.654,
+      "unanimous": 0.808
+    },
+    "c6099ae5": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 0.688
+    },
+    "b9d85204": {
+      "task": "konu-score",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 1.0
+    },
+    "1b65142b": {
+      "task": "niyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 0.875
+    },
+    "260768ab": {
+      "task": "insan_destegi-noul",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.771,
+      "unanimous": 0.854
+    },
+    "034ea34e": {
+      "task": "insan_destegi-choice",
+      "status": "rarely_applies",
+      "labelled": 2,
+      "top_share": 0.5,
+      "unanimous": 1.0
+    },
+    "6f90a982": {
+      "task": "niyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.562,
+      "unanimous": 0.938
+    },
+    "4431eccc": {
+      "task": "insan_destegi-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.812
+    },
+    "34b58f37": {
+      "task": "hedef_kitle-choice",
+      "status": "low_variance",
+      "labelled": 12,
+      "top_share": 0.917,
+      "unanimous": 0.917
+    },
+    "ab22c1f3": {
+      "task": "niyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.5,
+      "unanimous": 0.875
+    },
+    "52c49560": {
+      "task": "hedef_kitle-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.812
+    },
+    "0ed9bfdd": {
+      "task": "bilgi_turu-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 0.938
+    },
+    "2b541cef": {
+      "task": "bilgi_turu-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.562,
+      "unanimous": 0.75
+    },
+    "6b19a819": {
+      "task": "niyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.938
+    },
+    "889bdc42": {
+      "task": "insan_destegi-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.875
+    },
+    "39f673dc": {
+      "task": "hedef_kitle-choice",
+      "status": "answerable_blind",
+      "labelled": 15,
+      "top_share": 0.533,
+      "unanimous": 0.8
+    },
+    "dedd4609": {
+      "task": "insan_destegi-choice",
+      "status": "rarely_applies",
+      "labelled": 0,
+      "top_share": null,
+      "unanimous": null
+    },
+    "7d9bb9bd": {
+      "task": "hassasiyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 1.0,
+      "unanimous": 0.938
+    },
+    "8d668a53": {
+      "task": "bilgi_turu-choice",
+      "status": "complete",
+      "labelled": 85,
+      "top_share": 0.424,
+      "unanimous": 0.753
+    },
+    "544f6086": {
+      "task": "hedef_kitle-choice",
+      "status": "complete",
+      "labelled": 117,
+      "top_share": 0.513,
+      "unanimous": 0.786
+    },
+    "ca8eb7b0": {
+      "task": "konu-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.938
+    },
+    "7067f1cd": {
+      "task": "aciliyet-choice",
+      "status": "rarely_applies",
+      "labelled": 0,
+      "top_share": null,
+      "unanimous": null
+    },
+    "a1784c9f": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "complete",
+      "labelled": 85,
+      "top_share": 0.388,
+      "unanimous": 0.741
+    },
+    "e6d8163b": {
+      "task": "yanit_yeterliligi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.65,
+      "unanimous": 0.783
+    },
+    "7dc5afd2": {
+      "task": "yanit_yeterliligi-score",
+      "status": "skewed",
+      "labelled": 80,
+      "top_share": 0.6,
+      "unanimous": 0.713
+    },
+    "eebbb2d5": {
+      "task": "insan_destegi-choice",
+      "status": "complete",
+      "labelled": 39,
+      "top_share": 0.564,
+      "unanimous": 0.846
+    },
+    "6554f187": {
+      "task": "konu-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.525,
+      "unanimous": 0.875
+    },
+    "baf758f1": {
+      "task": "hedef_kitle-choice",
+      "status": "complete",
+      "labelled": 97,
+      "top_share": 0.371,
+      "unanimous": 0.804
+    },
+    "038dfdc4": {
+      "task": "aciliyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 1.0,
+      "unanimous": 1.0
+    },
+    "cbee6430": {
+      "task": "hedef_kitle-score",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.729,
+      "unanimous": 0.854
+    },
+    "c9406d90": {
+      "task": "aciliyet-choice",
+      "status": "answerable_blind",
+      "labelled": 5,
+      "top_share": 0.6,
+      "unanimous": 1.0
+    },
+    "d07e0e51": {
+      "task": "niyet-noul",
+      "status": "active",
+      "labelled": 119,
+      "top_share": 0.655,
+      "unanimous": 0.882
+    },
+    "bf4b03e1": {
+      "task": "insan_destegi-score",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.875
+    },
+    "23038837": {
+      "task": "niyet-score",
+      "status": "complete",
+      "labelled": 119,
+      "top_share": 0.378,
+      "unanimous": 0.765
+    },
+    "13d68064": {
+      "task": "insan_destegi-score",
+      "status": "skewed",
+      "labelled": 48,
+      "top_share": 0.75,
+      "unanimous": 0.875
+    },
+    "ce0c5c62": {
+      "task": "hedef_kitle-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 0.938
+    },
+    "88423674": {
+      "task": "yanit_yeterliligi-score",
+      "status": "judges_disagree",
+      "labelled": 48,
+      "top_share": 0.458,
+      "unanimous": 0.312
+    },
+    "a7184ac1": {
+      "task": "yanit_yeterliligi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.692,
+      "unanimous": 0.925
+    },
+    "3ce2909f": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "skewed",
+      "labelled": 38,
+      "top_share": 0.605,
+      "unanimous": 0.684
+    },
+    "0602e2dd": {
+      "task": "bilgi_turu-choice",
+      "status": "complete",
+      "labelled": 114,
+      "top_share": 0.579,
+      "unanimous": 0.807
+    },
+    "40587d38": {
+      "task": "bilgi_turu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.812,
+      "unanimous": 1.0
+    },
+    "c0ceb41a": {
+      "task": "niyet-score",
+      "status": "complete",
+      "labelled": 115,
+      "top_share": 0.417,
+      "unanimous": 0.8
+    },
+    "3ec3398d": {
+      "task": "hassasiyet-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 1.0
+    },
+    "044ed4ef": {
+      "task": "insan_destegi-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.688,
+      "unanimous": 1.0
+    },
+    "1f0c97d1": {
+      "task": "hassasiyet-score",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.812
+    },
+    "9375bbb9": {
+      "task": "konu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.562,
+      "unanimous": 1.0
+    },
+    "f2adac6b": {
+      "task": "niyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.562,
+      "unanimous": 0.938
+    },
+    "f7de6723": {
+      "task": "hedef_kitle-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.75
+    },
+    "2c8f4bf9": {
+      "task": "hedef_kitle-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.5,
+      "unanimous": 0.812
+    },
+    "8d941543": {
+      "task": "konu-choice",
+      "status": "complete",
+      "labelled": 49,
+      "top_share": 0.367,
+      "unanimous": 0.776
+    },
+    "4b0c2226": {
+      "task": "yanit_yeterliligi-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.642,
+      "unanimous": 0.85
+    },
+    "6503635f": {
+      "task": "bilgi_turu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.625,
+      "unanimous": 1.0
+    },
+    "2e610371": {
+      "task": "insan_destegi-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.812,
+      "unanimous": 0.625
+    },
+    "aa349b95": {
+      "task": "niyet-score",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.333,
+      "unanimous": 0.717
+    },
+    "bf47abcf": {
+      "task": "insan_destegi-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 1.0
+    },
+    "bc694b78": {
+      "task": "hassasiyet-choice",
+      "status": "complete",
+      "labelled": 86,
+      "top_share": 0.349,
+      "unanimous": 0.907
+    },
+    "06e897f6": {
+      "task": "niyet-noul",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.608,
+      "unanimous": 0.95
+    },
+    "17621582": {
+      "task": "niyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.812,
+      "unanimous": 0.812
+    },
+    "9c6f7cfd": {
+      "task": "konu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.938
+    },
+    "8d068bcf": {
+      "task": "hedef_kitle-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.875
+    },
+    "ee3f75fd": {
+      "task": "hassasiyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.938
+    },
+    "b525ad42": {
+      "task": "hassasiyet-score",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.688
+    },
+    "cb7a3438": {
+      "task": "insan_destegi-choice",
+      "status": "rarely_applies",
+      "labelled": 3,
+      "top_share": 0.667,
+      "unanimous": 0.667
+    },
+    "179c3892": {
+      "task": "bilgi_turu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.75,
+      "unanimous": 0.812
+    },
+    "74d6ab60": {
+      "task": "bilgi_turu-score",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.938,
+      "unanimous": 0.938
+    },
+    "65a086df": {
+      "task": "hassasiyet-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.625,
+      "unanimous": 1.0
+    },
+    "2279abad": {
+      "task": "bilgi_turu-score",
+      "status": "complete",
+      "labelled": 120,
+      "top_share": 0.492,
+      "unanimous": 0.742
+    },
+    "4340e349": {
+      "task": "insan_destegi-noul",
+      "status": "low_variance",
+      "labelled": 16,
+      "top_share": 0.875,
+      "unanimous": 0.812
+    },
+    "05ff2c21": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "complete",
+      "labelled": 97,
+      "top_share": 0.536,
+      "unanimous": 0.67
+    },
+    "35fd4eb1": {
+      "task": "yanit_yeterliligi-choice",
+      "status": "complete",
+      "labelled": 107,
+      "top_share": 0.374,
+      "unanimous": 0.636
+    },
+    "d0e95292": {
+      "task": "bilgi_turu-noul",
+      "status": "answerable_blind",
+      "labelled": 16,
+      "top_share": 0.812,
+      "unanimous": 0.938
+    },
+    "d36137f5": {
+      "task": "niyet-score",
+      "status": "judges_disagree",
+      "labelled": 48,
+      "top_share": 0.5,
+      "unanimous": 0.417
+    }
+  },
+  "spent_usd": 2.5585,
+  "usd_per_row": 0.00054
+}

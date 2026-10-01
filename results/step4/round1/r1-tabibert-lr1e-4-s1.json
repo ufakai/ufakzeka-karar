@@ -1,0 +1,3229 @@
+{
+  "name": "r1-tabibert-lr1e-4-s1",
+  "spec": {
+    "git_commit": "3e5ebc0518c0db4596893f3688130810080a80fc",
+    "prior_weights": true,
+    "drop_mined": false,
+    "backbone": "tabibert",
+    "rate": 0.0001,
+    "name": "r1-tabibert-lr1e-4-s1",
+    "seed": 1
+  },
+  "config": {
+    "backbone": "boun-tabilab/TabiBERT",
+    "revision": "36d24bfae8d67f7b1f7d0827fc43076e4a1c3e9f",
+    "causal": false,
+    "train_files": [
+      "/vol/round1/runs/r1-tabibert-lr1e-4-s1/train_mixed.jsonl"
+    ],
+    "validation_files": [
+      "/vol/round1/data/sss/validation.jsonl",
+      "/vol/round1/data/synth/validation.jsonl",
+      "/vol/round1/data/typed/aym_rights/validation.jsonl",
+      "/vol/round1/data/typed/facturk_verdict/validation.jsonl",
+      "/vol/round1/data/typed/massive_tr/validation.jsonl",
+      "/vol/round1/data/typed/mide22/validation.jsonl",
+      "/vol/round1/data/typed/offenseval_tr/validation.jsonl",
+      "/vol/round1/data/typed/prompt_injection/validation.jsonl",
+      "/vol/round1/data/typed/webfaq_relevance/validation.jsonl"
+    ],
+    "out_dir": "/vol/round1/runs/r1-tabibert-lr1e-4-s1",
+    "pooling": "mean",
+    "loss": "ce",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.01,
+    "epochs": 2.0,
+    "batch_questions": 32,
+    "warmup_frac": 0.06,
+    "eval_points": 4,
+    "max_prefix": 448,
+    "max_option": 48,
+    "max_train_rows": null,
+    "max_micro_tokens": 12000,
+    "seed": 1,
+    "device": "cuda",
+    "ordinal": true,
+    "prior_weights": true,
+    "drop_mined": false,
+    "save_model": true
+  },
+  "weight_fingerprint": "1b4e985d299b88322009c319",
+  "data_hashes": {
+    "sss/train.jsonl": "02509c59fe075d6d34f648867f190274566644000b9a0a44823dcc2e14f3f965",
+    "synth/train.jsonl": "936b9e3cc6c3d9a475bcd4b32cfe29613700eda6e3d9d52b8823f7c4f0c4f04a",
+    "typed/aym_rights/train.jsonl": "4b8c8b084c5d337624970c1f47f50246f694c7f59b48036236bdf3ed7317ac4f",
+    "typed/facturk_verdict/train.jsonl": "08de188d19b40803f6fdf22cebde3591fb53d37bcf7f7025199ca0128161d9e4",
+    "typed/massive_tr/train.jsonl": "4fc712171335e00e6dfaa630bc551f5700de138c4fd3900bf48bd21c80e5a35f",
+    "typed/mide22/train.jsonl": "4909e5b50622e48764a3648282b960254f93dc4592ea1001b8c988eb054cbfbf",
+    "typed/offenseval_tr/train.jsonl": "3e0f8210d466c8c2c93aef3e07b2522a2798e6f2c5a9bf406291d61b8167093a",
+    "typed/prompt_injection/train.jsonl": "c0207105da9525dae85e908b160002dc663aa830d14334c55b1b63ae05509b76",
+    "typed/webfaq_relevance/train.jsonl": "981b8353e2cdf993e25fe5f7558d8113f5dd3fbb45fbe466ae7d4d73a5448c9b",
+    "sss/validation.jsonl": "3cb16015c0def81cc4a6b5ba9bd9d5417b49524ccbb116c902fe97cfff360770",
+    "synth/validation.jsonl": "3fd6901e48255b737acfee51aafb5dd2159d4cad76c678c557cc1af6bb229fc6",
+    "typed/aym_rights/validation.jsonl": "e0362e263ea2b3131d6a1e46d4eb12d5298a191a49fd76c57ac12a874ffa9dae",
+    "typed/facturk_verdict/validation.jsonl": "dda23a6b8e2b71f3e42d5dbf630c731ba3e2fa60af9316edde8117150c4744af",
+    "typed/massive_tr/validation.jsonl": "1540dbe9bc979ac6353e2858199397d05cca99660f9dcd7f806b429c4ca533a0",
+    "typed/mide22/validation.jsonl": "716177cdda3b9677f09b305a4bad1d7cba62e363958ff977ed4cef7b73dc8560",
+    "typed/offenseval_tr/validation.jsonl": "7c6bcacebc4c39c080d30d32a453ef76ba71c2ca8b2b475c4dd4ccc20d82fc52",
+    "typed/prompt_injection/validation.jsonl": "19eb18c1e8d549e4a7232a4763778ff1256afe40a9a1f93b181e31e0a9b4696c",
+    "typed/webfaq_relevance/validation.jsonl": "3808a58d37ea0025b754c4b7341dda2277f0c923ecdf691d3abe4891cda16ee8",
+    "sss/heldout_task.jsonl": "eaea8fe15dd17eab1f6152f2a7f4100d9775971688ed6a0ca3fea9e17727a3e7"
+  },
+  "mixed_rows": 43243,
+  "steps": 2704,
+  "train_seconds": 1021.8,
+  "evaluations": [
+    {
+      "step": 676,
+      "metrics": {
+        "aciliyet-choice-f933d6ca": {
+          "rows": 5,
+          "macro_f1": 0.48888888888888893,
+          "accuracy": 0.6,
+          "brier": 0.29462271651397753,
+          "logloss": 1.1574407274745775,
+          "ece_15": 0.4856061935424805
+        },
+        "aciliyet-noul-867c01ba": {
+          "rows": 18,
+          "macro_f1": 0.5566502463054187,
+          "accuracy": 0.7222222222222222,
+          "brier": 0.158726819221269,
+          "logloss": 0.5497288341392342,
+          "ece_15": 0.07949846651819018
+        },
+        "aym_rights": {
+          "rows": 440,
+          "macro_f1": 0.7749633990936543,
+          "accuracy": 0.7818181818181819,
+          "brier": 0.3219945578988653,
+          "logloss": 0.6482110915499638,
+          "ece_15": 0.08568723235617988
+        },
+        "bilgi_turu-choice-0602e2dd": {
+          "rows": 78,
+          "macro_f1": 0.3702038601658786,
+          "accuracy": 0.6410256410256411,
+          "brier": 0.28931302399301173,
+          "logloss": 0.9852035996304406,
+          "ece_15": 0.14425275723139447
+        },
+        "bilgi_turu-choice-2bd63dfa": {
+          "rows": 59,
+          "macro_f1": 0.6280890804597701,
+          "accuracy": 0.6271186440677966,
+          "brier": 0.3963769692121014,
+          "logloss": 1.058357388208941,
+          "ece_15": 0.1741728686680228
+        },
+        "bilgi_turu-choice-38d8e6e4": {
+          "rows": 60,
+          "macro_f1": 0.422095238095238,
+          "accuracy": 0.55,
+          "brier": 0.36475493945308574,
+          "logloss": 1.0612142767868258,
+          "ece_15": 0.17259626587231958
+        },
+        "bilgi_turu-choice-6e45c40e": {
+          "rows": 54,
+          "macro_f1": 0.4892857142857142,
+          "accuracy": 0.5,
+          "brier": 0.4651115844823643,
+          "logloss": 1.1504520090547907,
+          "ece_15": 0.13968099984857774
+        },
+        "bilgi_turu-choice-8d668a53": {
+          "rows": 50,
+          "macro_f1": 0.49040451957909265,
+          "accuracy": 0.44,
+          "brier": 0.43999075247531066,
+          "logloss": 1.228908027069556,
+          "ece_15": 0.13185292661190032
+        },
+        "bilgi_turu-choice-ad7c9b98": {
+          "rows": 62,
+          "macro_f1": 0.4159532252617359,
+          "accuracy": 0.45161290322580644,
+          "brier": 0.47462868094358796,
+          "logloss": 1.2286332025367752,
+          "ece_15": 0.18514996959317118
+        },
+        "bilgi_turu-noul-0ed9bfdd": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.3405967300584654,
+          "logloss": 0.578291539507618,
+          "ece_15": 0.23957679271698
+        },
+        "bilgi_turu-noul-179c3892": {
+          "rows": 13,
+          "macro_f1": 0.6285714285714286,
+          "accuracy": 0.7692307692307693,
+          "brier": 0.12848035178932676,
+          "logloss": 0.41694862907134556,
+          "ece_15": 0.26345524421105015
+        },
+        "bilgi_turu-noul-1d2981ab": {
+          "rows": 52,
+          "macro_f1": 0.5715355805243446,
+          "accuracy": 0.7884615384615384,
+          "brier": 0.2185054143516849,
+          "logloss": 0.46080515559867785,
+          "ece_15": 0.10062935031377351
+        },
+        "bilgi_turu-noul-40587d38": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.2293900190963236,
+          "logloss": 0.630816712555451,
+          "ece_15": 0.3727928400039673
+        },
+        "bilgi_turu-noul-62839aa5": {
+          "rows": 12,
+          "macro_f1": 0.4782608695652174,
+          "accuracy": 0.9166666666666666,
+          "brier": 0.08835765543551023,
+          "logloss": 0.19807217790020118,
+          "ece_15": 0.15786773959795633
+        },
+        "bilgi_turu-noul-6503635f": {
+          "rows": 9,
+          "macro_f1": 0.5846153846153846,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.3566646983843356,
+          "logloss": 0.6165222307871338,
+          "ece_15": 0.1203317377302382
+        },
+        "bilgi_turu-noul-79af23f3": {
+          "rows": 76,
+          "macro_f1": 0.6606345475910693,
+          "accuracy": 0.75,
+          "brier": 0.18956662264655097,
+          "logloss": 0.5207864929954135,
+          "ece_15": 0.0997512544456281
+        },
+        "bilgi_turu-noul-d0e95292": {
+          "rows": 16,
+          "macro_f1": 0.7142857142857143,
+          "accuracy": 0.875,
+          "brier": 0.1381614282497909,
+          "logloss": 0.39863337737332766,
+          "ece_15": 0.15858148783445358
+        },
+        "bilgi_turu-score-2279abad": {
+          "rows": 56,
+          "macro_f1": 0.1744186046511628,
+          "accuracy": 0.5357142857142857,
+          "brier": 0.3703647439208607,
+          "logloss": 1.2047564261488266,
+          "ece_15": 0.18617192070399013
+        },
+        "bilgi_turu-score-2b541cef": {
+          "rows": 52,
+          "macro_f1": 0.21451787648970747,
+          "accuracy": 0.5192307692307693,
+          "brier": 0.33309397644424643,
+          "logloss": 1.0813256966357423,
+          "ece_15": 0.22888595725481325
+        },
+        "bilgi_turu-score-e3a1bf22": {
+          "rows": 64,
+          "macro_f1": 0.23435504469987228,
+          "accuracy": 0.453125,
+          "brier": 0.4056413919346471,
+          "logloss": 1.2060050005148188,
+          "ece_15": 0.09098671097308395
+        },
+        "dogrulama-dogrulanabilir": {
+          "rows": 959,
+          "macro_f1": 0.9554618907429286,
+          "accuracy": 0.9572471324296142,
+          "brier": 0.047035611059732106,
+          "logloss": 0.14836698447111957,
+          "ece_15": 0.0159463101805686
+        },
+        "egitim-cevap_puani": {
+          "rows": 316,
+          "macro_f1": 0.3767820399764844,
+          "accuracy": 0.509493670886076,
+          "brier": 0.48580009211013553,
+          "logloss": 1.2665057302424345,
+          "ece_15": 0.1410286236035673
+        },
+        "egitim-ders": {
+          "rows": 79,
+          "macro_f1": 0.621916931752458,
+          "accuracy": 0.620253164556962,
+          "brier": 0.5168655313737508,
+          "logloss": 1.0304077090080206,
+          "ece_15": 0.1067211548738842
+        },
+        "facturk_verdict": {
+          "rows": 1470,
+          "macro_f1": 0.24174279690794098,
+          "accuracy": 0.9360544217687075,
+          "brier": 0.12014812362458473,
+          "logloss": 0.28027494791582197,
+          "ece_15": 0.01732996949533215
+        },
+        "hassasiyet-choice-bc694b78": {
+          "rows": 36,
+          "macro_f1": 0.699720315280956,
+          "accuracy": 0.6944444444444444,
+          "brier": 0.2893436489832165,
+          "logloss": 0.7964483505036942,
+          "ece_15": 0.216961828370889
+        },
+        "hassasiyet-score-1f0c97d1": {
+          "rows": 20,
+          "macro_f1": 0.2962962962962963,
+          "accuracy": 0.8,
+          "brier": 0.1818093801101638,
+          "logloss": 0.6644956644690988,
+          "ece_15": 0.2087115615606308
+        },
+        "hassasiyet-score-26d6e5d6": {
+          "rows": 8,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.02888901479254683,
+          "logloss": 0.22604498231181092,
+          "ece_15": 0.0754584446549416
+        },
+        "hassasiyet-score-86765d61": {
+          "rows": 9,
+          "macro_f1": 0.4375,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.2905234796470782,
+          "logloss": 0.7669316561860992,
+          "ece_15": 0.3127720488442315
+        },
+        "hassasiyet-score-b525ad42": {
+          "rows": 12,
+          "macro_f1": 0.2857142857142857,
+          "accuracy": 0.75,
+          "brier": 0.22926358731207944,
+          "logloss": 0.6903364773533767,
+          "ece_15": 0.10917053620020548
+        },
+        "hedef_kitle-choice-340d8c46": {
+          "rows": 42,
+          "macro_f1": 0.36631151699644854,
+          "accuracy": 0.7857142857142857,
+          "brier": 0.17985737025536983,
+          "logloss": 0.8068451582245134,
+          "ece_15": 0.197326150678453
+        },
+        "hedef_kitle-choice-34b58f37": {
+          "rows": 5,
+          "macro_f1": 0.2,
+          "accuracy": 0.4,
+          "brier": 0.36255704481801065,
+          "logloss": 1.2849248402231823,
+          "ece_15": 0.2862702965736389
+        },
+        "hedef_kitle-choice-544f6086": {
+          "rows": 66,
+          "macro_f1": 0.4168614617422472,
+          "accuracy": 0.6212121212121212,
+          "brier": 0.22415335122083457,
+          "logloss": 0.8010692320607422,
+          "ece_15": 0.06582815854838399
+        },
+        "hedef_kitle-choice-baf758f1": {
+          "rows": 41,
+          "macro_f1": 0.6583251231527094,
+          "accuracy": 0.6585365853658537,
+          "brier": 0.32448896543778855,
+          "logloss": 1.0637591310980818,
+          "ece_15": 0.1859798773032863
+        },
+        "hedef_kitle-noul-483cbb20": {
+          "rows": 14,
+          "macro_f1": 0.48148148148148145,
+          "accuracy": 0.9285714285714286,
+          "brier": 0.1618046923244822,
+          "logloss": 0.4716347788834813,
+          "ece_15": 0.33572498815400253
+        },
+        "hedef_kitle-noul-52c49560": {
+          "rows": 11,
+          "macro_f1": 0.8070175438596491,
+          "accuracy": 0.9090909090909091,
+          "brier": 0.2696627715426401,
+          "logloss": 0.5059871458043378,
+          "ece_15": 0.2904897386377508
+        },
+        "hedef_kitle-noul-8d068bcf": {
+          "rows": 7,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.28226631896118354,
+          "logloss": 0.5895033220538476,
+          "ece_15": 0.25465443304606844
+        },
+        "hedef_kitle-noul-c4ff7aaa": {
+          "rows": 64,
+          "macro_f1": 0.5413886829750432,
+          "accuracy": 0.546875,
+          "brier": 0.4135360765240379,
+          "logloss": 0.690309558966778,
+          "ece_15": 0.041351342573761975
+        },
+        "hedef_kitle-noul-ce0c5c62": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.26605890047114134,
+          "logloss": 0.46176570407138134,
+          "ece_15": 0.3430631558100382
+        },
+        "hedef_kitle-score-14bbe2ca": {
+          "rows": 69,
+          "macro_f1": 0.49672039544379976,
+          "accuracy": 0.5652173913043478,
+          "brier": 0.30819998784395,
+          "logloss": 0.9736101707530153,
+          "ece_15": 0.17005884388218756
+        },
+        "hedef_kitle-score-2c8f4bf9": {
+          "rows": 46,
+          "macro_f1": 0.4687770281958139,
+          "accuracy": 0.6739130434782609,
+          "brier": 0.21561334903539492,
+          "logloss": 0.890202942116739,
+          "ece_15": 0.13420445893121802
+        },
+        "hedef_kitle-score-4ac3ba9b": {
+          "rows": 24,
+          "macro_f1": 0.30303030303030304,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.21468567875043545,
+          "logloss": 0.7939544430133232,
+          "ece_15": 0.23183100546399754
+        },
+        "hukuk-basvuru_yeri": {
+          "rows": 450,
+          "macro_f1": 0.5191155973624065,
+          "accuracy": 0.56,
+          "brier": 0.552900755162643,
+          "logloss": 1.325465350803546,
+          "ece_15": 0.1640974599123001
+        },
+        "insan_destegi-noul-044ed4ef": {
+          "rows": 47,
+          "macro_f1": 0.29850746268656714,
+          "accuracy": 0.425531914893617,
+          "brier": 0.38731621385054016,
+          "logloss": 0.7187898048079493,
+          "ece_15": 0.2130887508392334
+        },
+        "insan_destegi-noul-260768ab": {
+          "rows": 18,
+          "macro_f1": 0.5,
+          "accuracy": 0.5555555555555556,
+          "brier": 0.26963533596084804,
+          "logloss": 0.6680319285407688,
+          "ece_15": 0.133415549993515
+        },
+        "insan_destegi-noul-4340e349": {
+          "rows": 10,
+          "macro_f1": 0.47368421052631576,
+          "accuracy": 0.9,
+          "brier": 0.14833323490624678,
+          "logloss": 0.41722416485815017,
+          "ece_15": 0.27067803740501406
+        },
+        "insan_destegi-noul-5f2ec3cd": {
+          "rows": 7,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.18246174100387466,
+          "logloss": 0.5102405725139556,
+          "ece_15": 0.2228236028126308
+        },
+        "insan_destegi-noul-7924a359": {
+          "rows": 72,
+          "macro_f1": 0.4433613445378151,
+          "accuracy": 0.6805555555555556,
+          "brier": 0.2963386220742701,
+          "logloss": 0.6179912043811314,
+          "ece_15": 0.07598986311091319
+        },
+        "insan_destegi-noul-7ba23e82": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.3512223636838918,
+          "logloss": 0.5420613655096354,
+          "ece_15": 0.41665933529535926
+        },
+        "insan_destegi-noul-889bdc42": {
+          "rows": 42,
+          "macro_f1": 0.4246575342465753,
+          "accuracy": 0.7380952380952381,
+          "brier": 0.2540878817989148,
+          "logloss": 0.5666668941612769,
+          "ece_15": 0.0648847193945022
+        },
+        "insan_destegi-noul-df7ed3b9": {
+          "rows": 71,
+          "macro_f1": 0.4858459512837393,
+          "accuracy": 0.5352112676056338,
+          "brier": 0.39105526658096196,
+          "logloss": 0.7311671187117338,
+          "ece_15": 0.15919734306738406
+        },
+        "insan_destegi-score-0af5edf9": {
+          "rows": 57,
+          "macro_f1": 0.35781433607520563,
+          "accuracy": 0.6842105263157895,
+          "brier": 0.26789992126039214,
+          "logloss": 1.051056197287451,
+          "ece_15": 0.15965649171879415
+        },
+        "insan_destegi-score-0dbd668a": {
+          "rows": 17,
+          "macro_f1": 0.32065217391304346,
+          "accuracy": 0.5882352941176471,
+          "brier": 0.26821298549898964,
+          "logloss": 1.142882544858481,
+          "ece_15": 0.23308713295880487
+        },
+        "insan_destegi-score-13d68064": {
+          "rows": 19,
+          "macro_f1": 0.22857142857142856,
+          "accuracy": 0.8421052631578947,
+          "brier": 0.14847705926137159,
+          "logloss": 0.8553657043045153,
+          "ece_15": 0.2070817288599516
+        },
+        "insan_destegi-score-2e610371": {
+          "rows": 19,
+          "macro_f1": 0.30476190476190473,
+          "accuracy": 0.8421052631578947,
+          "brier": 0.20945984816035731,
+          "logloss": 0.8113430228339947,
+          "ece_15": 0.2519809995826922
+        },
+        "insan_destegi-score-4431eccc": {
+          "rows": 13,
+          "macro_f1": 0.2898550724637681,
+          "accuracy": 0.7692307692307693,
+          "brier": 0.19696967553919198,
+          "logloss": 0.7140758912751998,
+          "ece_15": 0.2592103343743545
+        },
+        "insan_destegi-score-bf4b03e1": {
+          "rows": 11,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.1968110677513292,
+          "logloss": 0.6949557997990564,
+          "ece_15": 0.4121744903651151
+        },
+        "konu-choice-0df404e5": {
+          "rows": 45,
+          "macro_f1": 0.5393139469226426,
+          "accuracy": 0.6444444444444445,
+          "brier": 0.3100086805397898,
+          "logloss": 1.043289496310891,
+          "ece_15": 0.15861987537807892
+        },
+        "konu-choice-8d941543": {
+          "rows": 20,
+          "macro_f1": 0.37745098039215685,
+          "accuracy": 0.55,
+          "brier": 0.4013132662876934,
+          "logloss": 1.2946871748835573,
+          "ece_15": 0.3878672629594803
+        },
+        "konu-choice-a0dd0d1f": {
+          "rows": 51,
+          "macro_f1": 0.5982238349885408,
+          "accuracy": 0.7647058823529411,
+          "brier": 0.3500919993372206,
+          "logloss": 0.8409956209143706,
+          "ece_15": 0.15718437409868427
+        },
+        "konu-choice-a42249f1": {
+          "rows": 53,
+          "macro_f1": 0.6098412698412699,
+          "accuracy": 0.5849056603773585,
+          "brier": 0.5485175343026859,
+          "logloss": 1.1022132213415536,
+          "ece_15": 0.24508257238370068
+        },
+        "konu-choice-ddfd07df": {
+          "rows": 18,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.17500257460807744,
+          "logloss": 0.6344158747255636,
+          "ece_15": 0.20494346486197573
+        },
+        "konu-noul-6554f187": {
+          "rows": 76,
+          "macro_f1": 0.7817883511074651,
+          "accuracy": 0.8157894736842105,
+          "brier": 0.21369762721715152,
+          "logloss": 0.44088668725463787,
+          "ece_15": 0.10521664666502098
+        },
+        "konu-noul-9375bbb9": {
+          "rows": 55,
+          "macro_f1": 0.789272030651341,
+          "accuracy": 0.8363636363636363,
+          "brier": 0.22204757616170492,
+          "logloss": 0.49233408419677394,
+          "ece_15": 0.11227023276415739
+        },
+        "konu-noul-9c6f7cfd": {
+          "rows": 18,
+          "macro_f1": 0.47058823529411764,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.05995075323568076,
+          "logloss": 0.22229575559778617,
+          "ece_15": 0.1442803773615096
+        },
+        "konu-noul-a378f446": {
+          "rows": 10,
+          "macro_f1": 0.6703296703296704,
+          "accuracy": 0.7,
+          "brier": 0.2359180805912297,
+          "logloss": 0.4557847672612875,
+          "ece_15": 0.27117644548416137
+        },
+        "konu-noul-ca8eb7b0": {
+          "rows": 6,
+          "macro_f1": 0.45454545454545453,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.20040504650630298,
+          "logloss": 0.3330373822666952,
+          "ece_15": 0.13475010792414346
+        },
+        "konu-score-5417389c": {
+          "rows": 57,
+          "macro_f1": 0.23342293906810035,
+          "accuracy": 0.38596491228070173,
+          "brier": 0.31592439532801,
+          "logloss": 1.2184735313196922,
+          "ece_15": 0.11268760080923114
+        },
+        "konu-score-54b9728b": {
+          "rows": 53,
+          "macro_f1": 0.5848089468779124,
+          "accuracy": 0.5849056603773585,
+          "brier": 0.27319198761838176,
+          "logloss": 0.9418158694437816,
+          "ece_15": 0.14122810734892793
+        },
+        "konu-score-b9d85204": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.38502464930335206,
+          "logloss": 0.680652713525415,
+          "ece_15": 0.40482770403226215
+        },
+        "massive_tr": {
+          "rows": 1978,
+          "macro_f1": 0.7285989535928101,
+          "accuracy": 0.788675429726997,
+          "brier": 0.29695135973097603,
+          "logloss": 0.6736237575071976,
+          "ece_15": 0.04476680736178938
+        },
+        "mide22": {
+          "rows": 478,
+          "macro_f1": 0.23073415412676698,
+          "accuracy": 0.5292887029288703,
+          "brier": 0.5767681191622822,
+          "logloss": 0.9511059568560022,
+          "ece_15": 0.03985755301419668
+        },
+        "niyet-choice-87cdd065": {
+          "rows": 51,
+          "macro_f1": 0.4812051649928264,
+          "accuracy": 0.5882352941176471,
+          "brier": 0.31218609953910764,
+          "logloss": 1.0378185217992593,
+          "ece_15": 0.23555442223361897
+        },
+        "niyet-noul-06e897f6": {
+          "rows": 74,
+          "macro_f1": 0.7972602739726027,
+          "accuracy": 0.7972972972972973,
+          "brier": 0.25877524344571284,
+          "logloss": 0.5267222490764804,
+          "ece_15": 0.11846160888671879
+        },
+        "niyet-noul-17621582": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.22330540415292058,
+          "logloss": 0.42629462864916623,
+          "ece_15": 0.3348149458567301
+        },
+        "niyet-noul-1b65142b": {
+          "rows": 5,
+          "macro_f1": 0.375,
+          "accuracy": 0.6,
+          "brier": 0.2994752374018155,
+          "logloss": 0.48243533776682535,
+          "ece_15": 0.17363562583923342
+        },
+        "niyet-noul-6b19a819": {
+          "rows": 17,
+          "macro_f1": 0.45161290322580644,
+          "accuracy": 0.8235294117647058,
+          "brier": 0.20859053023032856,
+          "logloss": 0.41665010809873665,
+          "ece_15": 0.22207426674225753
+        },
+        "niyet-noul-6f90a982": {
+          "rows": 49,
+          "macro_f1": 0.755,
+          "accuracy": 0.7551020408163265,
+          "brier": 0.3005081399575876,
+          "logloss": 0.5528640625419251,
+          "ece_15": 0.1370300760074538
+        },
+        "niyet-noul-ab22c1f3": {
+          "rows": 43,
+          "macro_f1": 0.8179068360556563,
+          "accuracy": 0.8372093023255814,
+          "brier": 0.21158639545882732,
+          "logloss": 0.3965557222564271,
+          "ece_15": 0.10786222302636433
+        },
+        "niyet-noul-d07e0e51": {
+          "rows": 17,
+          "macro_f1": 0.5277777777777778,
+          "accuracy": 0.5294117647058824,
+          "brier": 0.2464161667730704,
+          "logloss": 0.6264007645617172,
+          "ece_15": 0.15241505117977366
+        },
+        "niyet-noul-f2adac6b": {
+          "rows": 9,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.0806744355553372,
+          "logloss": 0.3041089725412799,
+          "ece_15": 0.18279217349158394
+        },
+        "niyet-score-23038837": {
+          "rows": 81,
+          "macro_f1": 0.45263532763532766,
+          "accuracy": 0.4691358024691358,
+          "brier": 0.3137187497104153,
+          "logloss": 1.0514650880205014,
+          "ece_15": 0.04996344299963963
+        },
+        "niyet-score-aa349b95": {
+          "rows": 71,
+          "macro_f1": 0.19654712949987366,
+          "accuracy": 0.29577464788732394,
+          "brier": 0.3778977555087155,
+          "logloss": 1.426537473282265,
+          "ece_15": 0.24306842013144156
+        },
+        "niyet-score-c0ceb41a": {
+          "rows": 35,
+          "macro_f1": 0.4146825396825397,
+          "accuracy": 0.4857142857142857,
+          "brier": 0.38154244541769494,
+          "logloss": 0.9466033691084524,
+          "ece_15": 0.2000100672245026
+        },
+        "offenseval_tr": {
+          "rows": 3169,
+          "macro_f1": 0.4560627069815029,
+          "accuracy": 0.8068791416850741,
+          "brier": 0.29304382819057473,
+          "logloss": 0.4610603163220113,
+          "ece_15": 0.05491197605771048
+        },
+        "oltalama-oltalama": {
+          "rows": 787,
+          "macro_f1": 0.6927381572097866,
+          "accuracy": 0.7484116899618806,
+          "brier": 0.21767042716157578,
+          "logloss": 0.6121176185846402,
+          "ece_15": 0.06234777943151875
+        },
+        "prompt_injection": {
+          "rows": 224,
+          "macro_f1": 0.9370937976410174,
+          "accuracy": 0.9375,
+          "brier": 0.10294120303087495,
+          "logloss": 0.1849722305717097,
+          "ece_15": 0.024325128910796988
+        },
+        "spam-mesaj_turu": {
+          "rows": 787,
+          "macro_f1": 0.7036614496678669,
+          "accuracy": 0.7395171537484116,
+          "brier": 0.243478973367381,
+          "logloss": 0.8369086417756056,
+          "ece_15": 0.08436634606448642
+        },
+        "webfaq_relevance": {
+          "rows": 2000,
+          "macro_f1": 0.39090135250165514,
+          "accuracy": 0.517,
+          "brier": 0.49784962096632535,
+          "logloss": 0.6908843913717453,
+          "ece_15": 0.06680172941088677
+        },
+        "yanit_yeterliligi-noul-4b0c2226": {
+          "rows": 61,
+          "macro_f1": 0.7007215007215007,
+          "accuracy": 0.7213114754098361,
+          "brier": 0.3263361613293985,
+          "logloss": 0.5829626353510758,
+          "ece_15": 0.1142128246729491
+        },
+        "yanit_yeterliligi-noul-4dd186be": {
+          "rows": 38,
+          "macro_f1": 0.42105263157894735,
+          "accuracy": 0.42105263157894735,
+          "brier": 0.38342023902320416,
+          "logloss": 0.7260398198239703,
+          "ece_15": 0.13849156153829473
+        },
+        "yanit_yeterliligi-noul-79e42d28": {
+          "rows": 44,
+          "macro_f1": 0.696969696969697,
+          "accuracy": 0.7727272727272727,
+          "brier": 0.3375491466460855,
+          "logloss": 0.6332385952368164,
+          "ece_15": 0.21549198437820785
+        },
+        "yanit_yeterliligi-noul-a7184ac1": {
+          "rows": 72,
+          "macro_f1": 0.6812144212523719,
+          "accuracy": 0.7083333333333334,
+          "brier": 0.3619677733110175,
+          "logloss": 0.6393124170526598,
+          "ece_15": 0.14049958768818116
+        },
+        "yanit_yeterliligi-noul-e6d8163b": {
+          "rows": 66,
+          "macro_f1": 0.38317757009345793,
+          "accuracy": 0.6212121212121212,
+          "brier": 0.3712072875866788,
+          "logloss": 0.6837434857981989,
+          "ece_15": 0.13693669438362122
+        },
+        "yanit_yeterliligi-noul-ef477d29": {
+          "rows": 67,
+          "macro_f1": 0.5838509316770186,
+          "accuracy": 0.6417910447761194,
+          "brier": 0.2543372536375998,
+          "logloss": 0.6726923488696127,
+          "ece_15": 0.09081720594149914
+        }
+      }
+    },
+    {
+      "step": 1352,
+      "metrics": {
+        "aciliyet-choice-f933d6ca": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.6,
+          "brier": 0.2257604551816567,
+          "logloss": 0.9893503481236452,
+          "ece_15": 0.1719555616378784
+        },
+        "aciliyet-noul-867c01ba": {
+          "rows": 18,
+          "macro_f1": 0.7662337662337663,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.15666964005294387,
+          "logloss": 0.5392001447026182,
+          "ece_15": 0.2907895015345679
+        },
+        "aym_rights": {
+          "rows": 440,
+          "macro_f1": 0.8190783754128648,
+          "accuracy": 0.8227272727272728,
+          "brier": 0.2528928276082459,
+          "logloss": 0.5033477262650823,
+          "ece_15": 0.05396705838766967
+        },
+        "bilgi_turu-choice-0602e2dd": {
+          "rows": 78,
+          "macro_f1": 0.49525426680599094,
+          "accuracy": 0.7051282051282052,
+          "brier": 0.2097590009914932,
+          "logloss": 0.8038190835714094,
+          "ece_15": 0.11583000574356471
+        },
+        "bilgi_turu-choice-2bd63dfa": {
+          "rows": 59,
+          "macro_f1": 0.6888257575757576,
+          "accuracy": 0.711864406779661,
+          "brier": 0.2984246328850399,
+          "logloss": 0.8656582879238455,
+          "ece_15": 0.18958786180463894
+        },
+        "bilgi_turu-choice-38d8e6e4": {
+          "rows": 60,
+          "macro_f1": 0.45441758241758246,
+          "accuracy": 0.65,
+          "brier": 0.31653856503430156,
+          "logloss": 0.9669413245016656,
+          "ece_15": 0.14277171542247133
+        },
+        "bilgi_turu-choice-6e45c40e": {
+          "rows": 54,
+          "macro_f1": 0.6303968253968254,
+          "accuracy": 0.6296296296296297,
+          "brier": 0.39713594726838763,
+          "logloss": 0.9853695029778833,
+          "ece_15": 0.15468758786166154
+        },
+        "bilgi_turu-choice-8d668a53": {
+          "rows": 50,
+          "macro_f1": 0.5299396681749623,
+          "accuracy": 0.54,
+          "brier": 0.32438605077454385,
+          "logloss": 0.9962214986389328,
+          "ece_15": 0.1455710381269455
+        },
+        "bilgi_turu-choice-ad7c9b98": {
+          "rows": 62,
+          "macro_f1": 0.5948611111111111,
+          "accuracy": 0.6290322580645161,
+          "brier": 0.24687373305189697,
+          "logloss": 0.8234284092861427,
+          "ece_15": 0.14012151668148662
+        },
+        "bilgi_turu-noul-0ed9bfdd": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.28414413534782346,
+          "logloss": 0.512581460169591,
+          "ece_15": 0.25418680906295776
+        },
+        "bilgi_turu-noul-179c3892": {
+          "rows": 13,
+          "macro_f1": 0.9022556390977443,
+          "accuracy": 0.9230769230769231,
+          "brier": 0.09063689238086431,
+          "logloss": 0.35777560259532615,
+          "ece_15": 0.19778455679233262
+        },
+        "bilgi_turu-noul-1d2981ab": {
+          "rows": 52,
+          "macro_f1": 0.7911646586345381,
+          "accuracy": 0.8653846153846154,
+          "brier": 0.15202375569138013,
+          "logloss": 0.367295421665463,
+          "ece_15": 0.07980136344066034
+        },
+        "bilgi_turu-noul-40587d38": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.35379407576229976,
+          "logloss": 0.7870941335510002,
+          "ece_15": 0.3328708012898763
+        },
+        "bilgi_turu-noul-62839aa5": {
+          "rows": 12,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.07096765642409132,
+          "logloss": 0.1662106236582225,
+          "ece_15": 0.1387912631034851
+        },
+        "bilgi_turu-noul-6503635f": {
+          "rows": 9,
+          "macro_f1": 0.75,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.2050830046270364,
+          "logloss": 0.40938003818205826,
+          "ece_15": 0.27272341648737586
+        },
+        "bilgi_turu-noul-79af23f3": {
+          "rows": 76,
+          "macro_f1": 0.753764055650848,
+          "accuracy": 0.7763157894736842,
+          "brier": 0.15217419189158138,
+          "logloss": 0.4697170503885559,
+          "ece_15": 0.11320596462801882
+        },
+        "bilgi_turu-noul-d0e95292": {
+          "rows": 16,
+          "macro_f1": 0.6135265700483092,
+          "accuracy": 0.6875,
+          "brier": 0.27134872666647974,
+          "logloss": 0.5417909635171685,
+          "ece_15": 0.1442343145608902
+        },
+        "bilgi_turu-score-2279abad": {
+          "rows": 56,
+          "macro_f1": 0.4,
+          "accuracy": 0.5892857142857143,
+          "brier": 0.2780606668211858,
+          "logloss": 1.0261321243492285,
+          "ece_15": 0.13525001385382246
+        },
+        "bilgi_turu-score-2b541cef": {
+          "rows": 52,
+          "macro_f1": 0.47304791481810116,
+          "accuracy": 0.6538461538461539,
+          "brier": 0.31346077267549816,
+          "logloss": 0.9983049983139953,
+          "ece_15": 0.1558300910087732
+        },
+        "bilgi_turu-score-e3a1bf22": {
+          "rows": 64,
+          "macro_f1": 0.5649014106460915,
+          "accuracy": 0.625,
+          "brier": 0.2833494679493628,
+          "logloss": 0.9640887397278001,
+          "ece_15": 0.09810741571709514
+        },
+        "dogrulama-dogrulanabilir": {
+          "rows": 959,
+          "macro_f1": 0.9539428935214918,
+          "accuracy": 0.9551616266944735,
+          "brier": 0.04312530147773053,
+          "logloss": 0.13191897271466313,
+          "ece_15": 0.014217816130088164
+        },
+        "egitim-cevap_puani": {
+          "rows": 316,
+          "macro_f1": 0.3276818557165378,
+          "accuracy": 0.5379746835443038,
+          "brier": 0.36438239962546615,
+          "logloss": 1.0368773115964545,
+          "ece_15": 0.06764471625225457
+        },
+        "egitim-ders": {
+          "rows": 79,
+          "macro_f1": 0.9890476190476191,
+          "accuracy": 0.9873417721518988,
+          "brier": 0.060153657746050304,
+          "logloss": 0.17809060269261626,
+          "ece_15": 0.12154881637307659
+        },
+        "facturk_verdict": {
+          "rows": 1470,
+          "macro_f1": 0.24174279690794098,
+          "accuracy": 0.9360544217687075,
+          "brier": 0.12053063961980758,
+          "logloss": 0.2779369244736658,
+          "ece_15": 0.029201807983878548
+        },
+        "hassasiyet-choice-bc694b78": {
+          "rows": 36,
+          "macro_f1": 0.513961038961039,
+          "accuracy": 0.75,
+          "brier": 0.24223426637863385,
+          "logloss": 0.6545621470483508,
+          "ece_15": 0.18773126519388625
+        },
+        "hassasiyet-score-1f0c97d1": {
+          "rows": 20,
+          "macro_f1": 0.36742424242424243,
+          "accuracy": 0.85,
+          "brier": 0.17757052533186674,
+          "logloss": 0.6472240875159969,
+          "ece_15": 0.23895649015903472
+        },
+        "hassasiyet-score-26d6e5d6": {
+          "rows": 8,
+          "macro_f1": 0.4666666666666667,
+          "accuracy": 0.875,
+          "brier": 0.20174690718042856,
+          "logloss": 0.5407112643438012,
+          "ece_15": 0.14475292712450027
+        },
+        "hassasiyet-score-86765d61": {
+          "rows": 9,
+          "macro_f1": 0.4375,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.26343569927798005,
+          "logloss": 0.7961299062270935,
+          "ece_15": 0.31056828962432015
+        },
+        "hassasiyet-score-b525ad42": {
+          "rows": 12,
+          "macro_f1": 0.2807017543859649,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.26102139843746,
+          "logloss": 0.7203745201839534,
+          "ece_15": 0.2866841331124306
+        },
+        "hedef_kitle-choice-340d8c46": {
+          "rows": 42,
+          "macro_f1": 0.484593837535014,
+          "accuracy": 0.8095238095238095,
+          "brier": 0.16073910398839103,
+          "logloss": 0.7878284016163054,
+          "ece_15": 0.20268646521227698
+        },
+        "hedef_kitle-choice-34b58f37": {
+          "rows": 5,
+          "macro_f1": 0.25,
+          "accuracy": 0.6,
+          "brier": 0.19590284508961525,
+          "logloss": 1.0438185367741666,
+          "ece_15": 0.2370759129524231
+        },
+        "hedef_kitle-choice-544f6086": {
+          "rows": 66,
+          "macro_f1": 0.4566744730679157,
+          "accuracy": 0.6818181818181818,
+          "brier": 0.18309755530813862,
+          "logloss": 0.7205066614671078,
+          "ece_15": 0.1053074390599222
+        },
+        "hedef_kitle-choice-baf758f1": {
+          "rows": 41,
+          "macro_f1": 0.5693957115009747,
+          "accuracy": 0.7560975609756098,
+          "brier": 0.2072843674800548,
+          "logloss": 0.8615207869187541,
+          "ece_15": 0.18984734721300078
+        },
+        "hedef_kitle-noul-483cbb20": {
+          "rows": 14,
+          "macro_f1": 0.44,
+          "accuracy": 0.7857142857142857,
+          "brier": 0.15414110891082017,
+          "logloss": 0.43595269554870886,
+          "ece_15": 0.1947161555290222
+        },
+        "hedef_kitle-noul-52c49560": {
+          "rows": 11,
+          "macro_f1": 0.7708333333333333,
+          "accuracy": 0.8181818181818182,
+          "brier": 0.2749796425363242,
+          "logloss": 0.511733950419478,
+          "ece_15": 0.34114008058201184
+        },
+        "hedef_kitle-noul-8d068bcf": {
+          "rows": 7,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.22395058096963966,
+          "logloss": 0.5185189535763529,
+          "ece_15": 0.3444914477212088
+        },
+        "hedef_kitle-noul-c4ff7aaa": {
+          "rows": 64,
+          "macro_f1": 0.7294685990338164,
+          "accuracy": 0.78125,
+          "brier": 0.25319682798718285,
+          "logloss": 0.5086456915062334,
+          "ece_15": 0.0942745264619589
+        },
+        "hedef_kitle-noul-ce0c5c62": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.1464439025379198,
+          "logloss": 0.29430028460137164,
+          "ece_15": 0.21958408753077188
+        },
+        "hedef_kitle-score-14bbe2ca": {
+          "rows": 69,
+          "macro_f1": 0.654780361757106,
+          "accuracy": 0.6956521739130435,
+          "brier": 0.22851044519070932,
+          "logloss": 0.8437844931364589,
+          "ece_15": 0.11641087264254471
+        },
+        "hedef_kitle-score-2c8f4bf9": {
+          "rows": 46,
+          "macro_f1": 0.49407407407407405,
+          "accuracy": 0.6956521739130435,
+          "brier": 0.15682562774316025,
+          "logloss": 0.8142057359511814,
+          "ece_15": 0.1225164532661438
+        },
+        "hedef_kitle-score-4ac3ba9b": {
+          "rows": 24,
+          "macro_f1": 0.29457364341085274,
+          "accuracy": 0.7916666666666666,
+          "brier": 0.1758112447082926,
+          "logloss": 0.7156515612303354,
+          "ece_15": 0.1792605072259903
+        },
+        "hukuk-basvuru_yeri": {
+          "rows": 450,
+          "macro_f1": 0.7389512682527761,
+          "accuracy": 0.7377777777777778,
+          "brier": 0.3095346159650702,
+          "logloss": 0.7592832363067848,
+          "ece_15": 0.05179287708467907
+        },
+        "insan_destegi-noul-044ed4ef": {
+          "rows": 47,
+          "macro_f1": 0.6964729259811226,
+          "accuracy": 0.723404255319149,
+          "brier": 0.29915477017636827,
+          "logloss": 0.6302301107647954,
+          "ece_15": 0.17533689483683162
+        },
+        "insan_destegi-noul-260768ab": {
+          "rows": 18,
+          "macro_f1": 0.6296296296296295,
+          "accuracy": 0.7222222222222222,
+          "brier": 0.22786954237532653,
+          "logloss": 0.627835700856509,
+          "ece_15": 0.17134087946679857
+        },
+        "insan_destegi-noul-4340e349": {
+          "rows": 10,
+          "macro_f1": 0.47368421052631576,
+          "accuracy": 0.9,
+          "brier": 0.1421643834095611,
+          "logloss": 0.42727695847368297,
+          "ece_15": 0.2093697249889374
+        },
+        "insan_destegi-noul-5f2ec3cd": {
+          "rows": 7,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.06504369408312619,
+          "logloss": 0.3558254603162516,
+          "ece_15": 0.29526057413646156
+        },
+        "insan_destegi-noul-7924a359": {
+          "rows": 72,
+          "macro_f1": 0.7037037037037037,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.19685521258093525,
+          "logloss": 0.5012017832883754,
+          "ece_15": 0.06651511953936681
+        },
+        "insan_destegi-noul-7ba23e82": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.3868189911958586,
+          "logloss": 0.5690635647434762,
+          "ece_15": 0.15118569135665894
+        },
+        "insan_destegi-noul-889bdc42": {
+          "rows": 42,
+          "macro_f1": 0.6259109311740891,
+          "accuracy": 0.7380952380952381,
+          "brier": 0.23790491444939596,
+          "logloss": 0.5453073958357969,
+          "ece_15": 0.08047724763552347
+        },
+        "insan_destegi-noul-df7ed3b9": {
+          "rows": 71,
+          "macro_f1": 0.5352112676056338,
+          "accuracy": 0.5352112676056338,
+          "brier": 0.34329292203101813,
+          "logloss": 0.667531561846643,
+          "ece_15": 0.10425759453169055
+        },
+        "insan_destegi-score-0af5edf9": {
+          "rows": 57,
+          "macro_f1": 0.3927556818181818,
+          "accuracy": 0.7543859649122807,
+          "brier": 0.18871222628565218,
+          "logloss": 0.9119641709087432,
+          "ece_15": 0.21765494817181635
+        },
+        "insan_destegi-score-0dbd668a": {
+          "rows": 17,
+          "macro_f1": 0.45138888888888884,
+          "accuracy": 0.5882352941176471,
+          "brier": 0.27098276528916143,
+          "logloss": 1.13895948899219,
+          "ece_15": 0.33848558278644786
+        },
+        "insan_destegi-score-13d68064": {
+          "rows": 19,
+          "macro_f1": 0.34375,
+          "accuracy": 0.7894736842105263,
+          "brier": 0.17462035214874666,
+          "logloss": 0.9231063295594307,
+          "ece_15": 0.17909614977083704
+        },
+        "insan_destegi-score-2e610371": {
+          "rows": 19,
+          "macro_f1": 0.5359477124183006,
+          "accuracy": 0.8947368421052632,
+          "brier": 0.1897983942473631,
+          "logloss": 0.7670020471900374,
+          "ece_15": 0.38291174408636597
+        },
+        "insan_destegi-score-4431eccc": {
+          "rows": 13,
+          "macro_f1": 0.3925925925925926,
+          "accuracy": 0.6153846153846154,
+          "brier": 0.28085332884158526,
+          "logloss": 0.8423968594572582,
+          "ece_15": 0.23332694172859192
+        },
+        "insan_destegi-score-bf4b03e1": {
+          "rows": 11,
+          "macro_f1": 0.8070175438596491,
+          "accuracy": 0.9090909090909091,
+          "brier": 0.1929881555811047,
+          "logloss": 0.6615704697869927,
+          "ece_15": 0.2887392965230075
+        },
+        "konu-choice-0df404e5": {
+          "rows": 45,
+          "macro_f1": 0.631686765615337,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.18887746232196967,
+          "logloss": 0.7494244792259765,
+          "ece_15": 0.09400868482059901
+        },
+        "konu-choice-8d941543": {
+          "rows": 20,
+          "macro_f1": 0.44842105263157894,
+          "accuracy": 0.6,
+          "brier": 0.2731858578264988,
+          "logloss": 1.0944943742087503,
+          "ece_15": 0.14954135194420815
+        },
+        "konu-choice-a0dd0d1f": {
+          "rows": 51,
+          "macro_f1": 0.8373201123201123,
+          "accuracy": 0.8627450980392157,
+          "brier": 0.19851803441101243,
+          "logloss": 0.46479520111222866,
+          "ece_15": 0.11814163712894216
+        },
+        "konu-choice-a42249f1": {
+          "rows": 53,
+          "macro_f1": 0.7238031533683708,
+          "accuracy": 0.7924528301886793,
+          "brier": 0.28209663214883424,
+          "logloss": 0.6124433008040842,
+          "ece_15": 0.14679880805735313
+        },
+        "konu-choice-ddfd07df": {
+          "rows": 18,
+          "macro_f1": 0.8076923076923078,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.07357319732277313,
+          "logloss": 0.44840597101429425,
+          "ece_15": 0.18958364427089688
+        },
+        "konu-noul-6554f187": {
+          "rows": 76,
+          "macro_f1": 0.8509803921568628,
+          "accuracy": 0.868421052631579,
+          "brier": 0.13362816966744362,
+          "logloss": 0.3254955289830656,
+          "ece_15": 0.05465414492707503
+        },
+        "konu-noul-9375bbb9": {
+          "rows": 55,
+          "macro_f1": 0.8484848484848484,
+          "accuracy": 0.8727272727272727,
+          "brier": 0.1297905185998603,
+          "logloss": 0.34999964821717755,
+          "ece_15": 0.12069191499189898
+        },
+        "konu-noul-9c6f7cfd": {
+          "rows": 18,
+          "macro_f1": 0.6,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.16708943277171248,
+          "logloss": 0.3270745843729286,
+          "ece_15": 0.17578607466485763
+        },
+        "konu-noul-a378f446": {
+          "rows": 10,
+          "macro_f1": 0.6703296703296704,
+          "accuracy": 0.7,
+          "brier": 0.35087423318835054,
+          "logloss": 0.7413162307240306,
+          "ece_15": 0.2417589008808136
+        },
+        "konu-noul-ca8eb7b0": {
+          "rows": 6,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.028484528484300792,
+          "logloss": 0.10807089821385402,
+          "ece_15": 0.1000634829203288
+        },
+        "konu-score-5417389c": {
+          "rows": 57,
+          "macro_f1": 0.3129749507458486,
+          "accuracy": 0.49122807017543857,
+          "brier": 0.28778828571720955,
+          "logloss": 1.1711856456634646,
+          "ece_15": 0.22369191677946793
+        },
+        "konu-score-54b9728b": {
+          "rows": 53,
+          "macro_f1": 0.7008448540706604,
+          "accuracy": 0.6981132075471698,
+          "brier": 0.18301108948272587,
+          "logloss": 0.7963068097255661,
+          "ece_15": 0.1278835917418858
+        },
+        "konu-score-b9d85204": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.03323673581488792,
+          "logloss": 0.1510690148441534,
+          "ece_15": 0.13993233442306519
+        },
+        "massive_tr": {
+          "rows": 1978,
+          "macro_f1": 0.8141597166662653,
+          "accuracy": 0.8599595551061678,
+          "brier": 0.2054888410015802,
+          "logloss": 0.4395937182024814,
+          "ece_15": 0.02094094084596484
+        },
+        "mide22": {
+          "rows": 478,
+          "macro_f1": 0.48831765121950915,
+          "accuracy": 0.5920502092050209,
+          "brier": 0.5087120010638221,
+          "logloss": 0.8317633588983392,
+          "ece_15": 0.037517532207477035
+        },
+        "niyet-choice-87cdd065": {
+          "rows": 51,
+          "macro_f1": 0.6655120281765018,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.22965605618065876,
+          "logloss": 0.919148152219978,
+          "ece_15": 0.11877347149100959
+        },
+        "niyet-noul-06e897f6": {
+          "rows": 74,
+          "macro_f1": 0.8377192982456141,
+          "accuracy": 0.8378378378378378,
+          "brier": 0.18449275646743524,
+          "logloss": 0.41343648066230776,
+          "ece_15": 0.08981538543830048
+        },
+        "niyet-noul-17621582": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.23354638311114187,
+          "logloss": 0.3673466011180207,
+          "ece_15": 0.2507778207461039
+        },
+        "niyet-noul-1b65142b": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.10733371948302539,
+          "logloss": 0.22065414384881485,
+          "ece_15": 0.17341361045837403
+        },
+        "niyet-noul-6b19a819": {
+          "rows": 17,
+          "macro_f1": 0.8172043010752688,
+          "accuracy": 0.9411764705882353,
+          "brier": 0.1416565187255114,
+          "logloss": 0.32103791765392264,
+          "ece_15": 0.16930922339944277
+        },
+        "niyet-noul-6f90a982": {
+          "rows": 49,
+          "macro_f1": 0.8561844863731656,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.17053319369307382,
+          "logloss": 0.3948229193205257,
+          "ece_15": 0.14058477173046185
+        },
+        "niyet-noul-ab22c1f3": {
+          "rows": 43,
+          "macro_f1": 0.8650345260514751,
+          "accuracy": 0.8837209302325582,
+          "brier": 0.18874898827812198,
+          "logloss": 0.36233396308416266,
+          "ece_15": 0.09161453053008678
+        },
+        "niyet-noul-d07e0e51": {
+          "rows": 17,
+          "macro_f1": 0.6458333333333333,
+          "accuracy": 0.6470588235294118,
+          "brier": 0.17335232939878087,
+          "logloss": 0.546771865461655,
+          "ece_15": 0.2847913994508631
+        },
+        "niyet-noul-f2adac6b": {
+          "rows": 9,
+          "macro_f1": 0.8,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.0980482537059962,
+          "logloss": 0.2946670406646414,
+          "ece_15": 0.10314981804953681
+        },
+        "niyet-score-23038837": {
+          "rows": 81,
+          "macro_f1": 0.6308837361468941,
+          "accuracy": 0.6419753086419753,
+          "brier": 0.21924150137076917,
+          "logloss": 0.9066133676029438,
+          "ece_15": 0.11208135220739582
+        },
+        "niyet-score-aa349b95": {
+          "rows": 71,
+          "macro_f1": 0.48066924066924066,
+          "accuracy": 0.4788732394366197,
+          "brier": 0.23870015794719424,
+          "logloss": 1.1680041329820476,
+          "ece_15": 0.22074068432122887
+        },
+        "niyet-score-c0ceb41a": {
+          "rows": 35,
+          "macro_f1": 0.5681818181818182,
+          "accuracy": 0.6,
+          "brier": 0.3039486316058495,
+          "logloss": 0.8077216088128447,
+          "ece_15": 0.21004714795521323
+        },
+        "offenseval_tr": {
+          "rows": 3169,
+          "macro_f1": 0.6817076703738918,
+          "accuracy": 0.8362259387819502,
+          "brier": 0.24574045305477338,
+          "logloss": 0.39646607528228067,
+          "ece_15": 0.01592875535121734
+        },
+        "oltalama-oltalama": {
+          "rows": 787,
+          "macro_f1": 0.7740597786213277,
+          "accuracy": 0.8055908513341804,
+          "brier": 0.17014589560647253,
+          "logloss": 0.5601428003984324,
+          "ece_15": 0.04898752789030834
+        },
+        "prompt_injection": {
+          "rows": 224,
+          "macro_f1": 0.9549223215004428,
+          "accuracy": 0.9553571428571429,
+          "brier": 0.06983322265002458,
+          "logloss": 0.11970539263977067,
+          "ece_15": 0.024951379480106502
+        },
+        "spam-mesaj_turu": {
+          "rows": 787,
+          "macro_f1": 0.7256077961748064,
+          "accuracy": 0.7636594663278272,
+          "brier": 0.18066777397426506,
+          "logloss": 0.6526218755419124,
+          "ece_15": 0.06336210571522935
+        },
+        "webfaq_relevance": {
+          "rows": 2000,
+          "macro_f1": 0.5930762222897055,
+          "accuracy": 0.598,
+          "brier": 0.47462146857926807,
+          "logloss": 0.6673611368445524,
+          "ece_15": 0.032799439817666975
+        },
+        "yanit_yeterliligi-noul-4b0c2226": {
+          "rows": 61,
+          "macro_f1": 0.7867132867132867,
+          "accuracy": 0.8032786885245902,
+          "brier": 0.27202649141989327,
+          "logloss": 0.5181327787004634,
+          "ece_15": 0.07957495822281134
+        },
+        "yanit_yeterliligi-noul-4dd186be": {
+          "rows": 38,
+          "macro_f1": 0.6833333333333333,
+          "accuracy": 0.7894736842105263,
+          "brier": 0.25022961565537993,
+          "logloss": 0.5859064290807043,
+          "ece_15": 0.17864461007871124
+        },
+        "yanit_yeterliligi-noul-79e42d28": {
+          "rows": 44,
+          "macro_f1": 0.42105263157894735,
+          "accuracy": 0.7272727272727273,
+          "brier": 0.27577076922529253,
+          "logloss": 0.5627321796979778,
+          "ece_15": 0.04902876507152208
+        },
+        "yanit_yeterliligi-noul-a7184ac1": {
+          "rows": 72,
+          "macro_f1": 0.692929292929293,
+          "accuracy": 0.7361111111111112,
+          "brier": 0.29069162406355253,
+          "logloss": 0.5672995452771773,
+          "ece_15": 0.1354455252488454
+        },
+        "yanit_yeterliligi-noul-e6d8163b": {
+          "rows": 66,
+          "macro_f1": 0.6689754000477669,
+          "accuracy": 0.6818181818181818,
+          "brier": 0.3316172715683947,
+          "logloss": 0.6489132063086965,
+          "ece_15": 0.14121409799113419
+        },
+        "yanit_yeterliligi-noul-ef477d29": {
+          "rows": 67,
+          "macro_f1": 0.4754149702474162,
+          "accuracy": 0.6268656716417911,
+          "brier": 0.24197683740514853,
+          "logloss": 0.6573054195383422,
+          "ece_15": 0.13121153614414277
+        }
+      }
+    },
+    {
+      "step": 2028,
+      "metrics": {
+        "aciliyet-choice-f933d6ca": {
+          "rows": 5,
+          "macro_f1": 0.5,
+          "accuracy": 0.6,
+          "brier": 0.2008023301397604,
+          "logloss": 0.940840577866141,
+          "ece_15": 0.30041860938072207
+        },
+        "aciliyet-noul-867c01ba": {
+          "rows": 18,
+          "macro_f1": 0.6727272727272727,
+          "accuracy": 0.7222222222222222,
+          "brier": 0.13209869058129864,
+          "logloss": 0.5082009556820521,
+          "ece_15": 0.07667618989944458
+        },
+        "aym_rights": {
+          "rows": 440,
+          "macro_f1": 0.8259409154702058,
+          "accuracy": 0.8363636363636363,
+          "brier": 0.23699052190525413,
+          "logloss": 0.4770576865264913,
+          "ece_15": 0.06510527127168397
+        },
+        "bilgi_turu-choice-0602e2dd": {
+          "rows": 78,
+          "macro_f1": 0.47407407407407404,
+          "accuracy": 0.6923076923076923,
+          "brier": 0.21867024376271355,
+          "logloss": 0.8462221513489777,
+          "ece_15": 0.1465621858071058
+        },
+        "bilgi_turu-choice-2bd63dfa": {
+          "rows": 59,
+          "macro_f1": 0.6804531490015362,
+          "accuracy": 0.7288135593220338,
+          "brier": 0.2641643388869465,
+          "logloss": 0.8214271992448007,
+          "ece_15": 0.08227254020965703
+        },
+        "bilgi_turu-choice-38d8e6e4": {
+          "rows": 60,
+          "macro_f1": 0.45115255115255115,
+          "accuracy": 0.6333333333333333,
+          "brier": 0.3292805151961296,
+          "logloss": 1.0129363628425208,
+          "ece_15": 0.175637091199557
+        },
+        "bilgi_turu-choice-6e45c40e": {
+          "rows": 54,
+          "macro_f1": 0.7316483516483516,
+          "accuracy": 0.7037037037037037,
+          "brier": 0.32297150534966085,
+          "logloss": 0.8812852072017895,
+          "ece_15": 0.11641932858361138
+        },
+        "bilgi_turu-choice-8d668a53": {
+          "rows": 50,
+          "macro_f1": 0.5142628205128205,
+          "accuracy": 0.54,
+          "brier": 0.3572744577039103,
+          "logloss": 1.0725775129273043,
+          "ece_15": 0.17985197722911833
+        },
+        "bilgi_turu-choice-ad7c9b98": {
+          "rows": 62,
+          "macro_f1": 0.5406140350877193,
+          "accuracy": 0.5806451612903226,
+          "brier": 0.24325672180251134,
+          "logloss": 0.8035967577428855,
+          "ece_15": 0.15304510295391086
+        },
+        "bilgi_turu-noul-0ed9bfdd": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.23537450712482638,
+          "logloss": 0.44188019085599206,
+          "ece_15": 0.20785495042800906
+        },
+        "bilgi_turu-noul-179c3892": {
+          "rows": 13,
+          "macro_f1": 0.9022556390977443,
+          "accuracy": 0.9230769230769231,
+          "brier": 0.06801969591266593,
+          "logloss": 0.32860895684361174,
+          "ece_15": 0.1849762980754559
+        },
+        "bilgi_turu-noul-1d2981ab": {
+          "rows": 52,
+          "macro_f1": 0.7435897435897436,
+          "accuracy": 0.8076923076923077,
+          "brier": 0.18441775995780224,
+          "logloss": 0.40066833457904977,
+          "ece_15": 0.09231833540476289
+        },
+        "bilgi_turu-noul-40587d38": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.44258146335544385,
+          "logloss": 0.9563915343518158,
+          "ece_15": 0.41491206487019855
+        },
+        "bilgi_turu-noul-62839aa5": {
+          "rows": 12,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.02096706109121735,
+          "logloss": 0.08133036777005559,
+          "ece_15": 0.06929391125837964
+        },
+        "bilgi_turu-noul-6503635f": {
+          "rows": 9,
+          "macro_f1": 0.8831168831168831,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.20558296168079396,
+          "logloss": 0.4235161652558002,
+          "ece_15": 0.1967852115631103
+        },
+        "bilgi_turu-noul-79af23f3": {
+          "rows": 76,
+          "macro_f1": 0.7212032281731475,
+          "accuracy": 0.7368421052631579,
+          "brier": 0.1599937869538212,
+          "logloss": 0.479405185749371,
+          "ece_15": 0.13920638592619647
+        },
+        "bilgi_turu-noul-d0e95292": {
+          "rows": 16,
+          "macro_f1": 0.6444444444444444,
+          "accuracy": 0.8125,
+          "brier": 0.17112903850540762,
+          "logloss": 0.42348538440201744,
+          "ece_15": 0.2301931530237198
+        },
+        "bilgi_turu-score-2279abad": {
+          "rows": 56,
+          "macro_f1": 0.4417808219178082,
+          "accuracy": 0.625,
+          "brier": 0.22156344647812998,
+          "logloss": 0.9331185093291078,
+          "ece_15": 0.13368945036615643
+        },
+        "bilgi_turu-score-2b541cef": {
+          "rows": 52,
+          "macro_f1": 0.46897457158651185,
+          "accuracy": 0.5961538461538461,
+          "brier": 0.24653062841798962,
+          "logloss": 0.8982111039535082,
+          "ece_15": 0.18863092076319915
+        },
+        "bilgi_turu-score-e3a1bf22": {
+          "rows": 64,
+          "macro_f1": 0.5648644318955505,
+          "accuracy": 0.640625,
+          "brier": 0.2938837850791419,
+          "logloss": 0.9975057172613132,
+          "ece_15": 0.0998466392047703
+        },
+        "dogrulama-dogrulanabilir": {
+          "rows": 959,
+          "macro_f1": 0.967614188970138,
+          "accuracy": 0.9687174139728885,
+          "brier": 0.030528108589092353,
+          "logloss": 0.12344590023333452,
+          "ece_15": 0.0087260014695097
+        },
+        "egitim-cevap_puani": {
+          "rows": 316,
+          "macro_f1": 0.5088405532788685,
+          "accuracy": 0.629746835443038,
+          "brier": 0.32208108886041875,
+          "logloss": 0.9506658485979678,
+          "ece_15": 0.06659429435488542
+        },
+        "egitim-ders": {
+          "rows": 79,
+          "macro_f1": 0.9464932712215322,
+          "accuracy": 0.9493670886075949,
+          "brier": 0.051558365166590764,
+          "logloss": 0.13325490889766659,
+          "ece_15": 0.05072261525105832
+        },
+        "facturk_verdict": {
+          "rows": 1470,
+          "macro_f1": 0.24785764622973924,
+          "accuracy": 0.9319727891156463,
+          "brier": 0.1237309581791195,
+          "logloss": 0.2957416104457599,
+          "ece_15": 0.033765639678961554
+        },
+        "hassasiyet-choice-bc694b78": {
+          "rows": 36,
+          "macro_f1": 0.5440476190476191,
+          "accuracy": 0.75,
+          "brier": 0.2100109821911991,
+          "logloss": 0.6146991643230959,
+          "ece_15": 0.20144793970717323
+        },
+        "hassasiyet-score-1f0c97d1": {
+          "rows": 20,
+          "macro_f1": 0.6458333333333334,
+          "accuracy": 0.85,
+          "brier": 0.15742004143980523,
+          "logloss": 0.6004696237486444,
+          "ece_15": 0.20800603926181796
+        },
+        "hassasiyet-score-26d6e5d6": {
+          "rows": 8,
+          "macro_f1": 0.4666666666666667,
+          "accuracy": 0.875,
+          "brier": 0.20559343302260305,
+          "logloss": 0.5371410238848277,
+          "ece_15": 0.17434579133987427
+        },
+        "hassasiyet-score-86765d61": {
+          "rows": 9,
+          "macro_f1": 0.4375,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.3188853860877796,
+          "logloss": 0.9635742328553284,
+          "ece_15": 0.18537971708509654
+        },
+        "hassasiyet-score-b525ad42": {
+          "rows": 12,
+          "macro_f1": 0.4473684210526316,
+          "accuracy": 0.75,
+          "brier": 0.2549617868707756,
+          "logloss": 0.6859593525178734,
+          "ece_15": 0.23624068498611456
+        },
+        "hedef_kitle-choice-340d8c46": {
+          "rows": 42,
+          "macro_f1": 0.4619047619047619,
+          "accuracy": 0.8095238095238095,
+          "brier": 0.15257531728123586,
+          "logloss": 0.7993181210958265,
+          "ece_15": 0.11690713110424225
+        },
+        "hedef_kitle-choice-34b58f37": {
+          "rows": 5,
+          "macro_f1": 0.26666666666666666,
+          "accuracy": 0.4,
+          "brier": 0.3504159109357968,
+          "logloss": 1.252916987217019,
+          "ece_15": 0.5292213082313538
+        },
+        "hedef_kitle-choice-544f6086": {
+          "rows": 66,
+          "macro_f1": 0.3661380597014925,
+          "accuracy": 0.5454545454545454,
+          "brier": 0.22638032010242715,
+          "logloss": 0.792269622529996,
+          "ece_15": 0.18095086560104834
+        },
+        "hedef_kitle-choice-baf758f1": {
+          "rows": 41,
+          "macro_f1": 0.4910585935253867,
+          "accuracy": 0.6829268292682927,
+          "brier": 0.23441410743208202,
+          "logloss": 0.8811226340080698,
+          "ece_15": 0.18083970139666303
+        },
+        "hedef_kitle-noul-483cbb20": {
+          "rows": 14,
+          "macro_f1": 0.44,
+          "accuracy": 0.7857142857142857,
+          "brier": 0.18774451323934857,
+          "logloss": 0.484832807450979,
+          "ece_15": 0.15901661344936915
+        },
+        "hedef_kitle-noul-52c49560": {
+          "rows": 11,
+          "macro_f1": 0.8705882352941177,
+          "accuracy": 0.9090909090909091,
+          "brier": 0.1663282732517569,
+          "logloss": 0.364475974165209,
+          "ece_15": 0.21963817964900625
+        },
+        "hedef_kitle-noul-8d068bcf": {
+          "rows": 7,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.24738908291943015,
+          "logloss": 0.5442477561366984,
+          "ece_15": 0.177624557699476
+        },
+        "hedef_kitle-noul-c4ff7aaa": {
+          "rows": 64,
+          "macro_f1": 0.7234226447709594,
+          "accuracy": 0.765625,
+          "brier": 0.22713949056881727,
+          "logloss": 0.47925071547542947,
+          "ece_15": 0.09753203950822355
+        },
+        "hedef_kitle-noul-ce0c5c62": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.1306029598014238,
+          "logloss": 0.2549475495238444,
+          "ece_15": 0.17633448044459024
+        },
+        "hedef_kitle-score-14bbe2ca": {
+          "rows": 69,
+          "macro_f1": 0.6824372759856631,
+          "accuracy": 0.7101449275362319,
+          "brier": 0.2253073303161376,
+          "logloss": 0.8484573716579314,
+          "ece_15": 0.1520652615505716
+        },
+        "hedef_kitle-score-2c8f4bf9": {
+          "rows": 46,
+          "macro_f1": 0.5253561253561253,
+          "accuracy": 0.717391304347826,
+          "brier": 0.18797188828542982,
+          "logloss": 0.885542003325613,
+          "ece_15": 0.16859464671300808
+        },
+        "hedef_kitle-score-4ac3ba9b": {
+          "rows": 24,
+          "macro_f1": 0.31007751937984496,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.11258744206755111,
+          "logloss": 0.5976706280846628,
+          "ece_15": 0.1639963152507941
+        },
+        "hukuk-basvuru_yeri": {
+          "rows": 450,
+          "macro_f1": 0.7390837884092504,
+          "accuracy": 0.7644444444444445,
+          "brier": 0.29715651208780336,
+          "logloss": 0.8327100919184833,
+          "ece_15": 0.09900439560413357
+        },
+        "insan_destegi-noul-044ed4ef": {
+          "rows": 47,
+          "macro_f1": 0.6657183499288762,
+          "accuracy": 0.6808510638297872,
+          "brier": 0.3258897736605212,
+          "logloss": 0.6703536784186472,
+          "ece_15": 0.1117551009705726
+        },
+        "insan_destegi-noul-260768ab": {
+          "rows": 18,
+          "macro_f1": 0.6785714285714286,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.18765505816453787,
+          "logloss": 0.644999787559334,
+          "ece_15": 0.18094576398531598
+        },
+        "insan_destegi-noul-4340e349": {
+          "rows": 10,
+          "macro_f1": 0.47368421052631576,
+          "accuracy": 0.9,
+          "brier": 0.10206690032932682,
+          "logloss": 0.3976635386311635,
+          "ece_15": 0.0973629117012024
+        },
+        "insan_destegi-noul-5f2ec3cd": {
+          "rows": 7,
+          "macro_f1": 0.46153846153846156,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.042723949113709955,
+          "logloss": 0.31426477605107067,
+          "ece_15": 0.1177344066756112
+        },
+        "insan_destegi-noul-7924a359": {
+          "rows": 72,
+          "macro_f1": 0.7252525252525253,
+          "accuracy": 0.7638888888888888,
+          "brier": 0.2076612034784534,
+          "logloss": 0.5042126133362955,
+          "ece_15": 0.07411730620596142
+        },
+        "insan_destegi-noul-7ba23e82": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.43084163220606864,
+          "logloss": 0.6227017170002221,
+          "ece_15": 0.15290453036626178
+        },
+        "insan_destegi-noul-889bdc42": {
+          "rows": 42,
+          "macro_f1": 0.5714285714285714,
+          "accuracy": 0.7619047619047619,
+          "brier": 0.2232375437711711,
+          "logloss": 0.5331136459099894,
+          "ece_15": 0.14787270199684868
+        },
+        "insan_destegi-noul-df7ed3b9": {
+          "rows": 71,
+          "macro_f1": 0.5886113886113886,
+          "accuracy": 0.5915492957746479,
+          "brier": 0.3311625135883194,
+          "logloss": 0.6662384133209897,
+          "ece_15": 0.13282372582126672
+        },
+        "insan_destegi-score-0af5edf9": {
+          "rows": 57,
+          "macro_f1": 0.5012629161882893,
+          "accuracy": 0.7719298245614035,
+          "brier": 0.20429914456626658,
+          "logloss": 0.9400796553620351,
+          "ece_15": 0.17383725496760585
+        },
+        "insan_destegi-score-0dbd668a": {
+          "rows": 17,
+          "macro_f1": 0.46838235294117647,
+          "accuracy": 0.5882352941176471,
+          "brier": 0.2722951323960669,
+          "logloss": 1.1184912680235204,
+          "ece_15": 0.2452030690277324
+        },
+        "insan_destegi-score-13d68064": {
+          "rows": 19,
+          "macro_f1": 0.4852941176470588,
+          "accuracy": 0.8947368421052632,
+          "brier": 0.1307168377507908,
+          "logloss": 0.9446920221663665,
+          "ece_15": 0.22680319610394928
+        },
+        "insan_destegi-score-2e610371": {
+          "rows": 19,
+          "macro_f1": 0.30476190476190473,
+          "accuracy": 0.8421052631578947,
+          "brier": 0.16197005273510223,
+          "logloss": 0.697607210743127,
+          "ece_15": 0.24250850865715426
+        },
+        "insan_destegi-score-4431eccc": {
+          "rows": 13,
+          "macro_f1": 0.4140350877192982,
+          "accuracy": 0.6923076923076923,
+          "brier": 0.2500166202762121,
+          "logloss": 0.797565552353531,
+          "ece_15": 0.27942369305170506
+        },
+        "insan_destegi-score-bf4b03e1": {
+          "rows": 11,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.09753498967960557,
+          "logloss": 0.5184123742986277,
+          "ece_15": 0.27192424915053626
+        },
+        "konu-choice-0df404e5": {
+          "rows": 45,
+          "macro_f1": 0.4411848986317072,
+          "accuracy": 0.6444444444444445,
+          "brier": 0.1702727304675667,
+          "logloss": 0.7409291880151149,
+          "ece_15": 0.17754178709454008
+        },
+        "konu-choice-8d941543": {
+          "rows": 20,
+          "macro_f1": 0.38175438596491224,
+          "accuracy": 0.55,
+          "brier": 0.2940031381707723,
+          "logloss": 1.114291159785652,
+          "ece_15": 0.28266671746969224
+        },
+        "konu-choice-a0dd0d1f": {
+          "rows": 51,
+          "macro_f1": 0.8452214452214453,
+          "accuracy": 0.8627450980392157,
+          "brier": 0.1982565022844115,
+          "logloss": 0.48469220372972077,
+          "ece_15": 0.06996713374175276
+        },
+        "konu-choice-a42249f1": {
+          "rows": 53,
+          "macro_f1": 0.7002799227799228,
+          "accuracy": 0.7358490566037735,
+          "brier": 0.32144217157125743,
+          "logloss": 0.7146908622102827,
+          "ece_15": 0.20157580611840734
+        },
+        "konu-choice-ddfd07df": {
+          "rows": 18,
+          "macro_f1": 0.7222222222222222,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.18295486237366188,
+          "logloss": 0.7343162838723026,
+          "ece_15": 0.17327889965640172
+        },
+        "konu-noul-6554f187": {
+          "rows": 76,
+          "macro_f1": 0.888481291269259,
+          "accuracy": 0.8947368421052632,
+          "brier": 0.11502014116008284,
+          "logloss": 0.30798862000523647,
+          "ece_15": 0.04062748739593909
+        },
+        "konu-noul-9375bbb9": {
+          "rows": 55,
+          "macro_f1": 0.8761261261261262,
+          "accuracy": 0.8909090909090909,
+          "brier": 0.13358972401047925,
+          "logloss": 0.3493823593391553,
+          "ece_15": 0.1174283905462785
+        },
+        "konu-noul-9c6f7cfd": {
+          "rows": 18,
+          "macro_f1": 0.45454545454545453,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.09786192926873778,
+          "logloss": 0.24410607295850692,
+          "ece_15": 0.13001969456672668
+        },
+        "konu-noul-a378f446": {
+          "rows": 10,
+          "macro_f1": 0.6703296703296704,
+          "accuracy": 0.7,
+          "brier": 0.35826603911095245,
+          "logloss": 0.704840053177135,
+          "ece_15": 0.269780296087265
+        },
+        "konu-noul-ca8eb7b0": {
+          "rows": 6,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.09161615197017502,
+          "logloss": 0.165301402167949,
+          "ece_15": 0.13190510869026184
+        },
+        "konu-score-5417389c": {
+          "rows": 57,
+          "macro_f1": 0.46693750265178835,
+          "accuracy": 0.631578947368421,
+          "brier": 0.23585436987137756,
+          "logloss": 1.061794995528509,
+          "ece_15": 0.21033694451315355
+        },
+        "konu-score-54b9728b": {
+          "rows": 53,
+          "macro_f1": 0.7231101088341995,
+          "accuracy": 0.7169811320754716,
+          "brier": 0.1823022736000378,
+          "logloss": 0.783378718874305,
+          "ece_15": 0.07938051392447272
+        },
+        "konu-score-b9d85204": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.20097552914284667,
+          "logloss": 0.4127530689439123,
+          "ece_15": 0.33722768227259314
+        },
+        "massive_tr": {
+          "rows": 1978,
+          "macro_f1": 0.8418683526302847,
+          "accuracy": 0.8786653185035389,
+          "brier": 0.18393302786164606,
+          "logloss": 0.42539254288923595,
+          "ece_15": 0.04935543608255649
+        },
+        "mide22": {
+          "rows": 478,
+          "macro_f1": 0.6247366743556011,
+          "accuracy": 0.6548117154811716,
+          "brier": 0.4577087512301985,
+          "logloss": 0.7975905765903691,
+          "ece_15": 0.10020641789276728
+        },
+        "niyet-choice-87cdd065": {
+          "rows": 51,
+          "macro_f1": 0.6954954954954955,
+          "accuracy": 0.7058823529411765,
+          "brier": 0.20944514466164393,
+          "logloss": 0.9044430942508787,
+          "ece_15": 0.1315388141893873
+        },
+        "niyet-noul-06e897f6": {
+          "rows": 74,
+          "macro_f1": 0.8639705882352942,
+          "accuracy": 0.8648648648648649,
+          "brier": 0.17091375062515762,
+          "logloss": 0.40816185993028553,
+          "ece_15": 0.09061113724837429
+        },
+        "niyet-noul-17621582": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.05244731780924403,
+          "logloss": 0.16282910682246063,
+          "ece_15": 0.1274283528327942
+        },
+        "niyet-noul-1b65142b": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.14659444614324216,
+          "logloss": 0.24856977661045782,
+          "ece_15": 0.18188443183898925
+        },
+        "niyet-noul-6b19a819": {
+          "rows": 17,
+          "macro_f1": 0.8172043010752688,
+          "accuracy": 0.9411764705882353,
+          "brier": 0.0956491414549942,
+          "logloss": 0.24709211888837668,
+          "ece_15": 0.15588696563945098
+        },
+        "niyet-noul-6f90a982": {
+          "rows": 49,
+          "macro_f1": 0.7740041928721174,
+          "accuracy": 0.7755102040816326,
+          "brier": 0.22614531261642096,
+          "logloss": 0.4493017429790357,
+          "ece_15": 0.08140138825591728
+        },
+        "niyet-noul-ab22c1f3": {
+          "rows": 43,
+          "macro_f1": 0.7787307032590052,
+          "accuracy": 0.7906976744186046,
+          "brier": 0.22084000922997135,
+          "logloss": 0.4061479171028877,
+          "ece_15": 0.0945484208506207
+        },
+        "niyet-noul-d07e0e51": {
+          "rows": 17,
+          "macro_f1": 0.7638888888888888,
+          "accuracy": 0.7647058823529411,
+          "brier": 0.14608687042565802,
+          "logloss": 0.6053643212936122,
+          "ece_15": 0.22748863697052002
+        },
+        "niyet-noul-f2adac6b": {
+          "rows": 9,
+          "macro_f1": 0.8,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.13955317701419295,
+          "logloss": 0.34733619498494533,
+          "ece_15": 0.10488665103912354
+        },
+        "niyet-score-23038837": {
+          "rows": 81,
+          "macro_f1": 0.5917460317460318,
+          "accuracy": 0.5925925925925926,
+          "brier": 0.18532419483005688,
+          "logloss": 0.8541064775129702,
+          "ece_15": 0.15704952088403112
+        },
+        "niyet-score-aa349b95": {
+          "rows": 71,
+          "macro_f1": 0.5577226162332545,
+          "accuracy": 0.5633802816901409,
+          "brier": 0.2350796796494284,
+          "logloss": 1.1832135660176804,
+          "ece_15": 0.08641239203197859
+        },
+        "niyet-score-c0ceb41a": {
+          "rows": 35,
+          "macro_f1": 0.6326630358888424,
+          "accuracy": 0.6571428571428571,
+          "brier": 0.23266622412198562,
+          "logloss": 0.7249786130454711,
+          "ece_15": 0.12819371138300215
+        },
+        "offenseval_tr": {
+          "rows": 3169,
+          "macro_f1": 0.7075765094975653,
+          "accuracy": 0.8330703692016409,
+          "brier": 0.24996570688507375,
+          "logloss": 0.40618472385360704,
+          "ece_15": 0.03859724694526169
+        },
+        "oltalama-oltalama": {
+          "rows": 787,
+          "macro_f1": 0.7902917795443443,
+          "accuracy": 0.8170266836086404,
+          "brier": 0.1524658321310085,
+          "logloss": 0.5374503964553687,
+          "ece_15": 0.03939201878774271
+        },
+        "prompt_injection": {
+          "rows": 224,
+          "macro_f1": 0.96856896586285,
+          "accuracy": 0.96875,
+          "brier": 0.05037795259426222,
+          "logloss": 0.08789662481119034,
+          "ece_15": 0.028406882126416465
+        },
+        "spam-mesaj_turu": {
+          "rows": 787,
+          "macro_f1": 0.7531484055788649,
+          "accuracy": 0.7789072426937739,
+          "brier": 0.17792364334395275,
+          "logloss": 0.6677392523295816,
+          "ece_15": 0.05330691536772507
+        },
+        "webfaq_relevance": {
+          "rows": 2000,
+          "macro_f1": 0.5965012218479625,
+          "accuracy": 0.609,
+          "brier": 0.47534961160153705,
+          "logloss": 0.6727383690643937,
+          "ece_15": 0.06578475153446199
+        },
+        "yanit_yeterliligi-noul-4b0c2226": {
+          "rows": 61,
+          "macro_f1": 0.8063492063492064,
+          "accuracy": 0.819672131147541,
+          "brier": 0.25948922971031857,
+          "logloss": 0.5385158402627894,
+          "ece_15": 0.09856432480890244
+        },
+        "yanit_yeterliligi-noul-4dd186be": {
+          "rows": 38,
+          "macro_f1": 0.5947497949138638,
+          "accuracy": 0.6578947368421053,
+          "brier": 0.2803168197560041,
+          "logloss": 0.6127955213757966,
+          "ece_15": 0.1756479708771957
+        },
+        "yanit_yeterliligi-noul-79e42d28": {
+          "rows": 44,
+          "macro_f1": 0.6719138359569179,
+          "accuracy": 0.7954545454545454,
+          "brier": 0.22090728926170183,
+          "logloss": 0.5024065762025844,
+          "ece_15": 0.1367680010470477
+        },
+        "yanit_yeterliligi-noul-a7184ac1": {
+          "rows": 72,
+          "macro_f1": 0.75,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.2700477026600352,
+          "logloss": 0.5424589898476428,
+          "ece_15": 0.11919414583179684
+        },
+        "yanit_yeterliligi-noul-e6d8163b": {
+          "rows": 66,
+          "macro_f1": 0.717948717948718,
+          "accuracy": 0.7272727272727273,
+          "brier": 0.3393101723184011,
+          "logloss": 0.6722609304370711,
+          "ece_15": 0.1723618886687539
+        },
+        "yanit_yeterliligi-noul-ef477d29": {
+          "rows": 67,
+          "macro_f1": 0.7312834224598931,
+          "accuracy": 0.7313432835820896,
+          "brier": 0.1785479956918599,
+          "logloss": 0.5892041803400478,
+          "ece_15": 0.07173064217638613
+        }
+      }
+    },
+    {
+      "step": 2704,
+      "metrics": {
+        "aciliyet-choice-f933d6ca": {
+          "rows": 5,
+          "macro_f1": 0.35555555555555557,
+          "accuracy": 0.4,
+          "brier": 0.18502842595892502,
+          "logloss": 0.9288073203450915,
+          "ece_15": 0.4474218368530274
+        },
+        "aciliyet-noul-867c01ba": {
+          "rows": 18,
+          "macro_f1": 0.625,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.1377187376718679,
+          "logloss": 0.5167710653192361,
+          "ece_15": 0.17743304702970714
+        },
+        "aym_rights": {
+          "rows": 440,
+          "macro_f1": 0.8480305040756477,
+          "accuracy": 0.85,
+          "brier": 0.2208933093427134,
+          "logloss": 0.4391212245083619,
+          "ece_15": 0.047126075354489455
+        },
+        "bilgi_turu-choice-0602e2dd": {
+          "rows": 78,
+          "macro_f1": 0.5846842812360054,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.22131853060334372,
+          "logloss": 0.8306743648925417,
+          "ece_15": 0.09915635180778992
+        },
+        "bilgi_turu-choice-2bd63dfa": {
+          "rows": 59,
+          "macro_f1": 0.6750121065375303,
+          "accuracy": 0.6949152542372882,
+          "brier": 0.26397392511032036,
+          "logloss": 0.8190538553151865,
+          "ece_15": 0.1104281004202568
+        },
+        "bilgi_turu-choice-38d8e6e4": {
+          "rows": 60,
+          "macro_f1": 0.49385300320237446,
+          "accuracy": 0.65,
+          "brier": 0.3143970046343391,
+          "logloss": 0.9383187039197468,
+          "ece_15": 0.18743253350257874
+        },
+        "bilgi_turu-choice-6e45c40e": {
+          "rows": 54,
+          "macro_f1": 0.7337672811059908,
+          "accuracy": 0.7037037037037037,
+          "brier": 0.3204734004401442,
+          "logloss": 0.8705943575926157,
+          "ece_15": 0.11876526861279099
+        },
+        "bilgi_turu-choice-8d668a53": {
+          "rows": 50,
+          "macro_f1": 0.4604672057502246,
+          "accuracy": 0.5,
+          "brier": 0.3255623424835063,
+          "logloss": 1.0285819946791597,
+          "ece_15": 0.2112465238571167
+        },
+        "bilgi_turu-choice-ad7c9b98": {
+          "rows": 62,
+          "macro_f1": 0.5914056531703591,
+          "accuracy": 0.6290322580645161,
+          "brier": 0.24133856591264866,
+          "logloss": 0.7917963668091328,
+          "ece_15": 0.12671836441563022
+        },
+        "bilgi_turu-noul-0ed9bfdd": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.1892024122868348,
+          "logloss": 0.37369242872202235,
+          "ece_15": 0.24572812318801882
+        },
+        "bilgi_turu-noul-179c3892": {
+          "rows": 13,
+          "macro_f1": 0.9022556390977443,
+          "accuracy": 0.9230769230769231,
+          "brier": 0.07218225136787591,
+          "logloss": 0.33057319687483944,
+          "ece_15": 0.12220930594664357
+        },
+        "bilgi_turu-noul-1d2981ab": {
+          "rows": 52,
+          "macro_f1": 0.755639097744361,
+          "accuracy": 0.8076923076923077,
+          "brier": 0.18415344319882013,
+          "logloss": 0.3961568983521743,
+          "ece_15": 0.08747570789777315
+        },
+        "bilgi_turu-noul-40587d38": {
+          "rows": 3,
+          "macro_f1": 0.4,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.3917789437103223,
+          "logloss": 0.8377294993876818,
+          "ece_15": 0.40531549851099646
+        },
+        "bilgi_turu-noul-62839aa5": {
+          "rows": 12,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.050853606371546935,
+          "logloss": 0.13492249892205138,
+          "ece_15": 0.11427046855290728
+        },
+        "bilgi_turu-noul-6503635f": {
+          "rows": 9,
+          "macro_f1": 0.8831168831168831,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.19135736058732056,
+          "logloss": 0.4021792429486639,
+          "ece_15": 0.19409414132436115
+        },
+        "bilgi_turu-noul-79af23f3": {
+          "rows": 76,
+          "macro_f1": 0.6955128205128205,
+          "accuracy": 0.7368421052631579,
+          "brier": 0.14719403564276157,
+          "logloss": 0.46259605747367055,
+          "ece_15": 0.11312440586717504
+        },
+        "bilgi_turu-noul-d0e95292": {
+          "rows": 16,
+          "macro_f1": 0.6666666666666667,
+          "accuracy": 0.75,
+          "brier": 0.21860863305202993,
+          "logloss": 0.47031868262941,
+          "ece_15": 0.2054974064230919
+        },
+        "bilgi_turu-score-2279abad": {
+          "rows": 56,
+          "macro_f1": 0.43824476650563604,
+          "accuracy": 0.625,
+          "brier": 0.21494434978867333,
+          "logloss": 0.9348626980542504,
+          "ece_15": 0.12900043598243166
+        },
+        "bilgi_turu-score-2b541cef": {
+          "rows": 52,
+          "macro_f1": 0.5637254901960784,
+          "accuracy": 0.7115384615384616,
+          "brier": 0.21542801890446125,
+          "logloss": 0.8507551497261205,
+          "ece_15": 0.12759171827481347
+        },
+        "bilgi_turu-score-e3a1bf22": {
+          "rows": 64,
+          "macro_f1": 0.59575260804769,
+          "accuracy": 0.640625,
+          "brier": 0.2613124094483801,
+          "logloss": 0.918236135036848,
+          "ece_15": 0.21225000312551856
+        },
+        "dogrulama-dogrulanabilir": {
+          "rows": 959,
+          "macro_f1": 0.9751000479778738,
+          "accuracy": 0.9760166840458812,
+          "brier": 0.028045207076376154,
+          "logloss": 0.11889285305800619,
+          "ece_15": 0.012880484988219499
+        },
+        "egitim-cevap_puani": {
+          "rows": 316,
+          "macro_f1": 0.567255159873394,
+          "accuracy": 0.6740506329113924,
+          "brier": 0.2938252891253537,
+          "logloss": 0.8927774673791661,
+          "ece_15": 0.10499770335758786
+        },
+        "egitim-ders": {
+          "rows": 79,
+          "macro_f1": 0.9360766045548654,
+          "accuracy": 0.9367088607594937,
+          "brier": 0.08299007272620065,
+          "logloss": 0.18283564920594156,
+          "ece_15": 0.052646985159644624
+        },
+        "facturk_verdict": {
+          "rows": 1470,
+          "macro_f1": 0.24174279690794098,
+          "accuracy": 0.9360544217687075,
+          "brier": 0.12098387993879764,
+          "logloss": 0.2744487720778304,
+          "ece_15": 0.029857716978001787
+        },
+        "hassasiyet-choice-bc694b78": {
+          "rows": 36,
+          "macro_f1": 0.5646551724137931,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.17115127386081974,
+          "logloss": 0.5599353981163817,
+          "ece_15": 0.11034623036781947
+        },
+        "hassasiyet-score-1f0c97d1": {
+          "rows": 20,
+          "macro_f1": 0.359375,
+          "accuracy": 0.8,
+          "brier": 0.24850053884731355,
+          "logloss": 0.7745582784462265,
+          "ece_15": 0.18512675613164903
+        },
+        "hassasiyet-score-26d6e5d6": {
+          "rows": 8,
+          "macro_f1": 0.4666666666666667,
+          "accuracy": 0.875,
+          "brier": 0.22666241110657478,
+          "logloss": 0.5964350560346551,
+          "ece_15": 0.21338169276714325
+        },
+        "hassasiyet-score-86765d61": {
+          "rows": 9,
+          "macro_f1": 0.4375,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.32135890462100347,
+          "logloss": 0.8855387032708879,
+          "ece_15": 0.3315568963686625
+        },
+        "hassasiyet-score-b525ad42": {
+          "rows": 12,
+          "macro_f1": 0.4473684210526316,
+          "accuracy": 0.75,
+          "brier": 0.22732664075144446,
+          "logloss": 0.6598871310482762,
+          "ece_15": 0.27105190604925156
+        },
+        "hedef_kitle-choice-340d8c46": {
+          "rows": 42,
+          "macro_f1": 0.5474358974358974,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.1664282143996417,
+          "logloss": 0.7905490352031878,
+          "ece_15": 0.2548953557298297
+        },
+        "hedef_kitle-choice-34b58f37": {
+          "rows": 5,
+          "macro_f1": 0.26666666666666666,
+          "accuracy": 0.4,
+          "brier": 0.30271934055176286,
+          "logloss": 1.1743924988126064,
+          "ece_15": 0.37030216455459597
+        },
+        "hedef_kitle-choice-544f6086": {
+          "rows": 66,
+          "macro_f1": 0.3857923497267759,
+          "accuracy": 0.5757575757575758,
+          "brier": 0.2110625182982855,
+          "logloss": 0.7434731514436077,
+          "ece_15": 0.13392607280702298
+        },
+        "hedef_kitle-choice-baf758f1": {
+          "rows": 41,
+          "macro_f1": 0.5729166666666667,
+          "accuracy": 0.7804878048780488,
+          "brier": 0.21954833993755718,
+          "logloss": 0.8598335945572552,
+          "ece_15": 0.20257931511576585
+        },
+        "hedef_kitle-noul-483cbb20": {
+          "rows": 14,
+          "macro_f1": 0.4166666666666667,
+          "accuracy": 0.7142857142857143,
+          "brier": 0.26650183099531854,
+          "logloss": 0.5604024978952648,
+          "ece_15": 0.23136756249836513
+        },
+        "hedef_kitle-noul-52c49560": {
+          "rows": 11,
+          "macro_f1": 0.8705882352941177,
+          "accuracy": 0.9090909090909091,
+          "brier": 0.16706702707025825,
+          "logloss": 0.3677867784622925,
+          "ece_15": 0.19165451418269766
+        },
+        "hedef_kitle-noul-8d068bcf": {
+          "rows": 7,
+          "macro_f1": 0.4166666666666667,
+          "accuracy": 0.7142857142857143,
+          "brier": 0.3958516913296056,
+          "logloss": 0.7275081302029367,
+          "ece_15": 0.464852213859558
+        },
+        "hedef_kitle-noul-c4ff7aaa": {
+          "rows": 64,
+          "macro_f1": 0.7373461012311902,
+          "accuracy": 0.765625,
+          "brier": 0.19433732155838646,
+          "logloss": 0.4406862248451662,
+          "ece_15": 0.1236897436901927
+        },
+        "hedef_kitle-noul-ce0c5c62": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.1540901640548479,
+          "logloss": 0.2925249856862941,
+          "ece_15": 0.21146980921427405
+        },
+        "hedef_kitle-score-14bbe2ca": {
+          "rows": 69,
+          "macro_f1": 0.6647550776583034,
+          "accuracy": 0.6956521739130435,
+          "brier": 0.22355981365660388,
+          "logloss": 0.831573419635713,
+          "ece_15": 0.136943105770194
+        },
+        "hedef_kitle-score-2c8f4bf9": {
+          "rows": 46,
+          "macro_f1": 0.509534706331045,
+          "accuracy": 0.6956521739130435,
+          "brier": 0.163972144070855,
+          "logloss": 0.8118498550202614,
+          "ece_15": 0.0735152771939402
+        },
+        "hedef_kitle-score-4ac3ba9b": {
+          "rows": 24,
+          "macro_f1": 0.5299145299145299,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.1702054898281146,
+          "logloss": 0.6894748544306036,
+          "ece_15": 0.1868166575829188
+        },
+        "hukuk-basvuru_yeri": {
+          "rows": 450,
+          "macro_f1": 0.7606314892466307,
+          "accuracy": 0.7733333333333333,
+          "brier": 0.27226660485079807,
+          "logloss": 0.6982856976198557,
+          "ece_15": 0.06460873603820799
+        },
+        "insan_destegi-noul-044ed4ef": {
+          "rows": 47,
+          "macro_f1": 0.6313725490196078,
+          "accuracy": 0.6595744680851063,
+          "brier": 0.3149210310850426,
+          "logloss": 0.652619155738711,
+          "ece_15": 0.09224058465754734
+        },
+        "insan_destegi-noul-260768ab": {
+          "rows": 18,
+          "macro_f1": 0.6785714285714286,
+          "accuracy": 0.7777777777777778,
+          "brier": 0.19082861843845633,
+          "logloss": 0.6088739812510624,
+          "ece_15": 0.15241501066419813
+        },
+        "insan_destegi-noul-4340e349": {
+          "rows": 10,
+          "macro_f1": 0.47368421052631576,
+          "accuracy": 0.9,
+          "brier": 0.14266036991287198,
+          "logloss": 0.42306163102906946,
+          "ece_15": 0.15524247884750367
+        },
+        "insan_destegi-noul-5f2ec3cd": {
+          "rows": 7,
+          "macro_f1": 0.7878787878787878,
+          "accuracy": 0.8571428571428571,
+          "brier": 0.09186106633764198,
+          "logloss": 0.37831394570672405,
+          "ece_15": 0.15394845179149083
+        },
+        "insan_destegi-noul-7924a359": {
+          "rows": 72,
+          "macro_f1": 0.7054545454545454,
+          "accuracy": 0.75,
+          "brier": 0.19661795390946382,
+          "logloss": 0.49389714811170926,
+          "ece_15": 0.10037651492489709
+        },
+        "insan_destegi-noul-7ba23e82": {
+          "rows": 3,
+          "macro_f1": 0.25,
+          "accuracy": 0.3333333333333333,
+          "brier": 0.49258775052738213,
+          "logloss": 0.6737487015343038,
+          "ece_15": 0.46090173721313477
+        },
+        "insan_destegi-noul-889bdc42": {
+          "rows": 42,
+          "macro_f1": 0.6911764705882353,
+          "accuracy": 0.8095238095238095,
+          "brier": 0.21251837400043905,
+          "logloss": 0.5148910197746429,
+          "ece_15": 0.10681400554520742
+        },
+        "insan_destegi-noul-df7ed3b9": {
+          "rows": 71,
+          "macro_f1": 0.6319776714513556,
+          "accuracy": 0.6338028169014085,
+          "brier": 0.3035276639891389,
+          "logloss": 0.6282924207783506,
+          "ece_15": 0.10204900318468121
+        },
+        "insan_destegi-score-0af5edf9": {
+          "rows": 57,
+          "macro_f1": 0.41323529411764703,
+          "accuracy": 0.7894736842105263,
+          "brier": 0.17345261687569893,
+          "logloss": 0.8817750824806385,
+          "ece_15": 0.11791144442140009
+        },
+        "insan_destegi-score-0dbd668a": {
+          "rows": 17,
+          "macro_f1": 0.4023109243697479,
+          "accuracy": 0.5294117647058824,
+          "brier": 0.2538771177534633,
+          "logloss": 1.093317742636733,
+          "ece_15": 0.416255384683609
+        },
+        "insan_destegi-score-13d68064": {
+          "rows": 19,
+          "macro_f1": 0.4852941176470588,
+          "accuracy": 0.8947368421052632,
+          "brier": 0.13344784484708838,
+          "logloss": 0.8799755430817621,
+          "ece_15": 0.28732574299762115
+        },
+        "insan_destegi-score-2e610371": {
+          "rows": 19,
+          "macro_f1": 0.6510416666666666,
+          "accuracy": 0.8947368421052632,
+          "brier": 0.22503558885669928,
+          "logloss": 0.8197325717943086,
+          "ece_15": 0.383596553614265
+        },
+        "insan_destegi-score-4431eccc": {
+          "rows": 13,
+          "macro_f1": 0.3856209150326797,
+          "accuracy": 0.6153846153846154,
+          "brier": 0.32774792414553705,
+          "logloss": 0.9594092380060091,
+          "ece_15": 0.19281207827421334
+        },
+        "insan_destegi-score-bf4b03e1": {
+          "rows": 11,
+          "macro_f1": 0.8070175438596491,
+          "accuracy": 0.9090909090909091,
+          "brier": 0.1447644056809209,
+          "logloss": 0.5806314232172163,
+          "ece_15": 0.3282829875295813
+        },
+        "konu-choice-0df404e5": {
+          "rows": 45,
+          "macro_f1": 0.5415044237249789,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.14495449244883443,
+          "logloss": 0.6724085355294951,
+          "ece_15": 0.16925423277748955
+        },
+        "konu-choice-8d941543": {
+          "rows": 20,
+          "macro_f1": 0.3666666666666666,
+          "accuracy": 0.5,
+          "brier": 0.27528318915039784,
+          "logloss": 1.0827474052712256,
+          "ece_15": 0.21573098748922348
+        },
+        "konu-choice-a0dd0d1f": {
+          "rows": 51,
+          "macro_f1": 0.8242523923444975,
+          "accuracy": 0.8431372549019608,
+          "brier": 0.18913346257404892,
+          "logloss": 0.46178701550704015,
+          "ece_15": 0.12322096906456295
+        },
+        "konu-choice-a42249f1": {
+          "rows": 53,
+          "macro_f1": 0.6560308385308385,
+          "accuracy": 0.7169811320754716,
+          "brier": 0.31824061849671537,
+          "logloss": 0.6479739789641209,
+          "ece_15": 0.20231190042675665
+        },
+        "konu-choice-ddfd07df": {
+          "rows": 18,
+          "macro_f1": 0.7222222222222222,
+          "accuracy": 0.8333333333333334,
+          "brier": 0.16951744096331767,
+          "logloss": 0.6387733052216807,
+          "ece_15": 0.19712810052765742
+        },
+        "konu-noul-6554f187": {
+          "rows": 76,
+          "macro_f1": 0.9017543859649122,
+          "accuracy": 0.9078947368421053,
+          "brier": 0.11908325662353435,
+          "logloss": 0.3103964554990965,
+          "ece_15": 0.06398029860697291
+        },
+        "konu-noul-9375bbb9": {
+          "rows": 55,
+          "macro_f1": 0.8952380952380952,
+          "accuracy": 0.9090909090909091,
+          "brier": 0.11275847038638558,
+          "logloss": 0.3188412704790315,
+          "ece_15": 0.09837199991399594
+        },
+        "konu-noul-9c6f7cfd": {
+          "rows": 18,
+          "macro_f1": 0.71875,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.12165107985929716,
+          "logloss": 0.2620338539634964,
+          "ece_15": 0.10832848482661779
+        },
+        "konu-noul-a378f446": {
+          "rows": 10,
+          "macro_f1": 0.6703296703296704,
+          "accuracy": 0.7,
+          "brier": 0.3352373143163362,
+          "logloss": 0.6121345815003846,
+          "ece_15": 0.22405747175216675
+        },
+        "konu-noul-ca8eb7b0": {
+          "rows": 6,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.03597429569768037,
+          "logloss": 0.11489913926773643,
+          "ece_15": 0.10437281926472981
+        },
+        "konu-score-5417389c": {
+          "rows": 57,
+          "macro_f1": 0.4383510638297873,
+          "accuracy": 0.5964912280701754,
+          "brier": 0.2236374213278413,
+          "logloss": 1.0393594818263836,
+          "ece_15": 0.15185522248870453
+        },
+        "konu-score-54b9728b": {
+          "rows": 53,
+          "macro_f1": 0.6326293995859213,
+          "accuracy": 0.6415094339622641,
+          "brier": 0.17781032034336586,
+          "logloss": 0.7728952310820892,
+          "ece_15": 0.13027301543163802
+        },
+        "konu-score-b9d85204": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.13120065467795805,
+          "logloss": 0.3219570775476107,
+          "ece_15": 0.2697504162788391
+        },
+        "massive_tr": {
+          "rows": 1978,
+          "macro_f1": 0.8504147683667425,
+          "accuracy": 0.8882709807886754,
+          "brier": 0.16660514013018465,
+          "logloss": 0.3499919681734419,
+          "ece_15": 0.02611562678980278
+        },
+        "mide22": {
+          "rows": 478,
+          "macro_f1": 0.6608907396950875,
+          "accuracy": 0.700836820083682,
+          "brier": 0.4092825011211568,
+          "logloss": 0.7116816900627049,
+          "ece_15": 0.04557325095561761
+        },
+        "niyet-choice-87cdd065": {
+          "rows": 51,
+          "macro_f1": 0.743143778987699,
+          "accuracy": 0.7450980392156863,
+          "brier": 0.2086274711459992,
+          "logloss": 0.8782848707624098,
+          "ece_15": 0.15324239052978217
+        },
+        "niyet-noul-06e897f6": {
+          "rows": 74,
+          "macro_f1": 0.8639705882352942,
+          "accuracy": 0.8648648648648649,
+          "brier": 0.1666948038642176,
+          "logloss": 0.3904018390553948,
+          "ece_15": 0.11829363897040085
+        },
+        "niyet-noul-17621582": {
+          "rows": 3,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.06706783039515436,
+          "logloss": 0.18456890778402865,
+          "ece_15": 0.14538943767547607
+        },
+        "niyet-noul-1b65142b": {
+          "rows": 5,
+          "macro_f1": 0.4444444444444444,
+          "accuracy": 0.8,
+          "brier": 0.11217906576191312,
+          "logloss": 0.2149952203060752,
+          "ece_15": 0.16561696529388426
+        },
+        "niyet-noul-6b19a819": {
+          "rows": 17,
+          "macro_f1": 1.0,
+          "accuracy": 1.0,
+          "brier": 0.06928476908083939,
+          "logloss": 0.2220688668268939,
+          "ece_15": 0.14281628061743343
+        },
+        "niyet-noul-6f90a982": {
+          "rows": 49,
+          "macro_f1": 0.8150943396226416,
+          "accuracy": 0.8163265306122449,
+          "brier": 0.17898062637403783,
+          "logloss": 0.3884518442980149,
+          "ece_15": 0.09370530259852507
+        },
+        "niyet-noul-ab22c1f3": {
+          "rows": 43,
+          "macro_f1": 0.8234604105571848,
+          "accuracy": 0.8372093023255814,
+          "brier": 0.20354622365746133,
+          "logloss": 0.37999394835926165,
+          "ece_15": 0.1094874614893004
+        },
+        "niyet-noul-d07e0e51": {
+          "rows": 17,
+          "macro_f1": 0.7638888888888888,
+          "accuracy": 0.7647058823529411,
+          "brier": 0.11801482469837771,
+          "logloss": 0.5285217399337794,
+          "ece_15": 0.20939947577083812
+        },
+        "niyet-noul-f2adac6b": {
+          "rows": 9,
+          "macro_f1": 0.8,
+          "accuracy": 0.8888888888888888,
+          "brier": 0.10825321339308443,
+          "logloss": 0.3056057612010484,
+          "ece_15": 0.10545655091603595
+        },
+        "niyet-score-23038837": {
+          "rows": 81,
+          "macro_f1": 0.5893175099646891,
+          "accuracy": 0.5925925925925926,
+          "brier": 0.16460977325583864,
+          "logloss": 0.8144963418742854,
+          "ece_15": 0.12161671526638076
+        },
+        "niyet-score-aa349b95": {
+          "rows": 71,
+          "macro_f1": 0.5738732087569297,
+          "accuracy": 0.5774647887323944,
+          "brier": 0.2243587945784638,
+          "logloss": 1.1464009170799765,
+          "ece_15": 0.1600624574741847
+        },
+        "niyet-score-c0ceb41a": {
+          "rows": 35,
+          "macro_f1": 0.6879120879120878,
+          "accuracy": 0.7142857142857143,
+          "brier": 0.20322500586236128,
+          "logloss": 0.6705793595048176,
+          "ece_15": 0.26348908202988763
+        },
+        "offenseval_tr": {
+          "rows": 3169,
+          "macro_f1": 0.6868030643933369,
+          "accuracy": 0.8384348374881666,
+          "brier": 0.23794396000643228,
+          "logloss": 0.39273478441679105,
+          "ece_15": 0.05021221647506331
+        },
+        "oltalama-oltalama": {
+          "rows": 787,
+          "macro_f1": 0.7786413228523634,
+          "accuracy": 0.806861499364676,
+          "brier": 0.1495456376570056,
+          "logloss": 0.5289227899105521,
+          "ece_15": 0.03823763715266576
+        },
+        "prompt_injection": {
+          "rows": 224,
+          "macro_f1": 0.9865468158795621,
+          "accuracy": 0.9866071428571429,
+          "brier": 0.024959723126059926,
+          "logloss": 0.03766388787364274,
+          "ece_15": 0.022236178229962086
+        },
+        "spam-mesaj_turu": {
+          "rows": 787,
+          "macro_f1": 0.7555525460138944,
+          "accuracy": 0.7750952986022872,
+          "brier": 0.17577602974915105,
+          "logloss": 0.6383955125507385,
+          "ece_15": 0.048908951852039896
+        },
+        "webfaq_relevance": {
+          "rows": 2000,
+          "macro_f1": 0.6485576366736409,
+          "accuracy": 0.6515,
+          "brier": 0.4405480320844989,
+          "logloss": 0.6310792145451861,
+          "ece_15": 0.027308232605457308
+        },
+        "yanit_yeterliligi-noul-4b0c2226": {
+          "rows": 61,
+          "macro_f1": 0.7906178489702517,
+          "accuracy": 0.8032786885245902,
+          "brier": 0.2576067355318195,
+          "logloss": 0.5166132886196146,
+          "ece_15": 0.12217171074914152
+        },
+        "yanit_yeterliligi-noul-4dd186be": {
+          "rows": 38,
+          "macro_f1": 0.6590229312063809,
+          "accuracy": 0.7631578947368421,
+          "brier": 0.2573558677185659,
+          "logloss": 0.5918828472289847,
+          "ece_15": 0.08771103934237832
+        },
+        "yanit_yeterliligi-noul-79e42d28": {
+          "rows": 44,
+          "macro_f1": 0.7380952380952381,
+          "accuracy": 0.7727272727272727,
+          "brier": 0.2301238362766492,
+          "logloss": 0.5012666130143316,
+          "ece_15": 0.12013463269580493
+        },
+        "yanit_yeterliligi-noul-a7184ac1": {
+          "rows": 72,
+          "macro_f1": 0.7113071371291099,
+          "accuracy": 0.7222222222222222,
+          "brier": 0.2597259647063137,
+          "logloss": 0.5155855914655322,
+          "ece_15": 0.07083549102147417
+        },
+        "yanit_yeterliligi-noul-e6d8163b": {
+          "rows": 66,
+          "macro_f1": 0.6588345864661653,
+          "accuracy": 0.6666666666666666,
+          "brier": 0.3037247909789586,
+          "logloss": 0.6140721067237868,
+          "ece_15": 0.15220074129827096
+        },
+        "yanit_yeterliligi-noul-ef477d29": {
+          "rows": 67,
+          "macro_f1": 0.6898148148148149,
+          "accuracy": 0.7014925373134329,
+          "brier": 0.16942406464260215,
+          "logloss": 0.5749714578509043,
+          "ece_15": 0.13408676012238463
+        }
+      }
+    }
+  ],
+  "gpu": "NVIDIA L4",
+  "peak_memory_gb": 9.14,
+  "status": "done",
+  "heldout": {
+    "hassasiyet-noul-28b86c9b": {
+      "rows": 249,
+      "macro_f1": 0.8226776388669093,
+      "accuracy": 0.8554216867469879,
+      "brier": 0.17596125158876122,
+      "logloss": 0.3639913082641064,
+      "ece_15": 0.09761621482879762
+    },
+    "hassasiyet-noul-65a086df": {
+      "rows": 123,
+      "macro_f1": 0.7212906734342428,
+      "accuracy": 0.7967479674796748,
+      "brier": 0.22963389543606405,
+      "logloss": 0.45198026149357257,
+      "ece_15": 0.10741450050012853
+    },
+    "hassasiyet-noul-6dfaef19": {
+      "rows": 57,
+      "macro_f1": 0.6620553359683794,
+      "accuracy": 0.7894736842105263,
+      "brier": 0.23639075854530459,
+      "logloss": 0.4361696844011597,
+      "ece_15": 0.06995039028033875
+    },
+    "hassasiyet-noul-c4bdbbf5": {
+      "rows": 58,
+      "macro_f1": 0.5972222222222222,
+      "accuracy": 0.6551724137931034,
+      "brier": 0.34574850943702384,
+      "logloss": 0.6180724130697289,
+      "ece_15": 0.09561914616617664
+    },
+    "insan_destegi-choice-7a9ba20b": {
+      "rows": 141,
+      "macro_f1": 0.5241064491064491,
+      "accuracy": 0.6950354609929078,
+      "brier": 0.22010999178968524,
+      "logloss": 0.7929923090398795,
+      "ece_15": 0.14269673612946318
+    },
+    "insan_destegi-choice-eebbb2d5": {
+      "rows": 106,
+      "macro_f1": 0.5002736726874658,
+      "accuracy": 0.7169811320754716,
+      "brier": 0.31905491988243045,
+      "logloss": 0.8211048995129635,
+      "ece_15": 0.21839095483411036
+    },
+    "yanit_yeterliligi-choice-05ff2c21": {
+      "rows": 117,
+      "macro_f1": 0.27186707098211527,
+      "accuracy": 0.41025641025641024,
+      "brier": 0.470919330971428,
+      "logloss": 1.294298160263294,
+      "ece_15": 0.14931197859283188
+    },
+    "yanit_yeterliligi-choice-35fd4eb1": {
+      "rows": 286,
+      "macro_f1": 0.27803766417794923,
+      "accuracy": 0.3041958041958042,
+      "brier": 0.4451412933709204,
+      "logloss": 1.407338734858143,
+      "ece_15": 0.09569114092346671
+    },
+    "yanit_yeterliligi-choice-3ce2909f": {
+      "rows": 72,
+      "macro_f1": 0.38286413708690326,
+      "accuracy": 0.5416666666666666,
+      "brier": 0.3480408134686853,
+      "logloss": 1.2399688574321575,
+      "ece_15": 0.14545066903034845
+    },
+    "yanit_yeterliligi-choice-6a332f36": {
+      "rows": 305,
+      "macro_f1": 0.13747985721570627,
+      "accuracy": 0.14098360655737704,
+      "brier": 0.5369789964133311,
+      "logloss": 1.5619045766755346,
+      "ece_15": 0.24207549945252838
+    },
+    "yanit_yeterliligi-choice-8ada0c99": {
+      "rows": 288,
+      "macro_f1": 0.21395473162016204,
+      "accuracy": 0.2986111111111111,
+      "brier": 0.4916468329436354,
+      "logloss": 1.3922359828395992,
+      "ece_15": 0.06950393950359689
+    },
+    "yanit_yeterliligi-choice-a1784c9f": {
+      "rows": 224,
+      "macro_f1": 0.23226781704028043,
+      "accuracy": 0.2857142857142857,
+      "brier": 0.5173199630710565,
+      "logloss": 1.344911167050294,
+      "ece_15": 0.11929959191807675
+    },
+    "yanit_yeterliligi-choice-ba29aa4a": {
+      "rows": 219,
+      "macro_f1": 0.3575890729301808,
+      "accuracy": 0.3607305936073059,
+      "brier": 0.4069624481382698,
+      "logloss": 1.101968134979958,
+      "ece_15": 0.06086181614496938
+    },
+    "yanit_yeterliligi-score-7dc5afd2": {
+      "rows": 107,
+      "macro_f1": 0.2708825847123719,
+      "accuracy": 0.27102803738317754,
+      "brier": 0.5515155243082529,
+      "logloss": 1.232193170192334,
+      "ece_15": 0.20206944853345923
+    }
+  },
+  "massive59": {
+    "rows": 1981,
+    "macro_f1": 0.6278949073011395,
+    "accuracy": 0.7102473498233216
+  },
+  "wall_seconds": 1395.5
+}

@@ -1,0 +1,17 @@
+{
+  "desk_units": 1730,
+  "rest_units": 328,
+  "owner_units": 827,
+  "why": {
+    "sampled": 237,
+    "catch": 82,
+    "checked": 2,
+    "disputed": 448,
+    "content": 20,
+    "shifted": 24,
+    "blind": 14
+  },
+  "suspect_catches": 7,
+  "shifted_catches": 24,
+  "blind_questions": 30
+}

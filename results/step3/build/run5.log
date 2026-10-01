@@ -1,0 +1,54 @@
+{
+  "templates": {
+    "failed_check": 73,
+    "ready": 134
+  },
+  "template_status": {
+    "judges_disagree": 8,
+    "complete": 52,
+    "skewed": 6,
+    "rarely_applies": 10,
+    "answerable_blind": 8,
+    "mined_low_variance": 15,
+    "low_variance": 12,
+    "mined_skewed": 23
+  },
+  "held_out_cells": [
+    "hassasiyet-noul",
+    "insan_destegi-choice",
+    "yanit_yeterliligi-choice",
+    "yanit_yeterliligi-score"
+  ],
+  "held_out_templates": 30,
+  "pair_outcomes": {
+    "labelled": 20685,
+    "out_of_scope": 2324,
+    "failed:LowLabelMass": 170,
+    "no_fit": 163,
+    "mined_majority": 9214,
+    "low_mass": 9,
+    "failed:NoStatedDistribution": 1,
+    "failed:TypeError": 3,
+    "failed:ApiError": 2
+  },
+  "pairs_labelled_or_judged": 32571,
+  "low_mass_by_judge": {
+    "C": 9
+  },
+  "retried_by_judge": {
+    "C": 46,
+    "A": 4
+  },
+  "transient_errors": 0,
+  "rows_by_split": {
+    "train": 13518,
+    "validation": 2959,
+    "heldout_task": 2394
+  },
+  "rows": 18871,
+  "surplus": 243,
+  "nofit": 163,
+  "unused_rows_of_stopped_templates": 1571,
+  "spent_usd": 8.1858,
+  "usd_per_row": 0.00043
+}

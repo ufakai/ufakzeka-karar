@@ -1,0 +1,19 @@
+{
+  "catch_items": 73,
+  "caught": 0,
+  "missed": 0,
+  "catch_rate": null,
+  "shifted_level": {
+    "items": 24,
+    "caught": 0,
+    "missed": 0
+  },
+  "suspect_catches": {},
+  "owner_against_known_truth": {
+    "ai_wrong:agrees": 10,
+    "ai_wrong:differs": 4
+  },
+  "spot_checks": {},
+  "removed_by_owner": [],
+  "owner_pending": 0
+}

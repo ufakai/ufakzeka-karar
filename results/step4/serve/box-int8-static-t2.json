@@ -1,0 +1,19 @@
+{
+  "engine": "int8-static",
+  "threads": 2,
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "onnxruntime": "1.30.0",
+  "questions": 200,
+  "tokens_p50": 90,
+  "tokens_max": 366,
+  "latency_ms_p50": 577.06,
+  "latency_ms_p95": 783.77,
+  "latency_ms_mean": 582.71,
+  "peak_memory_mb": 374.8,
+  "memory_for_session_mb": 264.1,
+  "file_mb": 180.6,
+  "max_prob_diff_vs_torch_fp32": 0.06055,
+  "mean_prob_diff_vs_torch_fp32": 0.01712,
+  "top1_agreement_vs_torch_fp32": 0.31
+}

@@ -1,0 +1,19 @@
+{
+  "engine": "fp32",
+  "threads": 1,
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "onnxruntime": "1.30.0",
+  "questions": 200,
+  "tokens_p50": 90,
+  "tokens_max": 366,
+  "latency_ms_p50": 285.75,
+  "latency_ms_p95": 695.44,
+  "latency_ms_mean": 346.12,
+  "peak_memory_mb": 1233.7,
+  "memory_for_session_mb": 1092.8,
+  "file_mb": 701.4,
+  "max_prob_diff_vs_torch_fp32": 0.0,
+  "mean_prob_diff_vs_torch_fp32": 0.0,
+  "top1_agreement_vs_torch_fp32": 1.0
+}

@@ -1,0 +1,103 @@
+{
+  "failures": {
+    "massive_tr": 3,
+    "trcola": 2
+  },
+  "tasks": {
+    "offenseval_tr": {
+      "A": {
+        "n": 75,
+        "accuracy": 0.96,
+        "mean_p_gold": 0.9562
+      },
+      "B": {
+        "n": 75,
+        "accuracy": 0.8133,
+        "mean_p_gold": 0.77
+      },
+      "C": {
+        "n": 75,
+        "accuracy": 0.96,
+        "mean_p_gold": 0.9596
+      },
+      "panel": {
+        "n": 75,
+        "accuracy": 0.96,
+        "mean_p_gold": 0.8953
+      }
+    },
+    "mide22": {
+      "A": {
+        "n": 75,
+        "accuracy": 0.5333,
+        "mean_p_gold": 0.491
+      },
+      "B": {
+        "n": 75,
+        "accuracy": 0.3067,
+        "mean_p_gold": 0.3197
+      },
+      "C": {
+        "n": 75,
+        "accuracy": 0.52,
+        "mean_p_gold": 0.5263
+      },
+      "panel": {
+        "n": 75,
+        "accuracy": 0.48,
+        "mean_p_gold": 0.4457
+      }
+    },
+    "massive_tr": {
+      "A": {
+        "n": 72,
+        "accuracy": 0.8611,
+        "mean_p_gold": 0.8541
+      },
+      "B": {
+        "n": 72,
+        "accuracy": 0.8611,
+        "mean_p_gold": 0.7879
+      },
+      "C": {
+        "n": 72,
+        "accuracy": 0.875,
+        "mean_p_gold": 0.8755
+      },
+      "panel": {
+        "n": 72,
+        "accuracy": 0.875,
+        "mean_p_gold": 0.8392
+      }
+    },
+    "trcola": {
+      "A": {
+        "n": 73,
+        "accuracy": 0.6575,
+        "mean_p_gold": 0.6457
+      },
+      "B": {
+        "n": 73,
+        "accuracy": 0.4658,
+        "mean_p_gold": 0.4809
+      },
+      "C": {
+        "n": 73,
+        "accuracy": 0.7397,
+        "mean_p_gold": 0.735
+      },
+      "panel": {
+        "n": 73,
+        "accuracy": 0.6575,
+        "mean_p_gold": 0.6206
+      }
+    }
+  },
+  "overall": {
+    "A": 0.753,
+    "B": 0.6117,
+    "C": 0.7737,
+    "panel": 0.7431
+  },
+  "spent_usd": 0.0402
+}

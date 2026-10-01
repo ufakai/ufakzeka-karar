@@ -1,0 +1,29 @@
+{
+  "units": 1730,
+  "to_owner": {
+    "disputed": 440,
+    "checked": 3,
+    "sampled": 257
+  },
+  "not_shown": 1030,
+  "reviewer_agrees_with_proposal": {
+    "arama:noul": 0.952,
+    "dogrulama:noul": 0.866,
+    "dogrulama:score": 0.591,
+    "egitim:choice": 0.988,
+    "egitim:score": 0.856,
+    "guvenlik:noul": 1.0,
+    "hukuk:choice": 0.887,
+    "moderasyon:noul": 0.942,
+    "spam:choice": 0.922,
+    "spam:noul": 0.926,
+    "sss:choice": 0.849,
+    "sss:noul": 0.889,
+    "sss:score": 0.875
+  },
+  "reviewer_on_catch_items": {
+    "caught": 72,
+    "took_the_wrong_answer": 7,
+    "catch_items": 82
+  }
+}

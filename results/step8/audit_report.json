@@ -1,0 +1,64 @@
+{
+  "known_truth": {
+    "drawn": 18,
+    "answered": 18,
+    "ambiguous": 0,
+    "differ": 2,
+    "rate": 0.1111111111111111,
+    "interval": [
+      0.031,
+      0.328
+    ]
+  },
+  "unanimous": {
+    "drawn": 70,
+    "answered": 70,
+    "ambiguous": 0,
+    "differ": 12,
+    "rate": 0.17142857142857143,
+    "interval": [
+      0.1009,
+      0.2762
+    ]
+  },
+  "adjudicated": {
+    "drawn": 100,
+    "answered": 93,
+    "ambiguous": 0,
+    "differ": 38,
+    "rate": 0.40860215053763443,
+    "interval": [
+      0.3143,
+      0.5102
+    ]
+  },
+  "pooled_by_stratum_weight": 0.2145,
+  "stratum_sizes": {
+    "unanimous": 3359,
+    "adjudicated": 745
+  },
+  "priority_blind": {
+    "research_pass": {
+      "drawn": 30,
+      "answered": 25,
+      "ambiguous": 0,
+      "differ": 14,
+      "rate": 0.56,
+      "interval": [
+        0.3707,
+        0.7333
+      ]
+    },
+    "second_model_pass": {
+      "drawn": 30,
+      "answered": 25,
+      "ambiguous": 0,
+      "differ": 16,
+      "rate": 0.64,
+      "interval": [
+        0.4452,
+        0.7975
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "ufakzeka": {
+    "tokens": 928,
+    "12000": {
+      "peak_memory_gb": 13.29,
+      "step_seconds": 1.948
+    },
+    "8000": {
+      "peak_memory_gb": 9.95,
+      "step_seconds": 1.857
+    }
+  },
+  "berturk": {
+    "tokens": 928,
+    "12000": {
+      "peak_memory_gb": 6.35,
+      "step_seconds": 0.958
+    },
+    "8000": {
+      "peak_memory_gb": 4.87,
+      "step_seconds": 0.918
+    }
+  },
+  "tabibert": {
+    "tokens": 928,
+    "12000": {
+      "peak_memory_gb": 9.4,
+      "step_seconds": 1.641
+    },
+    "8000": {
+      "peak_memory_gb": 7.14,
+      "step_seconds": 1.542
+    }
+  },
+  "moganbert": {
+    "tokens": 928,
+    "12000": {
+      "peak_memory_gb": 9.4,
+      "step_seconds": 1.651
+    },
+    "8000": {
+      "peak_memory_gb": 7.14,
+      "step_seconds": 1.557
+    }
+  },
+  "gpu": "NVIDIA L4",
+  "total_memory_gb": 22.0
+}

@@ -1,0 +1,51 @@
+{
+  "task": "aym_rights",
+  "source": "https://huggingface.co/datasets/icgcihan/Turkish_Constutional_Court_Decisions",
+  "revision": "347a0f83d7e5f3bd74fcdf38d0684aa126b1920c",
+  "splits": {
+    "train": {
+      "rows": 8545,
+      "classes": {
+        "adil yargılanma (hukuk ve idare davaları)": 2799,
+        "yaşam hakkı ya da kötü muamele yasağı": 1064,
+        "adil yargılanma (ceza davaları)": 1054,
+        "mülkiyet hakkı": 864,
+        "kişi özgürlüğü ve güvenliği": 847,
+        "özel hayatın ve aile hayatının korunması": 638,
+        "ifade özgürlüğü": 504,
+        "maddi ve manevi varlığın korunması": 310,
+        "başka bir hak": 260,
+        "toplanma, örgütlenme ve sendika hakları": 205
+      }
+    },
+    "validation": {
+      "rows": 440,
+      "classes": {
+        "adil yargılanma (hukuk ve idare davaları)": 129,
+        "adil yargılanma (ceza davaları)": 68,
+        "yaşam hakkı ya da kötü muamele yasağı": 56,
+        "kişi özgürlüğü ve güvenliği": 47,
+        "mülkiyet hakkı": 39,
+        "özel hayatın ve aile hayatının korunması": 32,
+        "ifade özgürlüğü": 27,
+        "başka bir hak": 19,
+        "maddi ve manevi varlığın korunması": 17,
+        "toplanma, örgütlenme ve sendika hakları": 6
+      }
+    }
+  },
+  "dropped": {
+    "train": {
+      "duplicate_text": 1992,
+      "empty_summary": 3,
+      "source_rows": 11957,
+      "text_with_two_labels": 1417
+    },
+    "validation": {
+      "duplicate_text": 40,
+      "source_rows": 664,
+      "text_also_in_train": 122,
+      "text_with_two_labels": 62
+    }
+  }
+}

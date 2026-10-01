@@ -1,0 +1,109 @@
+{
+  "requests": 252,
+  "requests_failed": 0,
+  "texts_written": 890,
+  "private_texts": 320,
+  "private_sampled": true,
+  "dropped": {
+    "hukuk:filter:gambling": 4,
+    "moderasyon:overlap": 1,
+    "spam:overlap": 4,
+    "sss:overlap": 15
+  },
+  "held_out_templates": {
+    "hassasiyet-noul": "65a086df",
+    "insan_destegi-choice": "eebbb2d5",
+    "yanit_yeterliligi-choice": "a1784c9f",
+    "yanit_yeterliligi-score": "7dc5afd2"
+  },
+  "tracks": {
+    "egitim": {
+      "items": 160,
+      "pairs": 320,
+      "by_split": {
+        "public": 96,
+        "private": 64
+      },
+      "by_source": {
+        "generated": 160
+      },
+      "outcomes": {
+        "labelled": 320
+      },
+      "panel_agrees_with_intended_kind": {
+        "cevap_puani": 0.75,
+        "ders": 0.9375
+      }
+    },
+    "spam": {
+      "items": 309,
+      "pairs": 618,
+      "by_split": {
+        "private": 154,
+        "public": 155
+      },
+      "by_source": {
+        "generated": 309
+      },
+      "outcomes": {
+        "labelled": 618
+      },
+      "panel_agrees_with_intended_kind": {
+        "mesaj_turu": 0.932,
+        "oltalama": 0.9256
+      }
+    },
+    "hukuk": {
+      "items": 116,
+      "pairs": 116,
+      "by_split": {
+        "private": 55,
+        "public": 61
+      },
+      "by_source": {
+        "generated": 116
+      },
+      "outcomes": {
+        "labelled": 116
+      },
+      "panel_agrees_with_intended_kind": {
+        "basvuru_yeri": 0.9224
+      }
+    },
+    "moderasyon": {
+      "items": 312,
+      "pairs": 312,
+      "by_split": {
+        "private": 159,
+        "public": 153
+      },
+      "by_source": {
+        "clips/mqa": 159,
+        "generated": 153
+      },
+      "outcomes": {
+        "labelled": 312
+      },
+      "panel_agrees_with_intended_kind": {
+        "offenseval_tr": 0.8889
+      }
+    },
+    "sss": {
+      "items": 289,
+      "pairs": 1156,
+      "by_split": {
+        "private": 145,
+        "public": 144
+      },
+      "by_source": {
+        "clips/mqa": 145,
+        "generated": 144
+      },
+      "outcomes": {
+        "labelled": 1156
+      },
+      "panel_agrees_with_intended_kind": {}
+    }
+  },
+  "spent_usd": 1.5163
+}

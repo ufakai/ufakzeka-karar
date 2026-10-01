@@ -1,0 +1,8 @@
+{
+  "templates": 28,
+  "templates_failing_check": 6,
+  "templates_blind_confident": 11,
+  "pairs": 170,
+  "pairs_out_of_scope": 57,
+  "spent_usd": 0.0317
+}

@@ -1,0 +1,15 @@
+{
+ "probe_texts": 659,
+ "overlapping": 13,
+ "by_rule": {
+  "row_ngram": 2
+ },
+ "ids": 13,
+ "reviewed": {
+  "rule_matches": 2,
+  "hukuk slot probe (public)": "its base item has the same overlap, with a validation row (never trained on); nothing new",
+  "hukuk paraphrase probe (private)": "a 17-token training row shares only the legal name of the Article 17 right (9 tokens); a term of art, not benchmark text",
+  "below every rule": 11,
+  "action": "none: no training row holds probe text; the retrain stands"
+ }
+}

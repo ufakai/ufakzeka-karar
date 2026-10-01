@@ -1,0 +1,19 @@
+{
+  "engine": "int8-dynamic",
+  "threads": 2,
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "onnxruntime": "1.30.0",
+  "questions": 200,
+  "tokens_p50": 90,
+  "tokens_max": 366,
+  "latency_ms_p50": 93.01,
+  "latency_ms_p95": 233.68,
+  "latency_ms_mean": 114.71,
+  "peak_memory_mb": 414.5,
+  "memory_for_session_mb": 312.6,
+  "file_mb": 179.0,
+  "max_prob_diff_vs_torch_fp32": 0.02102,
+  "mean_prob_diff_vs_torch_fp32": 0.00535,
+  "top1_agreement_vs_torch_fp32": 0.695
+}

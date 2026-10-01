@@ -1,0 +1,104 @@
+[
+  {
+    "gpu": "H100",
+    "price_per_second": 0.001097,
+    "measured_at": "2026-09-21T18:48:46Z",
+    "steps": 12,
+    "results": [
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": true,
+        "fused": true,
+        "engine": "native",
+        "tokens_per_second": 199117,
+        "peak_gib": 48.47,
+        "final_loss": 8.210526466369629
+      },
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": false,
+        "fused": true,
+        "engine": "native",
+        "tokens_per_second": 208985,
+        "peak_gib": 48.48,
+        "final_loss": 8.326112747192383
+      },
+      {
+        "micro_batch": 32,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": true,
+        "fused": true,
+        "engine": "native",
+        "tokens_per_second": 182860,
+        "peak_gib": 33.26,
+        "final_loss": 8.29613971710205
+      },
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": false,
+        "mask_documents": true,
+        "fused": true,
+        "tokens_per_second": 102936,
+        "peak_gib": 67.46,
+        "final_loss": 8.278938293457031
+      },
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": true,
+        "fused": true,
+        "tokens_per_second": 237704,
+        "peak_gib": 42.9,
+        "final_loss": 8.278857231140137
+      }
+    ]
+  },
+  {
+    "gpu": "H100",
+    "price_per_second": 0.001097,
+    "measured_at": "2026-09-21T19:03:49Z",
+    "steps": 12,
+    "results": [
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": true,
+        "fused": true,
+        "engine": "native",
+        "tokens_per_second": 227454,
+        "peak_gib": 48.54,
+        "final_loss": 8.186605453491211
+      },
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": true,
+        "fused": true,
+        "engine": "native",
+        "dense_mask": true,
+        "tokens_per_second": 211772,
+        "peak_gib": 48.65,
+        "final_loss": 8.18651294708252
+      },
+      {
+        "micro_batch": 48,
+        "attn_implementation": "sdpa",
+        "compile": true,
+        "mask_documents": true,
+        "fused": true,
+        "tokens_per_second": 232910,
+        "peak_gib": 42.94,
+        "final_loss": 8.258237838745117
+      }
+    ]
+  }
+]

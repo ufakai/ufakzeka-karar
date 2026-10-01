@@ -1,0 +1,155 @@
+{
+  "set": "xfact_tr",
+  "dataset": {
+    "name": "xfact_tr",
+    "title": "X-FACT, Turkish test claims",
+    "repo": "utahnlp/x-fact (GitHub)",
+    "revision": "c58b1ea78753977528485469428ff356a4b837e4",
+    "url": "https://github.com/utahnlp/x-fact",
+    "licence_as_shown": "MIT License, Copyright (c) 2021 Utah NLP (LICENSE at the pinned commit)",
+    "licence_id": "MIT",
+    "split": "test",
+    "phrasing": "choice of Cetvel's four verdicts in plain Turkish: state = the claim; instructions = the FACTurk training question (data/typed/claims.py); gold by Cetvel's own map (true, false, complicated, anything else partly true)",
+    "cetvel_task": "xfact_tr",
+    "notes": [
+      "Cetvel loads the mirror mcemilg/x-fact, which carries no licence tag; the rows are read from the authors' own repository, whose LICENSE is MIT.",
+      "All Turkish claims come from dogrulukpayi.com, one of the FACTurk sources the model trained on (verdict task); FACTurk was decontaminated against X-FACT, and the overlap check here is run again."
+    ],
+    "gated": false
+  },
+  "items_kept_after_overlap": 169,
+  "overlap_dropped": 0,
+  "build_file": "results/step9/external/xfact_tr.build.json",
+  "limit": null,
+  "model": {
+    "run": "r3-base-s2",
+    "weights": "models/r3-base-s2/model.pt",
+    "weights_sha256": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "calibrator": "results/step7/r3-base-s2/calibrator.json",
+    "calibrator_sha256": "a7a4d40c6a478d052b35394db92d30ecbddaaf9f43ed232b1ff06f6547f17b23",
+    "calibrator_fitted_on": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "temperatures": {
+      "form": "type",
+      "global": 1.282035163790311,
+      "type": {
+        "choice": 1.2340743633576456,
+        "noul": 1.4003216897042885,
+        "score": 1.0507197734004332
+      }
+    },
+    "path": "bench/adapters/karar.py answer, fp32 torch, CPU, batched passes",
+    "weights_sha256_in_container": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8"
+  },
+  "runtime": {
+    "container": "Modal CPU, 32 physical cores (request and limit), 32768 MiB",
+    "host": "Linux x86_64 ",
+    "threads": 32,
+    "load_seconds": 12.1,
+    "prepare_seconds": 23.0,
+    "function_seconds": 2263.3,
+    "padded_tokens": 4559610,
+    "estimated_usd": 1.11,
+    "set_seconds": 9.7,
+    "set_padded_tokens": 19654
+  },
+  "unanswered": [],
+  "results": {
+    "questions": 169,
+    "metrics": {
+      "accuracy": {
+        "value": 0.31952662721893493,
+        "interval": [
+          0.25443786982248523,
+          0.3905325443786982
+        ]
+      },
+      "brier": {
+        "value": 0.8262416493321372,
+        "interval": [
+          0.769305102731568,
+          0.8814993993743724
+        ]
+      },
+      "smooth_ece": {
+        "value": 0.18108674461988988,
+        "interval": [
+          0.12200810147999186,
+          0.25333328808275707
+        ]
+      },
+      "macro_f1": {
+        "value": 0.19634766527970413,
+        "interval": [
+          0.147924056693798,
+          0.24623997243358142
+        ]
+      }
+    },
+    "random_baseline_accuracy": 0.25,
+    "per_group_accuracy": {
+      "false": {
+        "n": 37,
+        "accuracy": 0.05405405405405406,
+        "wilson_95": [
+          0.014950976698341792,
+          0.1770465448418871
+        ]
+      },
+      "mostly false": {
+        "n": 14,
+        "accuracy": 0.21428571428571427,
+        "wilson_95": [
+          0.07571386653293533,
+          0.4758923079830535
+        ]
+      },
+      "mostly true": {
+        "n": 30,
+        "accuracy": 0.16666666666666666,
+        "wilson_95": [
+          0.07336542325431777,
+          0.33564350658665026
+        ]
+      },
+      "partly true/misleading": {
+        "n": 31,
+        "accuracy": 0.12903225806451613,
+        "wilson_95": [
+          0.05134284338910197,
+          0.2885240640684634
+        ]
+      },
+      "true": {
+        "n": 57,
+        "accuracy": 0.7017543859649122,
+        "wilson_95": [
+          0.5733571979120613,
+          0.8046744999286146
+        ]
+      }
+    },
+    "definitions": {
+      "accuracy": "share of questions whose most probable option is the gold one",
+      "macro_f1": "unweighted mean F1 over the gold and predicted classes (bench/metrics.py)",
+      "brier": "sum over options of the squared error of the served probabilities, 0 to 2",
+      "smooth_ece": "top-label smooth ECE of the served maximum probability (relplot, arXiv 2309.12236)",
+      "intervals": "2.5 and 97.5 percentiles of 2000 bootstrap draws over items, seed 0",
+      "random_baseline_accuracy": "mean over questions of 1/k, k the number of options",
+      "per_group_accuracy": "accuracy per category with a 95 percent Wilson interval"
+    }
+  },
+  "code": {
+    "git_head": "1ae0d0ce348c7561b25eaf6d691fcec1a0e62710",
+    "tree_clean": false,
+    "code_sha256": {
+      "bench/external.py": "b173c44c8c14cb9044e54d26da9b4d7d874520be139cbc5ddaa15018ba446215",
+      "bench/modal_external.py": "3bbd3e63adbaee9db5eedb76ec50624a9c3319c082e070a58d3a75279f3b601d",
+      "bench/adapters/karar.py": "41889e5a0437093a940aec18c1d5e3d0367bd70f80f7ffbeb492891e8e52035b",
+      "model/head/pack.py": "7fc61f500f9348a495848bcd34c32dd10be0f99994c8d360606bd8fbfc2c44df",
+      "model/head/infer.py": "5bd3d5ce3112cab5350d33ac6850df3dcf08180a37b22df5d1cdaa980d924c7a",
+      "model/head/head.py": "794e3d61a6322b1c4700112a9f1ecd2de33495be5910385ef7998a7988a18f9b"
+    }
+  },
+  "rows_file": "xfact_tr-r3-base-s2.rows.jsonl",
+  "rows_sha256": "5b2ec57b852a076e1d9ad02202c7b82089472552afeb216fe6f26b7bc7120484"
+}

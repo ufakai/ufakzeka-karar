@@ -1,0 +1,16 @@
+{
+  "owner_units": 869,
+  "questions": 1229,
+  "shown": {
+    "blind": 30,
+    "differ": 458,
+    "agree": 603,
+    "blind control": 123,
+    "proposal only": 15
+  },
+  "research_disputed_added": 29,
+  "research_sources": {
+    "researched": 51,
+    "own_origin": 0
+  }
+}

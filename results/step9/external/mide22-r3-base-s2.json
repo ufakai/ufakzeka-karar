@@ -1,0 +1,138 @@
+{
+  "set": "mide22",
+  "dataset": {
+    "name": "mide22",
+    "title": "MiDe22 Turkish tweets",
+    "repo": "ogozcelik/turkish-fake-news-detection",
+    "revision": "6b6bb45712d746e28906913e953d5525f5c8c633",
+    "url": "https://huggingface.co/datasets/ogozcelik/turkish-fake-news-detection",
+    "licence_as_shown": "mit",
+    "licence_id": "MIT",
+    "split": "test",
+    "phrasing": "choice of three, exactly the training question (data/typed/instrument.py)",
+    "cetvel_task": null,
+    "notes": [
+      "The source has one split; the test fifth was carved by data/converters/mide22.py (70/10/20, stratified, seed 1) before any training."
+    ],
+    "gated": false
+  },
+  "items_kept_after_overlap": 1012,
+  "overlap_dropped": 2,
+  "build_file": "results/step9/external/mide22.build.json",
+  "limit": null,
+  "model": {
+    "run": "r3-base-s2",
+    "weights": "models/r3-base-s2/model.pt",
+    "weights_sha256": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "calibrator": "results/step7/r3-base-s2/calibrator.json",
+    "calibrator_sha256": "a7a4d40c6a478d052b35394db92d30ecbddaaf9f43ed232b1ff06f6547f17b23",
+    "calibrator_fitted_on": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "temperatures": {
+      "form": "type",
+      "global": 1.282035163790311,
+      "type": {
+        "choice": 1.2340743633576456,
+        "noul": 1.4003216897042885,
+        "score": 1.0507197734004332
+      }
+    },
+    "path": "bench/adapters/karar.py answer, fp32 torch, CPU, batched passes",
+    "weights_sha256_in_container": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8"
+  },
+  "runtime": {
+    "container": "Modal CPU, 32 physical cores (request and limit), 32768 MiB",
+    "host": "Linux x86_64 ",
+    "threads": 32,
+    "load_seconds": 15.0,
+    "prepare_seconds": 33.7,
+    "function_seconds": 2725.8,
+    "padded_tokens": 4559610,
+    "estimated_usd": 1.336,
+    "set_seconds": 71.5,
+    "set_padded_tokens": 127276
+  },
+  "unanswered": [],
+  "results": {
+    "questions": 1012,
+    "metrics": {
+      "accuracy": {
+        "value": 0.7658102766798419,
+        "interval": [
+          0.7401185770750988,
+          0.7905138339920948
+        ]
+      },
+      "brier": {
+        "value": 0.3344606741444044,
+        "interval": [
+          0.30713423413549346,
+          0.36463011273349927
+        ]
+      },
+      "smooth_ece": {
+        "value": 0.03547812952015061,
+        "interval": [
+          0.02691486850031822,
+          0.054833852646574636
+        ]
+      },
+      "macro_f1": {
+        "value": 0.7454489586857785,
+        "interval": [
+          0.7132354276490012,
+          0.7734489343026437
+        ]
+      }
+    },
+    "random_baseline_accuracy": 0.3333333333333333,
+    "per_group_accuracy": {
+      "False": {
+        "n": 345,
+        "accuracy": 0.6608695652173913,
+        "wilson_95": [
+          0.6093872054744901,
+          0.7088089182201168
+        ]
+      },
+      "Other": {
+        "n": 533,
+        "accuracy": 0.8574108818011257,
+        "wilson_95": [
+          0.8251654147081611,
+          0.884541322163376
+        ]
+      },
+      "True": {
+        "n": 134,
+        "accuracy": 0.6716417910447762,
+        "wilson_95": [
+          0.5883152927573583,
+          0.7454014305951819
+        ]
+      }
+    },
+    "definitions": {
+      "accuracy": "share of questions whose most probable option is the gold one",
+      "macro_f1": "unweighted mean F1 over the gold and predicted classes (bench/metrics.py)",
+      "brier": "sum over options of the squared error of the served probabilities, 0 to 2",
+      "smooth_ece": "top-label smooth ECE of the served maximum probability (relplot, arXiv 2309.12236)",
+      "intervals": "2.5 and 97.5 percentiles of 2000 bootstrap draws over items, seed 0",
+      "random_baseline_accuracy": "mean over questions of 1/k, k the number of options",
+      "per_group_accuracy": "accuracy per category with a 95 percent Wilson interval"
+    }
+  },
+  "code": {
+    "git_head": "1e3f5f40f2e46b6e62508929c63688d01dfc4790",
+    "tree_clean": false,
+    "code_sha256": {
+      "bench/external.py": "c7fb13b6a6031a2319d69b6f5dbcf9bb864f9fce9744051d7d01e71ea2c424ef",
+      "bench/modal_external.py": "8cc27ce659f78d1e9a632ed10bfb5e5cff5ce7d3eee61afdc921eb8854930c4e",
+      "bench/adapters/karar.py": "41889e5a0437093a940aec18c1d5e3d0367bd70f80f7ffbeb492891e8e52035b",
+      "model/head/pack.py": "7fc61f500f9348a495848bcd34c32dd10be0f99994c8d360606bd8fbfc2c44df",
+      "model/head/infer.py": "5bd3d5ce3112cab5350d33ac6850df3dcf08180a37b22df5d1cdaa980d924c7a",
+      "model/head/head.py": "794e3d61a6322b1c4700112a9f1ecd2de33495be5910385ef7998a7988a18f9b"
+    }
+  },
+  "rows_file": "mide22-r3-base-s2.rows.jsonl",
+  "rows_sha256": "97e0782c42771ba2858b0872d8b01473c8709345c83961fd891d9dd0abb58c17"
+}

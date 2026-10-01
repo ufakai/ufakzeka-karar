@@ -1,0 +1,179 @@
+{
+  "texts": 10605,
+  "texts_by_kind": {
+    "seviye0": 399,
+    "seviye1": 399,
+    "seviye2": 399,
+    "seviye3": 399,
+    "dolandirici": 568,
+    "Asliye hukuk mahkemesi": 250,
+    "iddia": 887,
+    "Asliye ticaret mahkemesi": 250,
+    "Sulh hukuk mahkemesi": 250,
+    "deneyim": 300,
+    "Savcılığa suç duyurusu": 230,
+    "pazarlama": 586,
+    "istenmeyen": 589,
+    "islem": 580,
+    "İş mahkemesi": 250,
+    "Aile mahkemesi": 250,
+    "kisisel": 572,
+    "dilek": 298,
+    "soru": 300,
+    "Tüketici mahkemesi ya da hakem heyeti": 250,
+    "gorus": 299,
+    "İdare mahkemesi": 250,
+    "İcra hukuk mahkemesi": 250,
+    "facturk": 900,
+    "mqa_soru": 900
+  },
+  "tasks": {
+    "mesaj_turu": {
+      "judges_agree_on_top": 0.839,
+      "mean_top_probability": {
+        "B": 0.8846,
+        "C": 0.9178
+      },
+      "pairs": 2895,
+      "outcomes": {
+        "labelled": 2895
+      },
+      "rows_by_split": {
+        "train": 2108,
+        "validation": 787
+      },
+      "surplus": 0,
+      "judges_agree_with_intended_kind": 0.9012,
+      "top_answers_train": {
+        "dolandırıcılık": 466,
+        "izinli pazarlama": 434,
+        "istenmeyen reklam": 375,
+        "işlem bildirimi": 419,
+        "kişisel yazışma": 414
+      }
+    },
+    "oltalama": {
+      "judges_agree_on_top": 0.8321,
+      "mean_top_probability": {
+        "B": 0.9361,
+        "C": 0.8417
+      },
+      "pairs": 2895,
+      "outcomes": {
+        "labelled": 2895
+      },
+      "rows_by_split": {
+        "train": 1837,
+        "validation": 787
+      },
+      "surplus": 271,
+      "judges_agree_with_intended_kind": 0.8718,
+      "top_answers_train": {
+        "true": 643,
+        "false": 1194
+      }
+    },
+    "cevap_puani": {
+      "judges_agree_on_top": 0.74,
+      "mean_top_probability": {
+        "A": 0.9293,
+        "C": 0.9061
+      },
+      "pairs": 1596,
+      "outcomes": {
+        "labelled": 1596
+      },
+      "rows_by_split": {
+        "train": 1280,
+        "validation": 316
+      },
+      "surplus": 0,
+      "judges_agree_with_intended_kind": 0.735,
+      "top_answers_train": {
+        "0": 279,
+        "1": 281,
+        "3": 546,
+        "2": 174
+      }
+    },
+    "ders": {
+      "judges_agree_on_top": 1.0,
+      "mean_top_probability": {
+        "A": 0.9988,
+        "C": 0.9914
+      },
+      "pairs": 399,
+      "outcomes": {
+        "labelled": 399
+      },
+      "rows_by_split": {
+        "train": 320,
+        "validation": 79
+      },
+      "surplus": 0,
+      "judges_agree_with_intended_kind": 0.9875,
+      "top_answers_train": {
+        "Kimya": 38,
+        "Coğrafya": 40,
+        "Biyoloji": 40,
+        "Fizik": 42,
+        "Türkçe": 40,
+        "Tarih": 40,
+        "Matematik": 40,
+        "Felsefe": 40
+      }
+    },
+    "basvuru_yeri": {
+      "judges_agree_on_top": 0.9256,
+      "mean_top_probability": {
+        "A": 0.9823,
+        "C": 0.9527
+      },
+      "pairs": 2230,
+      "outcomes": {
+        "labelled": 2230
+      },
+      "rows_by_split": {
+        "train": 1780,
+        "validation": 450
+      },
+      "surplus": 0,
+      "judges_agree_with_intended_kind": 0.9462,
+      "top_answers_train": {
+        "Asliye hukuk mahkemesi": 152,
+        "Savcılığa suç duyurusu": 230,
+        "Tüketici mahkemesi ya da hakem heyeti": 219,
+        "Sulh hukuk mahkemesi": 201,
+        "Asliye ticaret mahkemesi": 184,
+        "Aile mahkemesi": 199,
+        "İş mahkemesi": 201,
+        "İdare mahkemesi": 201,
+        "İcra hukuk mahkemesi": 193
+      }
+    },
+    "dogrulanabilir": {
+      "judges_agree_on_top": 0.948,
+      "mean_top_probability": {
+        "A": 0.9879,
+        "C": 0.9902
+      },
+      "pairs": 3884,
+      "outcomes": {
+        "labelled": 3884
+      },
+      "rows_by_split": {
+        "train": 2925,
+        "validation": 959
+      },
+      "surplus": 0,
+      "judges_agree_with_intended_kind": 0.9822,
+      "top_answers_train": {
+        "true": 1435,
+        "false": 1490
+      }
+    }
+  },
+  "rows": 13628,
+  "spent_usd": 10.8069,
+  "usd_per_row": 0.00079
+}

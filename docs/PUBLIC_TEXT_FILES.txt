@@ -1,0 +1,22 @@
+# Files under results/ and data/ that hold text fields and ship in the public build, each
+# reviewed: a path (a folder ends in a slash), then why its texts may be published.
+# release/public_build.py blocks any other such file; the open item files and result rows
+# are exempt (result rows must be on open items), and every file, listed or not, is also
+# scanned for copies of training texts that are not ours.
+results/step3/build/generated.jsonl The question templates written for labelling: questions and criteria we wrote, no source text.
+results/step3/build/templates.jsonl The question templates written for labelling: questions and criteria we wrote, no source text.
+results/step3/pilot/build/templates.jsonl Pilot question templates we wrote; no source text.
+results/step3/pilot2/templates.jsonl Pilot question templates we wrote; no source text.
+results/step3/pilot3/templates.jsonl Pilot question templates we wrote; no source text.
+results/step3/synth/generated.jsonl.gz Messages written by various LLMs to our briefs (generated:synth-v1); no source text.
+results/step3/synth/surplus.jsonl Generated rows left over from the synthesis (every source generated:synth-v1).
+results/step4/continue/probe.json A run's own error message.
+results/step9/external/ Evaluation summaries: our prompt phrasing, notes and build rules; no test item text.
+results/step9/board_public.json The board: model route descriptions (path_used) and model labels.
+results/step9/board_public_check.json The board recomputed from public files: the same descriptions.
+results/step9/probes_public.json Probe statistics: model route descriptions and our notes.
+results/step9/gpu_runs.jsonl GPU run log: model route descriptions.
+results/step9/runs/meta/run_log.jsonl Run log: model route descriptions.
+results/step9/smoke/meta/run_log.jsonl Smoke run log: model route descriptions.
+results/step9/owner_check_open_answers.json The founder's answers: our description of the file; the answers are option keys.
+results/step9/model_facts.json Model facts: our note on the CPU measure (release/measure_cpu.py).

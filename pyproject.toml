@@ -1,0 +1,112 @@
+[project]
+name = "ufakzeka-karar"
+version = "0.0.0"
+description = "An open Turkish decision model and HakemBench, its benchmark"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.9",
+    "pyyaml>=6",
+    "httpx>=0.28",
+    # calib/ and model/instrument/ import numpy at module level, so it is a
+    # runtime dependency of the repo and not part of any optional group.
+    "numpy>=2",
+]
+
+# The repo is run from its root, not installed: schema/, data/ and bench/
+# are imported as top-level packages.
+[tool.uv]
+package = false
+
+# Every GPU run happens on Modal, whose image installs its own pinned torch
+# and never reads this file. Nothing here or in CI needs a CUDA build, and the
+# CUDA wheel is several gigabytes, so Linux resolves torch from the CPU index.
+# `--torch-backend` would be the tidier route but it "is only available in the
+# `uv pip` interface" (docs.astral.sh/uv/guides/integration/pytorch, read
+# 2026-09-20) and this project syncs. macOS is left on the default index,
+# where the published wheels are already CPU and Metal.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.9",
+    "rust-just>=1.40",
+]
+# Needed only by bench/adapters/local.py. Kept out of the default sync so
+# the license check and the unit tests run without a torch install.
+local = [
+    "torch>=2.6",
+    "transformers>=5",
+]
+
+# Step 1, the instrument: fine-tuning, offline checkpoint selection, metrics.
+# CI installs this group, because the metrics, the selection rule and the
+# training loop are what the results rest on and a run that skipped them would
+# be green for nothing. On Linux torch comes from the CPU index above.
+# relplot (smooth ECE) is under its publisher's own license; it is an
+# evaluation dependency only and none of its code is copied into the repo.
+instrument = [
+    "torch>=2.6",
+    "transformers>=5",
+    "accelerate>=1.1",
+    "datasets>=5",
+    "scikit-learn>=1.7",
+    "probmetrics>=1.3",
+    # probmetrics 1.3.0 imports numba at load time without declaring it.
+    "numba>=0.61",
+    "relplot>=1.0.3",
+    "pyarrow>=17",
+]
+
+# Step 7 and the week-1 serving check: ONNX export and int8 on CPU.
+export = [
+    "torch>=2.6",
+    "transformers>=5",
+    "onnx>=1.19",
+    "onnxscript>=0.5",
+    "onnxruntime>=1.23",
+]
+
+# Step 9 baselines on CPU: other open decision models through their own
+# published inference code (bench/adapters/laya.py, bench/adapters/openjev.py).
+# laya is pinned so every row names the runtime that produced it. The
+# open-jev code comes with its weights (the Hugging Face snapshot, pinned by
+# revision); its model card asks for sentencepiece and protobuf.
+baselines = [
+    "torch>=2.6",
+    "transformers>=5",
+    "laya==0.3.20",
+    "safetensors>=0.4",
+    "huggingface-hub>=0.20",
+    "sentencepiece>=0.2",
+    "protobuf>=5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["schema", "data", "bench", "calib", "model", "release"]
+addopts = "--import-mode=importlib -q"
+markers = [
+    "local_model: needs the local dependency group and downloaded weights",
+    "live_server: needs a chat-completions server listening on localhost",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# Scripts the AI writers produced are kept as provenance under results/, not as project code.
+extend-exclude = ["results"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["schema", "data", "bench", "model", "calib", "release"]

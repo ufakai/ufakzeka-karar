@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.env
+
+# Weights and caches never enter the repo.
+models/
+*.safetensors
+*.gguf
+*.onnx
+*.bin
+
+# Downloaded and built data stay out of git. Each file still needs its
+# entry in data/MANIFEST.yaml, which is tracked.
+data/raw/
+data/built/
+.cache/
+
+# HakemBench draft freezes (bench.hakembench.freeze --allow-pending) are never committed.
+bench/hakembench/v*-draft/
+results/private/step8/v*-draft/
+results/step8/hakembench_v*-draft.json
+# Intermediate output of desk collect; the frozen items carry the gold.
+results/private/step8/checked/

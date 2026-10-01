@@ -1,0 +1,27 @@
+{
+  "evaluation_texts": 18384,
+  "seed": 1,
+  "legal": {
+    "tokens": 200252226,
+    "shards": 5,
+    "seen": 287757,
+    "kept": 286976,
+    "dropped:reference:covers": 746,
+    "dropped:reference:ngram": 32,
+    "dropped:ours:covers": 3,
+    "seconds": 213.8
+  },
+  "questions": {
+    "tokens": 70008664,
+    "shards": 2,
+    "seen": 1736600,
+    "kept": 1237504,
+    "dropped:ours:ngram": 49915,
+    "dropped:filtered": 448627,
+    "dropped:ours:covers": 507,
+    "dropped:reference:ngram": 34,
+    "dropped:reference:covers": 13,
+    "seconds": 120.3
+  },
+  "seconds": 447.2
+}

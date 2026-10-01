@@ -1,0 +1,122 @@
+[
+  {
+    "gpu": "NVIDIA L4",
+    "precision": {
+      "bf16": true,
+      "fp16": false,
+      "tf32": true
+    },
+    "shapes": [
+      {
+        "batch": 32,
+        "length": 64,
+        "steps_per_second": 4.649622983164148,
+        "peak_gib": 4.659453392028809
+      },
+      {
+        "batch": 8,
+        "length": 512,
+        "steps_per_second": 3.321205900998052,
+        "peak_gib": 6.925968647003174
+      }
+    ],
+    "requested": "L4",
+    "price_per_second": 0.000222
+  },
+  {
+    "gpu": "NVIDIA L40S",
+    "precision": {
+      "bf16": true,
+      "fp16": false,
+      "tf32": true
+    },
+    "shapes": [
+      {
+        "batch": 32,
+        "length": 64,
+        "steps_per_second": 8.712645526093006,
+        "peak_gib": 4.659453392028809
+      },
+      {
+        "batch": 8,
+        "length": 512,
+        "steps_per_second": 8.468229690062913,
+        "peak_gib": 6.925968647003174
+      }
+    ],
+    "requested": "L40S",
+    "price_per_second": 0.000542
+  },
+  {
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "precision": {
+      "bf16": true,
+      "fp16": false,
+      "tf32": true
+    },
+    "shapes": [
+      {
+        "batch": 32,
+        "length": 64,
+        "steps_per_second": 8.811442638627367,
+        "peak_gib": 4.659453392028809
+      },
+      {
+        "batch": 8,
+        "length": 512,
+        "steps_per_second": 8.753224489039443,
+        "peak_gib": 6.925968647003174
+      }
+    ],
+    "requested": "A100-40GB",
+    "price_per_second": 0.000583
+  },
+  {
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "precision": {
+      "bf16": true,
+      "fp16": false,
+      "tf32": true
+    },
+    "shapes": [
+      {
+        "batch": 32,
+        "length": 64,
+        "steps_per_second": 16.86218502998642,
+        "peak_gib": 4.682890892028809
+      },
+      {
+        "batch": 8,
+        "length": 512,
+        "steps_per_second": 15.571652613029585,
+        "peak_gib": 6.965031147003174
+      }
+    ],
+    "requested": "H100",
+    "price_per_second": 0.001097
+  },
+  {
+    "gpu": "NVIDIA H200",
+    "precision": {
+      "bf16": true,
+      "fp16": false,
+      "tf32": true
+    },
+    "shapes": [
+      {
+        "batch": 32,
+        "length": 64,
+        "steps_per_second": 12.09357926374552,
+        "peak_gib": 4.682890892028809
+      },
+      {
+        "batch": 8,
+        "length": 512,
+        "steps_per_second": 11.813287150185026,
+        "peak_gib": 6.965031147003174
+      }
+    ],
+    "requested": "H200",
+    "price_per_second": 0.001261
+  }
+]

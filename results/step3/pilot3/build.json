@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "templates_written": 12,
+    "pairs": 240,
+    "template_low_variance": 2,
+    "template_rarely_applies": 3,
+    "kept": 84,
+    "answerable_blind": 32,
+    "failed:LowLabelMass": 15,
+    "not_applicable": 9,
+    "screened_out": 40
+  },
+  "template_problems": {},
+  "screening": {
+    "Verilen cevap metninde sunulan bilginin ana odağı nedir?": "passed",
+    "Metindeki soruyu soran kişinin temel amacı aşağıdakilerden hangisidir?": "low_variance",
+    "Metindeki talep, standart bilgilendirme içerikleriyle çözülemeyip bir uzmanın doğrudan müdahalesini veya kişiselleştirilmiş değerlendirmesini gerektiriyor mu?": "passed",
+    "Verilen cevap sorulan konuya dair ne düzeyde pratik ve uygulanabilir adımlar içermektedir?": "low_variance",
+    "Verilen cevap esas olarak kime yönelik hazırlanmıştır?": "passed",
+    "Metindeki konu, gecikmesi durumunda sağlık veya maddi kayıp gibi doğrudan riskler doğurabilecek acil bir duruma mı işaret ediyor?": "rarely_applies",
+    "Verilen cevap hedef kitleden ne düzeyde teknik uzmanlık veya ön bilgi beklemektedir?": "rarely_applies",
+    "Metindeki soru temel olarak hangi konu alanıyla ilgilidir?": "passed",
+    "Metindeki sorunun çözümü veya yanıtlanması ne ölçüde zamana duyarlıdır?": "rarely_applies",
+    "Verilen yanıt kullanıcı talebini tek başına çözmekte yetersiz kalıp canlı destek yönlendirmesi gerektiriyor mu?": "passed",
+    "Metindeki konu veya verilen yanıt; finansal kayıp, hukuki yaptırım ya da fiziksel sağlık açısından ne derece kritik bir risk barındırmaktadır?": "passed"
+  },
+  "texts_by_config": {
+    "tr-faq-question": 240,
+    "tr-cqa-question": 240
+  },
+  "unanimous_share": 0.881,
+  "mean_off_letter_mass": {
+    "A": 0.0,
+    "C": 0.0
+  },
+  "top_option_by_task": {
+    "bilgi_turu-choice": {
+      "Sayısal ve mali veri": 2,
+      "İşlem ve uygulama adımları": 4,
+      "Tanıtım ve kampanya": 1
+    },
+    "niyet-choice": {
+      "Uzman görüşü veya deneyim paylaşımı almak": 3,
+      "Sorun çözümü veya işlem adımı öğrenmek": 2,
+      "Hizmet, ürün veya fiyat tavsiyesi istemek": 2
+    },
+    "insan_destegi-noul": {
+      "false": 26,
+      "true": 4
+    },
+    "hedef_kitle-choice": {
+      "Genel okuyucu kitlesi": 7,
+      "Soruyu soran kişi": 4
+    },
+    "konu-choice": {
+      "ürün ve alışveriş": 5,
+      "yaşam ve edebiyat": 1,
+      "teknoloji ve bilişim": 7,
+      "seyahat ve ulaşım": 1
+    },
+    "hassasiyet-score": {
+      "0": 14,
+      "3": 1
+    }
+  },
+  "spent_usd": 0.0833,
+  "usd_per_kept_row": 0.00099
+}

@@ -1,0 +1,421 @@
+{
+  "aym_rights": {
+    "train": {
+      "rows": 7982,
+      "types": {
+        "choice": 7982
+      },
+      "label_kind": {
+        "human": 7982
+      },
+      "tasks": 1,
+      "distinct_texts": 7982,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 440,
+      "types": {
+        "choice": 440
+      },
+      "label_kind": {
+        "human": 440
+      },
+      "tasks": 1,
+      "distinct_texts": 440,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "facturk_verdict": {
+    "train": {
+      "rows": 13095,
+      "types": {
+        "choice": 13095
+      },
+      "label_kind": {
+        "human": 13095
+      },
+      "tasks": 1,
+      "distinct_texts": 13095,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 1470,
+      "types": {
+        "choice": 1470
+      },
+      "label_kind": {
+        "human": 1470
+      },
+      "tasks": 1,
+      "distinct_texts": 1470,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "massive_tr": {
+    "train": {
+      "rows": 10890,
+      "types": {
+        "choice": 10890
+      },
+      "label_kind": {
+        "human": 10890
+      },
+      "tasks": 1,
+      "distinct_texts": 10890,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 1978,
+      "types": {
+        "choice": 1978
+      },
+      "label_kind": {
+        "human": 1978
+      },
+      "tasks": 1,
+      "distinct_texts": 1978,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "mide22": {
+    "train": {
+      "rows": 3356,
+      "types": {
+        "choice": 3356
+      },
+      "label_kind": {
+        "human": 3356
+      },
+      "tasks": 1,
+      "distinct_texts": 3356,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 478,
+      "types": {
+        "choice": 478
+      },
+      "label_kind": {
+        "human": 478
+      },
+      "tasks": 1,
+      "distinct_texts": 478,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "offenseval_tr": {
+    "train": {
+      "rows": 28537,
+      "types": {
+        "noul": 28537
+      },
+      "label_kind": {
+        "human": 28537
+      },
+      "tasks": 1,
+      "distinct_texts": 28537,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 3169,
+      "types": {
+        "noul": 3169
+      },
+      "label_kind": {
+        "human": 3169
+      },
+      "tasks": 1,
+      "distinct_texts": 3169,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "prompt_injection": {
+    "train": {
+      "rows": 1791,
+      "types": {
+        "noul": 1791
+      },
+      "label_kind": {
+        "rule": 1791
+      },
+      "tasks": 1,
+      "distinct_texts": 1791,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 224,
+      "types": {
+        "noul": 224
+      },
+      "label_kind": {
+        "rule": 224
+      },
+      "tasks": 1,
+      "distinct_texts": 224,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "prompt_injection_conv": {
+    "train": {
+      "rows": 530,
+      "types": {
+        "noul": 530
+      },
+      "label_kind": {
+        "rule": 530
+      },
+      "tasks": 1,
+      "distinct_texts": 530,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 220,
+      "types": {
+        "noul": 220
+      },
+      "label_kind": {
+        "rule": 220
+      },
+      "tasks": 1,
+      "distinct_texts": 220,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "webfaq_relevance": {
+    "train": {
+      "rows": 17989,
+      "types": {
+        "noul": 17989
+      },
+      "label_kind": {
+        "rule": 17989
+      },
+      "tasks": 1,
+      "distinct_texts": 17989,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 2000,
+      "types": {
+        "noul": 2000
+      },
+      "label_kind": {
+        "rule": 2000
+      },
+      "tasks": 1,
+      "distinct_texts": 2000,
+      "judges_agree_on_top": null,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "sss": {
+    "heldout_task": {
+      "rows": 2311,
+      "types": {
+        "choice": 1734,
+        "noul": 472,
+        "score": 105
+      },
+      "label_kind": {
+        "judges": 2311
+      },
+      "tasks": 14,
+      "distinct_texts": 937,
+      "judges_agree_on_top": 0.7737,
+      "mined": 0,
+      "family_type": {
+        "hassasiyet-noul": 472,
+        "insan_destegi-choice": 239,
+        "yanit_yeterliligi-choice": 1495,
+        "yanit_yeterliligi-score": 105
+      }
+    },
+    "train": {
+      "rows": 12957,
+      "types": {
+        "choice": 3250,
+        "noul": 6032,
+        "score": 3675
+      },
+      "label_kind": {
+        "judges": 12957
+      },
+      "tasks": 82,
+      "distinct_texts": 4043,
+      "judges_agree_on_top": 0.8108,
+      "mined": 1599,
+      "family_type": {
+        "aciliyet-choice": 34,
+        "aciliyet-noul": 74,
+        "bilgi_turu-choice": 1372,
+        "bilgi_turu-noul": 913,
+        "bilgi_turu-score": 730,
+        "hassasiyet-choice": 184,
+        "hassasiyet-score": 366,
+        "hedef_kitle-choice": 715,
+        "hedef_kitle-noul": 570,
+        "hedef_kitle-score": 607,
+        "insan_destegi-noul": 1180,
+        "insan_destegi-score": 705,
+        "konu-choice": 756,
+        "konu-noul": 697,
+        "konu-score": 567,
+        "niyet-choice": 189,
+        "niyet-noul": 1110,
+        "niyet-score": 700,
+        "yanit_yeterliligi-noul": 1488
+      }
+    },
+    "validation": {
+      "rows": 2834,
+      "types": {
+        "choice": 778,
+        "noul": 1279,
+        "score": 777
+      },
+      "label_kind": {
+        "judges": 2834
+      },
+      "tasks": 81,
+      "distinct_texts": 984,
+      "judges_agree_on_top": 0.8095,
+      "mined": 0,
+      "family_type": {
+        "aciliyet-choice": 5,
+        "aciliyet-noul": 17,
+        "bilgi_turu-choice": 356,
+        "bilgi_turu-noul": 183,
+        "bilgi_turu-score": 166,
+        "hassasiyet-choice": 35,
+        "hassasiyet-score": 49,
+        "hedef_kitle-choice": 151,
+        "hedef_kitle-noul": 97,
+        "hedef_kitle-score": 135,
+        "insan_destegi-noul": 266,
+        "insan_destegi-score": 132,
+        "konu-choice": 181,
+        "konu-noul": 161,
+        "konu-score": 110,
+        "niyet-choice": 50,
+        "niyet-noul": 211,
+        "niyet-score": 185,
+        "yanit_yeterliligi-noul": 344
+      }
+    }
+  },
+  "synth": {
+    "train": {
+      "rows": 10250,
+      "types": {
+        "choice": 4208,
+        "noul": 4762,
+        "score": 1280
+      },
+      "label_kind": {
+        "judges": 10250
+      },
+      "tasks": 6,
+      "distinct_texts": 8093,
+      "judges_agree_on_top": 0.8738,
+      "mined": 0,
+      "family_type": {}
+    },
+    "validation": {
+      "rows": 3378,
+      "types": {
+        "choice": 1316,
+        "noul": 1746,
+        "score": 316
+      },
+      "label_kind": {
+        "judges": 3378
+      },
+      "tasks": 6,
+      "distinct_texts": 2512,
+      "judges_agree_on_top": 0.8837,
+      "mined": 0,
+      "family_type": {}
+    }
+  },
+  "r4": {
+    "train": {
+      "rows": 12872,
+      "types": {
+        "noul": 4781,
+        "choice": 5394,
+        "score": 2697
+      },
+      "label_kind": {
+        "judges": 12872
+      },
+      "tasks": 6,
+      "distinct_texts": 4781,
+      "judges_agree_on_top": 0.9138,
+      "mined": 0,
+      "family_type": {},
+      "task_rows": {
+        "hassasiyet-noul-r4": 2697,
+        "insan_destegi-choice-r4": 2697,
+        "offenseval_tr-r4": 1363,
+        "prompt_injection-r4": 721,
+        "yanit_yeterliligi-choice-r4": 2697,
+        "yanit_yeterliligi-score-r4": 2697
+      }
+    },
+    "validation": {
+      "rows": 1415,
+      "types": {
+        "noul": 515,
+        "choice": 600,
+        "score": 300
+      },
+      "label_kind": {
+        "judges": 1415
+      },
+      "tasks": 6,
+      "distinct_texts": 515,
+      "judges_agree_on_top": 0.911,
+      "mined": 0,
+      "family_type": {},
+      "task_rows": {
+        "hassasiyet-noul-r4": 300,
+        "insan_destegi-choice-r4": 300,
+        "offenseval_tr-r4": 136,
+        "prompt_injection-r4": 79,
+        "yanit_yeterliligi-choice-r4": 300,
+        "yanit_yeterliligi-score-r4": 300
+      }
+    }
+  }
+}

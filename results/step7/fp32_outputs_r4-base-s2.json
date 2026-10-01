@@ -1,0 +1,16 @@
+{
+  "run": "r4-base-s2",
+  "build": {
+    "sample": 50,
+    "calibration": 0,
+    "head": "/vol/round1/runs/r4-base-s2/model.pt",
+    "fp32_bytes": 735333256
+  },
+  "outputs": {
+    "rows": 19697,
+    "engines": [
+      "fp32"
+    ],
+    "seconds": 2950.3
+  }
+}

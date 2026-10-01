@@ -1,0 +1,69 @@
+{
+ "source_run": "r5b-base-s1",
+ "weights_sha256": "ba939e9f33445ec02bac6c5ab4e8acffa89645fc573c2efe4c25e316a9fcdaae",
+ "request": {
+  "model": "ufakzeka-karar",
+  "state": "Faturam iki kez kesildi, iade istiyorum.",
+  "questions": {
+   "konu": {
+    "type": "choice",
+    "instructions": "Mesajın konusu nedir?",
+    "criteria": {
+     "fatura": null,
+     "kargo": null,
+     "iade": null
+    }
+   },
+   "temsilci": {
+    "type": "noul",
+    "instructions": "Bu mesaj bir müşteri temsilcisine yönlendirilmeli mi?"
+   },
+   "ofke": {
+    "type": "score",
+    "instructions": "Müşteri ne kadar öfkeli?",
+    "criteria": [
+     "Sakin",
+     "Rahatsız",
+     "Öfkeli"
+    ]
+   }
+  }
+ },
+ "response": {
+  "model": "ufakzeka-karar",
+  "answers": {
+   "konu": {
+    "type": "choice",
+    "choice": "iade",
+    "probabilities": {
+     "fatura": 0.4586752924950543,
+     "kargo": 0.06985893859303746,
+     "iade": 0.4714657689119082
+    },
+    "confidence": 0.420241,
+    "abstain": 0.579759
+   },
+   "temsilci": {
+    "type": "noul",
+    "noul": 0.12584166095459465,
+    "abstain": 0.145412
+   },
+   "ofke": {
+    "type": "score",
+    "score": 0.9149802656609806,
+    "legend": {
+     "0": "Sakin",
+     "1": "Rahatsız",
+     "2": "Öfkeli"
+    },
+    "probabilities": {
+     "0": 0.4035768294174935,
+     "1": 0.2778660755040324,
+     "2": 0.3185570950784741
+    },
+    "confidence": 0.369498,
+    "abstain": 0.630502
+   }
+  }
+ }
+}

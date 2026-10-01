@@ -1,0 +1,199 @@
+{
+  "source": "https://zenodo.org/records/19713325",
+  "file": "tbmm_speeches_v1_floor_core.parquet",
+  "file_sha256": "fc856032cea5273b1ddf63031633fe4d2ef2c486e446d46b4094d7c2af1f93c8",
+  "parquet": "data/raw/_downloads/zenodo__19713325/tbmm_speeches_v1_floor_core.parquet",
+  "seed": 1,
+  "target": 1300,
+  "party_cap": 0.35,
+  "words": [
+    8,
+    40
+  ],
+  "population": {
+    "rows_read": 136118,
+    "before_2011": 66432,
+    "not_plenary_chamber": 32,
+    "population_turns": 69654
+  },
+  "sentences": {
+    "sentences": 1036825,
+    "page_header": 32629,
+    "hyphen_wrap": 893,
+    "ocr_spacing": 19318,
+    "stage_note": 37783,
+    "speaker_line": 0,
+    "capitals": 3397,
+    "opening": 63415,
+    "thanks": 48195,
+    "greeting": 9178,
+    "chair": 13104,
+    "vote": 1486,
+    "start": 972,
+    "unfinished": 27250,
+    "unbalanced": 2543,
+    "short": 162584,
+    "long": 25267,
+    "ocr_glued": 44604,
+    "names_person": 15549,
+    "eligible_sentences": 528658
+  },
+  "turns": {
+    "turns": 69654,
+    "cut_at_speaker_line": 14638,
+    "eligible_turns": 55458
+  },
+  "turns_per_year_population_eligible": {
+    "2011": [
+      1122,
+      224
+    ],
+    "2012": [
+      2648,
+      738
+    ],
+    "2013": [
+      3140,
+      989
+    ],
+    "2014": [
+      3688,
+      1699
+    ],
+    "2015": [
+      2477,
+      1917
+    ],
+    "2016": [
+      6763,
+      5382
+    ],
+    "2017": [
+      6009,
+      4903
+    ],
+    "2018": [
+      6440,
+      5752
+    ],
+    "2019": [
+      7131,
+      6609
+    ],
+    "2020": [
+      9969,
+      8925
+    ],
+    "2021": [
+      8222,
+      7383
+    ],
+    "2022": [
+      9255,
+      8304
+    ],
+    "2023": [
+      2790,
+      2633
+    ]
+  },
+  "population_turns_per_party": {
+    "AKP": 15161,
+    "BAG": 998,
+    "CHP": 30880,
+    "HDP": 8904,
+    "IYI": 5013,
+    "MHP": 8698
+  },
+  "eligible_turns_per_party": {
+    "AKP": 10544,
+    "BAG": 561,
+    "CHP": 24463,
+    "HDP": 8086,
+    "IYI": 4827,
+    "MHP": 6977
+  },
+  "party_quotas": {
+    "CHP": 455,
+    "AKP": 330,
+    "BAG": 22,
+    "HDP": 194,
+    "IYI": 109,
+    "MHP": 190
+  },
+  "party_short": {},
+  "pooled": 2214,
+  "overlap_in_pool": 0,
+  "dropped_while_filling": {},
+  "shortfall": {},
+  "candidates": 1300,
+  "per_party": {
+    "AKP": 330,
+    "BAG": 22,
+    "CHP": 455,
+    "HDP": 194,
+    "IYI": 109,
+    "MHP": 190
+  },
+  "per_calendar_year": {
+    "2011": 20,
+    "2012": 48,
+    "2013": 60,
+    "2014": 66,
+    "2015": 44,
+    "2016": 121,
+    "2017": 109,
+    "2018": 122,
+    "2019": 135,
+    "2020": 192,
+    "2021": 155,
+    "2022": 175,
+    "2023": 53
+  },
+  "per_legislative_year": {
+    "2010-2011": 6,
+    "2011-2012": 45,
+    "2012-2013": 51,
+    "2013-2014": 69,
+    "2014-2015": 57,
+    "2015-2016": 92,
+    "2016-2017": 98,
+    "2017-2018": 106,
+    "2018-2019": 133,
+    "2019-2020": 188,
+    "2020-2021": 167,
+    "2021-2022": 168,
+    "2022-2023": 120
+  },
+  "per_corpus_source": {
+    "tbmm_direct_scrape": 783,
+    "turkronicles": 517
+  },
+  "per_split": {
+    "private": 629,
+    "public": 671
+  },
+  "masked": 0,
+  "line_breaks_joined": 297,
+  "overlap_files_checked": [
+    "data/built/sss/train.jsonl",
+    "data/built/synth/train.jsonl",
+    "data/built/typed/aym_rights/train.jsonl",
+    "data/built/typed/facturk_verdict/train.jsonl",
+    "data/built/typed/massive_tr/train.jsonl",
+    "data/built/typed/mide22/train.jsonl",
+    "data/built/typed/offenseval_tr/train.jsonl",
+    "data/built/typed/prompt_injection/train.jsonl",
+    "data/built/typed/webfaq_relevance/train.jsonl",
+    "data/built/sss/validation.jsonl",
+    "data/built/synth/validation.jsonl",
+    "data/built/typed/aym_rights/validation.jsonl",
+    "data/built/typed/facturk_verdict/validation.jsonl",
+    "data/built/typed/massive_tr/validation.jsonl",
+    "data/built/typed/mide22/validation.jsonl",
+    "data/built/typed/offenseval_tr/validation.jsonl",
+    "data/built/typed/prompt_injection/validation.jsonl",
+    "data/built/typed/webfaq_relevance/validation.jsonl",
+    ".cache/karar/hakembench/facturk_claims.jsonl"
+  ]
+}

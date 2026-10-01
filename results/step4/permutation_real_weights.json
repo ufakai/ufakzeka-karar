@@ -1,0 +1,12 @@
+{
+  "backbone": "ufakai/ufakzeka-1-base@f9e11eea28cbb2ba953a5628f972d416fe0c3cfe",
+  "attention": "causal inside each part, options blind to each other",
+  "dtype": "float32",
+  "device": "cpu",
+  "questions": 60,
+  "shuffled_orders_per_question": 5,
+  "comparisons": 300,
+  "bit_exact": 300,
+  "max_abs_logit_difference": 0.0,
+  "torch": "2.14.0"
+}

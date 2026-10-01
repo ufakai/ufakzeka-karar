@@ -1,0 +1,40 @@
+{
+  "task": "facturk_verdict",
+  "source": "https://github.com/altuncu/FACTurk",
+  "revision": "b85871b4dcfaa9b0f43b037237ae4b548f6a51ed",
+  "splits": {
+    "train": {
+      "rows": 13126,
+      "classes": {
+        "yanlış ya da yanıltıcı": 12271,
+        "doğru": 618,
+        "karma": 174,
+        "sonuçlandırılamadı": 63
+      }
+    },
+    "validation": {
+      "rows": 1475,
+      "classes": {
+        "yanlış ya da yanıltıcı": 1381,
+        "doğru": 67,
+        "karma": 24,
+        "sonuçlandırılamadı": 3
+      }
+    }
+  },
+  "dropped": {
+    "source": {
+      "no_verdict_on_page": 956,
+      "source_rows": 15766,
+      "unmapped_rating": 1,
+      "verdict_fixed_by_scraper": 190
+    },
+    "train": {
+      "duplicate_text": 18
+    },
+    "validation": {
+      "duplicate_text": 0,
+      "text_also_in_train": 0
+    }
+  }
+}

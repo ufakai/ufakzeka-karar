@@ -1,0 +1,132 @@
+{
+  "probe": "slots",
+  "cap_per_track": null,
+  "drawn": 2166,
+  "kept": 423,
+  "kept_by_half": {
+    "public": 423
+  },
+  "dropped": {
+    "blind answer differs": 42,
+    "gold slot changed": 1,
+    "meaning differs": 8,
+    "no slot": 1576,
+    "not generated": 107,
+    "slot text mismatch": 7,
+    "unparsed": 2
+  },
+  "dropped_share": {
+    "blind answer differs": 0.0194,
+    "gold slot changed": 0.0005,
+    "meaning differs": 0.0037,
+    "no slot": 0.7276,
+    "not generated": 0.0494,
+    "slot text mismatch": 0.0032,
+    "unparsed": 0.0009
+  },
+  "per_track": {
+    "dogrulama": {
+      "drawn": 335,
+      "kept": 93,
+      "dropped": {
+        "blind answer differs": 25,
+        "meaning differs": 7,
+        "no slot": 161,
+        "not generated": 47,
+        "slot text mismatch": 2
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0746,
+        "meaning differs": 0.0209,
+        "no slot": 0.4806,
+        "not generated": 0.1403,
+        "slot text mismatch": 0.006
+      }
+    },
+    "egitim": {
+      "drawn": 320,
+      "kept": 31,
+      "dropped": {
+        "blind answer differs": 1,
+        "no slot": 286,
+        "unparsed": 2
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0031,
+        "no slot": 0.8938,
+        "unparsed": 0.0063
+      }
+    },
+    "guvenlik": {
+      "drawn": 221,
+      "kept": 23,
+      "dropped": {
+        "no slot": 197,
+        "slot text mismatch": 1
+      },
+      "dropped_share": {
+        "no slot": 0.8914,
+        "slot text mismatch": 0.0045
+      }
+    },
+    "hukuk": {
+      "drawn": 156,
+      "kept": 31,
+      "dropped": {
+        "blind answer differs": 1,
+        "gold slot changed": 1,
+        "meaning differs": 1,
+        "no slot": 122
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0064,
+        "gold slot changed": 0.0064,
+        "meaning differs": 0.0064,
+        "no slot": 0.7821
+      }
+    },
+    "moderasyon": {
+      "drawn": 176,
+      "kept": 4,
+      "dropped": {
+        "no slot": 172
+      },
+      "dropped_share": {
+        "no slot": 0.9773
+      }
+    },
+    "spam": {
+      "drawn": 306,
+      "kept": 98,
+      "dropped": {
+        "blind answer differs": 6,
+        "no slot": 138,
+        "not generated": 60,
+        "slot text mismatch": 4
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0196,
+        "no slot": 0.451,
+        "not generated": 0.1961,
+        "slot text mismatch": 0.0131
+      }
+    },
+    "sss": {
+      "drawn": 652,
+      "kept": 143,
+      "dropped": {
+        "blind answer differs": 9,
+        "no slot": 500
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0138,
+        "no slot": 0.7669
+      }
+    }
+  },
+  "spent_usd": 1.478256,
+  "items": {
+    "public": 423,
+    "private": 0
+  }
+}

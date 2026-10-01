@@ -1,0 +1,215 @@
+{
+  "set": "mmlu_pro_tr",
+  "dataset": {
+    "name": "mmlu_pro_tr",
+    "title": "MMLU-Pro-TR",
+    "repo": "bezir/MMLU-pro-TR",
+    "revision": "e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2",
+    "url": "https://huggingface.co/datasets/bezir/MMLU-pro-TR",
+    "licence_as_shown": "license: mit (card metadata at the pinned revision); upstream TIGER-Lab/MMLU-Pro, license: mit",
+    "licence_id": "MIT",
+    "split": "test",
+    "phrasing": "choice: state = the question text; criteria = one key per option, its letter and text (\"A) ...\"), no description; instructions = \"Doğru cevap hangisi?\"",
+    "cetvel_task": null,
+    "notes": [
+      "The card says the Turkish text was machine-translated from MMLU-Pro with human oversight; it is not native Turkish.",
+      "Options: 3 to 10 per question, so every question is one pass."
+    ],
+    "gated": false
+  },
+  "items_kept_after_overlap": 11838,
+  "overlap_dropped": 0,
+  "build_file": "results/step9/external/mmlu_pro_tr.build.json",
+  "limit": null,
+  "model": {
+    "run": "r5b-base-s1",
+    "weights": "models/r5b-base-s1/model.pt",
+    "weights_sha256": "25fb92963ba1f658524de699884e3658a5ae5e582d75c55936047b5c178305bc",
+    "calibrator": "results/step7/r5b-base-s1/calibrator.json",
+    "calibrator_sha256": "2a01cbe4628ee8ecab5a9e4c19b87c3d8e812b59ad04f4a56048bc32c8b1f21a",
+    "calibrator_fitted_on": "25fb92963ba1f658524de699884e3658a5ae5e582d75c55936047b5c178305bc",
+    "temperatures": {
+      "form": "global",
+      "global": 1.2614079599045405
+    },
+    "path": "bench/adapters/karar.py answer, fp32 torch, CPU, batched passes",
+    "weights_sha256_in_container": "25fb92963ba1f658524de699884e3658a5ae5e582d75c55936047b5c178305bc"
+  },
+  "runtime": {
+    "container": "Modal CPU, 32 physical cores (request and limit), 32768 MiB",
+    "host": "Linux x86_64 ",
+    "threads": 32,
+    "load_seconds": 16.6,
+    "prepare_seconds": 32.8,
+    "function_seconds": 2816.0,
+    "padded_tokens": 4559610,
+    "estimated_usd": 1.381,
+    "set_seconds": 1565.1,
+    "set_padded_tokens": 2605782
+  },
+  "unanswered": [],
+  "results": {
+    "questions": 11838,
+    "metrics": {
+      "accuracy": {
+        "value": 0.09773610407163372,
+        "interval": [
+          0.09224531170805879,
+          0.10322689643520865
+        ]
+      },
+      "brier": {
+        "value": 0.9408027719983079,
+        "interval": [
+          0.937810619010094,
+          0.9438259493216136
+        ]
+      },
+      "smooth_ece": {
+        "value": 0.13526464633015836,
+        "interval": [
+          0.12964071768822236,
+          0.1410736694529759
+        ]
+      }
+    },
+    "random_baseline_accuracy": 0.11082567706363955,
+    "per_group_accuracy": {
+      "biology": {
+        "n": 714,
+        "accuracy": 0.12044817927170869,
+        "wilson_95": [
+          0.09858254942698641,
+          0.14637607856216905
+        ]
+      },
+      "business": {
+        "n": 773,
+        "accuracy": 0.0646830530401035,
+        "wilson_95": [
+          0.04940581154948086,
+          0.08426555433106146
+        ]
+      },
+      "chemistry": {
+        "n": 1125,
+        "accuracy": 0.08355555555555555,
+        "wilson_95": [
+          0.06876807473608271,
+          0.10117736567271893
+        ]
+      },
+      "computer science": {
+        "n": 397,
+        "accuracy": 0.11083123425692695,
+        "wilson_95": [
+          0.08360375785938093,
+          0.145517898212861
+        ]
+      },
+      "economics": {
+        "n": 830,
+        "accuracy": 0.13012048192771083,
+        "wilson_95": [
+          0.10892559952508037,
+          0.15472339098714621
+        ]
+      },
+      "engineering": {
+        "n": 965,
+        "accuracy": 0.08082901554404145,
+        "wilson_95": [
+          0.06524733866545485,
+          0.09973472048988113
+        ]
+      },
+      "health": {
+        "n": 800,
+        "accuracy": 0.10125,
+        "wilson_95": [
+          0.08221514955891406,
+          0.12409600427494903
+        ]
+      },
+      "history": {
+        "n": 342,
+        "accuracy": 0.12280701754385964,
+        "wilson_95": [
+          0.09215246512891628,
+          0.16184096632791212
+        ]
+      },
+      "law": {
+        "n": 1086,
+        "accuracy": 0.1132596685082873,
+        "wilson_95": [
+          0.0957586110099321,
+          0.13348708050354186
+        ]
+      },
+      "math": {
+        "n": 1345,
+        "accuracy": 0.07137546468401487,
+        "wilson_95": [
+          0.05880282800436075,
+          0.08638952028223719
+        ]
+      },
+      "other": {
+        "n": 913,
+        "accuracy": 0.09529025191675794,
+        "wilson_95": [
+          0.07790491947397311,
+          0.11606695773399382
+        ]
+      },
+      "philosophy": {
+        "n": 479,
+        "accuracy": 0.14822546972860126,
+        "wilson_95": [
+          0.11920738462590189,
+          0.18284095069973208
+        ]
+      },
+      "physics": {
+        "n": 1289,
+        "accuracy": 0.07292474786656322,
+        "wilson_95": [
+          0.059963752988639756,
+          0.0884237059402359
+        ]
+      },
+      "psychology": {
+        "n": 780,
+        "accuracy": 0.13205128205128205,
+        "wilson_95": [
+          0.11008581050318028,
+          0.1576232478831715
+        ]
+      }
+    },
+    "definitions": {
+      "accuracy": "share of questions whose most probable option is the gold one",
+      "macro_f1": "unweighted mean F1 over the gold and predicted classes (bench/metrics.py)",
+      "brier": "sum over options of the squared error of the served probabilities, 0 to 2",
+      "smooth_ece": "top-label smooth ECE of the served maximum probability (relplot, arXiv 2309.12236)",
+      "intervals": "2.5 and 97.5 percentiles of 2000 bootstrap draws over items, seed 0",
+      "random_baseline_accuracy": "mean over questions of 1/k, k the number of options",
+      "per_group_accuracy": "accuracy per category with a 95 percent Wilson interval"
+    }
+  },
+  "code": {
+    "git_head": "e5851908dfa781be0755592f41a2f9a32f003369",
+    "tree_clean": false,
+    "code_sha256": {
+      "bench/external.py": "c7fb13b6a6031a2319d69b6f5dbcf9bb864f9fce9744051d7d01e71ea2c424ef",
+      "bench/modal_external.py": "8cc27ce659f78d1e9a632ed10bfb5e5cff5ce7d3eee61afdc921eb8854930c4e",
+      "bench/adapters/karar.py": "41889e5a0437093a940aec18c1d5e3d0367bd70f80f7ffbeb492891e8e52035b",
+      "model/head/pack.py": "7fc61f500f9348a495848bcd34c32dd10be0f99994c8d360606bd8fbfc2c44df",
+      "model/head/infer.py": "5bd3d5ce3112cab5350d33ac6850df3dcf08180a37b22df5d1cdaa980d924c7a",
+      "model/head/head.py": "794e3d61a6322b1c4700112a9f1ecd2de33495be5910385ef7998a7988a18f9b"
+    }
+  },
+  "rows_file": "mmlu_pro_tr-r5b-base-s1.rows.jsonl",
+  "rows_sha256": "8b334e82bf459ca2ef139aff72473ce97278bdaccf7a5a1a211649bc32238cf5"
+}

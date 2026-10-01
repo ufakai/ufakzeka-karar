@@ -1,0 +1,37 @@
+{
+  "files_sha256": {
+    "3nesdeniz/turkish-conversation-prompt-injection@29d7593984f563c4ad56876aa800b9ffd948a2fb/data/train.parquet": "8128714a60f7f63167e838c71d5a4c94f55ef2b1c752b00585f945b41dfe6321",
+    "3nesdeniz/turkish-conversation-prompt-injection@29d7593984f563c4ad56876aa800b9ffd948a2fb/data/validation.parquet": "404cd620e542f2a1961f509522623abf312fc58844d3dc3ce349b3fa15443014",
+    "3nesdeniz/turkish-conversation-prompt-injection@29d7593984f563c4ad56876aa800b9ffd948a2fb/data/test.parquet": "887cbc90bb8b6a8f47346dd1ad432ef51db94da4eeb3aa6e528091b7ad586cbc"
+  },
+  "candidates": 750,
+  "after_dedupe": 750,
+  "dedupe": {
+    "duplicate": 0
+  },
+  "touch_hakembench": {
+    "count": 0,
+    "by_split_label": {},
+    "ids": {}
+  },
+  "train_touches_dev": {
+    "count": 0,
+    "by_split_label": {},
+    "ids": {}
+  },
+  "dev_touches_training": {
+    "count": 0,
+    "by_split_label": {},
+    "ids": {}
+  },
+  "existing_training_texts": 119719,
+  "drops": [],
+  "kept_by_split_label": {
+    "train:0": 430,
+    "train:1": 100,
+    "validation:0": 80,
+    "validation:1": 20,
+    "test:0": 90,
+    "test:1": 30
+  }
+}

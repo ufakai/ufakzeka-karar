@@ -1,0 +1,121 @@
+{
+  "set": "xcopa_tr",
+  "dataset": {
+    "name": "xcopa_tr",
+    "title": "XCOPA, Turkish",
+    "repo": "cambridgeltl/xcopa",
+    "revision": "042f78955ba48e6404616762fa6e05e839c3907a",
+    "url": "https://huggingface.co/datasets/cambridgeltl/xcopa",
+    "licence_as_shown": "license: cc-by-4.0 (card metadata); \"Creative Commons Attribution 4.0 International (CC BY 4.0)\" (card, Licensing Information)",
+    "licence_id": "CC-BY-4.0",
+    "split": "test",
+    "phrasing": "choice of two: state = the premise; instructions = \"Bunun sebebi hangisi?\" (question cause) or \"Bunun sonucu hangisi?\" (effect); criteria = the two alternative sentences as keys",
+    "cetvel_task": "xcopa_tr",
+    "notes": [],
+    "gated": false
+  },
+  "items_kept_after_overlap": 500,
+  "overlap_dropped": 0,
+  "build_file": "results/step9/external/xcopa_tr.build.json",
+  "limit": null,
+  "model": {
+    "run": "r3-base-s2",
+    "weights": "models/r3-base-s2/model.pt",
+    "weights_sha256": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "calibrator": "results/step7/r3-base-s2/calibrator.json",
+    "calibrator_sha256": "a7a4d40c6a478d052b35394db92d30ecbddaaf9f43ed232b1ff06f6547f17b23",
+    "calibrator_fitted_on": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "temperatures": {
+      "form": "type",
+      "global": 1.282035163790311,
+      "type": {
+        "choice": 1.2340743633576456,
+        "noul": 1.4003216897042885,
+        "score": 1.0507197734004332
+      }
+    },
+    "path": "bench/adapters/karar.py answer, fp32 torch, CPU, batched passes",
+    "weights_sha256_in_container": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8"
+  },
+  "runtime": {
+    "container": "Modal CPU, 32 physical cores (request and limit), 32768 MiB",
+    "host": "Linux x86_64 ",
+    "threads": 32,
+    "load_seconds": 15.0,
+    "prepare_seconds": 33.7,
+    "function_seconds": 2725.8,
+    "padded_tokens": 4559610,
+    "estimated_usd": 1.336,
+    "set_seconds": 9.0,
+    "set_padded_tokens": 16728
+  },
+  "unanswered": [],
+  "results": {
+    "questions": 500,
+    "metrics": {
+      "accuracy": {
+        "value": 0.562,
+        "interval": [
+          0.518,
+          0.604
+        ]
+      },
+      "brier": {
+        "value": 0.6016034587557898,
+        "interval": [
+          0.5503454949158826,
+          0.657604411142177
+        ]
+      },
+      "smooth_ece": {
+        "value": 0.1956196996217542,
+        "interval": [
+          0.15571644027101897,
+          0.24313217013250252
+        ]
+      }
+    },
+    "random_baseline_accuracy": 0.5,
+    "per_group_accuracy": {
+      "cause": {
+        "n": 199,
+        "accuracy": 0.6180904522613065,
+        "wilson_95": [
+          0.548955152194076,
+          0.6827529032459349
+        ]
+      },
+      "effect": {
+        "n": 301,
+        "accuracy": 0.5249169435215947,
+        "wilson_95": [
+          0.46854361564247304,
+          0.5806622897978396
+        ]
+      }
+    },
+    "definitions": {
+      "accuracy": "share of questions whose most probable option is the gold one",
+      "macro_f1": "unweighted mean F1 over the gold and predicted classes (bench/metrics.py)",
+      "brier": "sum over options of the squared error of the served probabilities, 0 to 2",
+      "smooth_ece": "top-label smooth ECE of the served maximum probability (relplot, arXiv 2309.12236)",
+      "intervals": "2.5 and 97.5 percentiles of 2000 bootstrap draws over items, seed 0",
+      "random_baseline_accuracy": "mean over questions of 1/k, k the number of options",
+      "per_group_accuracy": "accuracy per category with a 95 percent Wilson interval"
+    }
+  },
+  "code": {
+    "git_head": "1e3f5f40f2e46b6e62508929c63688d01dfc4790",
+    "tree_clean": false,
+    "code_sha256": {
+      "bench/external.py": "c7fb13b6a6031a2319d69b6f5dbcf9bb864f9fce9744051d7d01e71ea2c424ef",
+      "bench/modal_external.py": "8cc27ce659f78d1e9a632ed10bfb5e5cff5ce7d3eee61afdc921eb8854930c4e",
+      "bench/adapters/karar.py": "41889e5a0437093a940aec18c1d5e3d0367bd70f80f7ffbeb492891e8e52035b",
+      "model/head/pack.py": "7fc61f500f9348a495848bcd34c32dd10be0f99994c8d360606bd8fbfc2c44df",
+      "model/head/infer.py": "5bd3d5ce3112cab5350d33ac6850df3dcf08180a37b22df5d1cdaa980d924c7a",
+      "model/head/head.py": "794e3d61a6322b1c4700112a9f1ecd2de33495be5910385ef7998a7988a18f9b"
+    }
+  },
+  "rows_file": "xcopa_tr-r3-base-s2.rows.jsonl",
+  "rows_sha256": "23d462a2fd5954ecf8e9cb3ec59ec7c5dfee55705706b0c189fbb9e1fb53ec0b"
+}

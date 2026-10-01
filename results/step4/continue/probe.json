@@ -1,0 +1,39 @@
+{
+  "gpu": "H100",
+  "objective": "clm",
+  "measured_at": "2026-09-24T09:15:41Z",
+  "steps": 12,
+  "results": [
+    {
+      "engine": "native",
+      "micro_batch": 16,
+      "attn_implementation": "sdpa",
+      "compile": true,
+      "mask_documents": true,
+      "fused": true,
+      "tokens_per_second": 150497,
+      "peak_gib": 28.38,
+      "final_loss": 2.881474018096924
+    },
+    {
+      "engine": "native",
+      "micro_batch": 32,
+      "attn_implementation": "sdpa",
+      "compile": true,
+      "mask_documents": true,
+      "fused": true,
+      "tokens_per_second": 164357,
+      "peak_gib": 54.14,
+      "final_loss": 2.8814470767974854
+    },
+    {
+      "engine": "native",
+      "micro_batch": 48,
+      "attn_implementation": "sdpa",
+      "compile": true,
+      "mask_documents": true,
+      "fused": true,
+      "error": "CUDA out of memory. Tried to allocate 7.48 GiB. GPU 0 has a total capacity of 79.18 GiB of which 6.01 GiB is free. Process 1 has 73.16 GiB memory in use. Of the allocated memory 72.24 GiB is allocated"
+    }
+  ]
+}

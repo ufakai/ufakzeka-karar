@@ -1,0 +1,78 @@
+{
+  "run": "r1-main-s1",
+  "build": {
+    "sample": 3749,
+    "calibration": 100,
+    "head": "/vol/round1/runs/r1-main-s1/model.pt",
+    "fp32_bytes": 735332336
+  },
+  "fp32_onnx": {
+    "engine": "fp32",
+    "engine_scores": {
+      "questions": 3749,
+      "accuracy": 0.8557,
+      "brier": 0.1775,
+      "ece": 0.0371,
+      "macro_f1_mean_over_tasks": 0.7198
+    },
+    "torch_fp32_scores": {
+      "questions": 3749,
+      "accuracy": 0.8557,
+      "brier": 0.1775,
+      "ece": 0.0371,
+      "macro_f1_mean_over_tasks": 0.7198
+    },
+    "answers_changed_vs_fp32": 0,
+    "points_lost": {
+      "accuracy": 0.0,
+      "macro_f1_mean_over_tasks": 0.0
+    },
+    "ece_points_added": 0.0
+  },
+  "int8_dynamic": {
+    "engine": "int8-dynamic",
+    "engine_scores": {
+      "questions": 3749,
+      "accuracy": 0.8541,
+      "brier": 0.1787,
+      "ece": 0.0323,
+      "macro_f1_mean_over_tasks": 0.7232
+    },
+    "torch_fp32_scores": {
+      "questions": 3749,
+      "accuracy": 0.8557,
+      "brier": 0.1775,
+      "ece": 0.0371,
+      "macro_f1_mean_over_tasks": 0.7198
+    },
+    "answers_changed_vs_fp32": 37,
+    "points_lost": {
+      "accuracy": 0.16,
+      "macro_f1_mean_over_tasks": -0.34
+    },
+    "ece_points_added": -0.48
+  },
+  "int8_dynamic_per_channel": {
+    "engine": "int8-dynamic-per-channel",
+    "engine_scores": {
+      "questions": 3749,
+      "accuracy": 0.8546,
+      "brier": 0.1787,
+      "ece": 0.0346,
+      "macro_f1_mean_over_tasks": 0.7243
+    },
+    "torch_fp32_scores": {
+      "questions": 3749,
+      "accuracy": 0.8557,
+      "brier": 0.1775,
+      "ece": 0.0371,
+      "macro_f1_mean_over_tasks": 0.7198
+    },
+    "answers_changed_vs_fp32": 37,
+    "points_lost": {
+      "accuracy": 0.11,
+      "macro_f1_mean_over_tasks": -0.45
+    },
+    "ece_points_added": -0.25
+  }
+}

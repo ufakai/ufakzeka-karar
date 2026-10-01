@@ -1,0 +1,39 @@
+{
+  "run": "r2-base-s1",
+  "build": {
+    "sample": 45,
+    "calibration": 0,
+    "head": "/vol/round1/runs/r2-base-s1/model.pt",
+    "fp32_bytes": 735332336
+  },
+  "quantized": {
+    "heads_excluded": [
+      "node_MatMul_3399"
+    ],
+    "abstain_gemm_left_fp32": [
+      "node_Gemm_4492"
+    ],
+    "int8-matmul": {
+      "bytes": 282016736,
+      "integer_products": 169,
+      "fp32_products_left": 51,
+      "embeddings_fp32": true
+    },
+    "int8-matmul-per-channel": {
+      "bytes": 282847020,
+      "integer_products": 169,
+      "fp32_products_left": 51,
+      "embeddings_fp32": true
+    }
+  },
+  "outputs": {
+    "rows": 18282,
+    "engines": [
+      "fp32",
+      "int8-dynamic",
+      "int8-matmul",
+      "int8-matmul-per-channel"
+    ],
+    "seconds": 5850.9
+  }
+}

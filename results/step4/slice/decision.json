@@ -1,0 +1,33 @@
+{
+  "tasks": [
+    "massive_tr",
+    "mide22",
+    "offenseval_tr"
+  ],
+  "rows_per_task": {
+    "massive_tr": 1981,
+    "mide22": 506,
+    "offenseval_tr": 3174
+  },
+  "seeds": {
+    "converted": 3,
+    "causal": 3
+  },
+  "difference": -0.016772686009613975,
+  "interval": [
+    -0.03888445455084019,
+    0.003273351337820315
+  ],
+  "verdict": "not above zero: keep the causal backbone",
+  "converted_runs": [
+    "converted-last-lr1e-4-s1",
+    "converted-last-lr1e-4-s2",
+    "converted-last-lr1e-4-s3"
+  ],
+  "causal_runs": [
+    "causal-mean-lr1e-4-s1",
+    "causal-mean-lr1e-4-s2",
+    "causal-mean-lr1e-4-s3"
+  ],
+  "rule": "Keep the converted backbone only if the whole 95 percent interval lies above zero"
+}

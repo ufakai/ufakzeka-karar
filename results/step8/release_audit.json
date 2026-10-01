@@ -1,0 +1,432 @@
+{
+ "items": 2920,
+ "per_half": {
+  "private": 1722,
+  "public": 1198
+ },
+ "findings": {
+  "hygiene/unknown_bracket": 9,
+  "language/not_turkish": 3
+ },
+ "duplicates": {
+  "exact": 0,
+  "near": 3,
+  "shared_8gram_across_halves": 1
+ },
+ "public_build_leaks": {},
+ "parliament_by_party": {
+  "CHP": {
+   "public": 59,
+   "private": 49,
+   "checkable": 48,
+   "asked": 105,
+   "checkable_share": 0.457,
+   "interval": [
+    0.3651,
+    0.5523
+   ]
+  },
+  "AKP": {
+   "public": 43,
+   "private": 34,
+   "checkable": 34,
+   "asked": 77,
+   "checkable_share": 0.442,
+   "interval": [
+    0.3361,
+    0.5526
+   ]
+  },
+  "MHP": {
+   "public": 24,
+   "private": 22,
+   "checkable": 18,
+   "asked": 46,
+   "checkable_share": 0.391,
+   "interval": [
+    0.2639,
+    0.5354
+   ]
+  },
+  "HDP": {
+   "public": 22,
+   "private": 20,
+   "checkable": 24,
+   "asked": 42,
+   "checkable_share": 0.571,
+   "interval": [
+    0.4221,
+    0.7088
+   ]
+  },
+  "IYI": {
+   "public": 18,
+   "private": 9,
+   "checkable": 16,
+   "asked": 27,
+   "checkable_share": 0.593,
+   "interval": [
+    0.4073,
+    0.7549
+   ]
+  },
+  "BAG": {
+   "public": 3,
+   "private": 2,
+   "checkable": 3,
+   "asked": 5,
+   "checkable_share": 0.6,
+   "interval": [
+    0.2307,
+    0.8824
+   ]
+  }
+ },
+ "label_findings": [
+  {
+   "track": "egitim",
+   "qid": "cevap_puani",
+   "half": "public",
+   "option": "3",
+   "leaky_feature": "length",
+   "balanced_accuracy": 0.814
+  },
+  {
+   "track": "egitim",
+   "qid": "ders",
+   "half": "public",
+   "option": "matematik",
+   "leaky_feature": "digit",
+   "balanced_accuracy": 0.782
+  },
+  {
+   "track": "hukuk",
+   "qid": "aym_rights",
+   "half": "public",
+   "option": "mülkiyet hakkı",
+   "leaky_feature": "length",
+   "balanced_accuracy": 0.81
+  },
+  {
+   "track": "hukuk",
+   "qid": "basvuru_yeri",
+   "half": "public",
+   "option": "tüketici mahkemesi ya da hakem heyeti",
+   "leaky_feature": "company_mask",
+   "balanced_accuracy": 0.813
+  },
+  {
+   "track": "spam",
+   "qid": "mesaj_turu",
+   "half": "public",
+   "option": "kişisel yazışma",
+   "leaky_feature": "question_mark",
+   "balanced_accuracy": 0.866
+  },
+  {
+   "track": "sss",
+   "qid": "insan_destegi-choice",
+   "half": "public",
+   "option": "acil yönlendirme",
+   "leaky_feature": "length",
+   "balanced_accuracy": 0.75
+  }
+ ],
+ "label_shares": {
+  "arama/webfaq_relevance": {
+   "private": {
+    "n": 295
+   }
+  },
+  "dogrulama/dogrulanabilir": {
+   "public": {
+    "n": 169,
+    "shares": {
+     "false": 0.574,
+     "true": 0.426
+    },
+    "best_single_feature": {
+     "feature": "digit",
+     "balanced_accuracy": 0.653,
+     "option": "true"
+    }
+   },
+   "private": {
+    "n": 133,
+    "distance": 0.108
+   }
+  },
+  "dogrulama/kontrol_onceligi": {
+   "public": {
+    "n": 166,
+    "shares": {
+     "0": 0.566,
+     "1": 0.133,
+     "2": 0.259,
+     "3": 0.042
+    },
+    "best_single_feature": {
+     "feature": "digit",
+     "balanced_accuracy": 0.652,
+     "option": "0"
+    }
+   },
+   "private": {
+    "n": 134,
+    "distance": 0.117
+   }
+  },
+  "egitim/cevap_puani": {
+   "public": {
+    "n": 160,
+    "shares": {
+     "0": 0.231,
+     "1": 0.2,
+     "2": 0.188,
+     "3": 0.381
+    },
+    "best_single_feature": {
+     "feature": "length",
+     "balanced_accuracy": 0.814,
+     "option": "3"
+    }
+   },
+   "private": {
+    "n": 160,
+    "distance": 0.081
+   }
+  },
+  "egitim/ders": {
+   "public": {
+    "n": 160,
+    "shares": {
+     "Biyoloji": 0.125,
+     "Coğrafya": 0.125,
+     "Felsefe": 0.125,
+     "Fizik": 0.125,
+     "Kimya": 0.125,
+     "Matematik": 0.125,
+     "Tarih": 0.125,
+     "Türkçe": 0.125
+    },
+    "best_single_feature": {
+     "feature": "digit",
+     "balanced_accuracy": 0.782,
+     "option": "matematik"
+    }
+   },
+   "private": {
+    "n": 160,
+    "distance": 0.05
+   }
+  },
+  "guvenlik/prompt_injection": {
+   "public": {
+    "n": 221,
+    "shares": {
+     "false": 0.475,
+     "true": 0.525
+    },
+    "best_single_feature": {
+     "feature": "placeholder",
+     "balanced_accuracy": 0.583,
+     "option": "true"
+    }
+   },
+   "private": {
+    "n": 197,
+    "distance": 0.012
+   }
+  },
+  "hukuk/aym_rights": {
+   "public": {
+    "n": 92,
+    "shares": {
+     "adil yargılanma (ceza davaları)": 0.087,
+     "adil yargılanma (hukuk ve idare davaları)": 0.293,
+     "başka bir hak": 0.065,
+     "ifade özgürlüğü": 0.098,
+     "kişi özgürlüğü ve güvenliği": 0.033,
+     "maddi ve manevi varlığın korunması": 0.043,
+     "mülkiyet hakkı": 0.13,
+     "toplanma, örgütlenme ve sendika hakları": 0.043,
+     "yaşam hakkı ya da kötü muamele yasağı": 0.152,
+     "özel hayatın ve aile hayatının korunması": 0.054
+    },
+    "best_single_feature": {
+     "feature": "length",
+     "balanced_accuracy": 0.81,
+     "option": "mülkiyet hakkı"
+    }
+   },
+   "private": {
+    "n": 89,
+    "distance": 0.215
+   }
+  },
+  "hukuk/basvuru_yeri": {
+   "public": {
+    "n": 64,
+    "shares": {
+     "Aile mahkemesi": 0.109,
+     "Asliye hukuk mahkemesi": 0.094,
+     "Asliye ticaret mahkemesi": 0.109,
+     "Savcılığa suç duyurusu": 0.109,
+     "Sulh hukuk mahkemesi": 0.125,
+     "Tüketici mahkemesi ya da hakem heyeti": 0.109,
+     "İcra hukuk mahkemesi": 0.109,
+     "İdare mahkemesi": 0.125,
+     "İş mahkemesi": 0.109
+    },
+    "best_single_feature": {
+     "feature": "company_mask",
+     "balanced_accuracy": 0.813,
+     "option": "tüketici mahkemesi ya da hakem heyeti"
+    }
+   },
+   "private": {
+    "n": 63,
+    "distance": 0.029
+   }
+  },
+  "moderasyon/offenseval_tr": {
+   "public": {
+    "n": 176,
+    "shares": {
+     "false": 0.511,
+     "true": 0.489
+    },
+    "best_single_feature": {
+     "feature": "length",
+     "balanced_accuracy": 0.582,
+     "option": "true"
+    }
+   },
+   "private": {
+    "n": 327,
+    "distance": 0.263
+   }
+  },
+  "spam/mesaj_turu": {
+   "public": {
+    "n": 153,
+    "shares": {
+     "dolandırıcılık": 0.157,
+     "istenmeyen reklam": 0.373,
+     "izinli pazarlama": 0.046,
+     "işlem bildirimi": 0.222,
+     "kişisel yazışma": 0.203
+    },
+    "best_single_feature": {
+     "feature": "question_mark",
+     "balanced_accuracy": 0.866,
+     "option": "kişisel yazışma"
+    }
+   },
+   "private": {
+    "n": 154,
+    "distance": 0.049
+   }
+  },
+  "spam/oltalama": {
+   "public": {
+    "n": 153,
+    "shares": {
+     "false": 0.817,
+     "true": 0.183
+    },
+    "best_single_feature": {
+     "feature": "length",
+     "balanced_accuracy": 0.591,
+     "option": "true"
+    }
+   },
+   "private": {
+    "n": 154,
+    "distance": 0.018
+   }
+  },
+  "sss/hassasiyet-noul": {
+   "public": {
+    "n": 163,
+    "shares": {
+     "false": 0.436,
+     "true": 0.564
+    },
+    "best_single_feature": {
+     "feature": "length",
+     "balanced_accuracy": 0.678,
+     "option": "true"
+    }
+   },
+   "private": {
+    "n": 300,
+    "distance": 0.197
+   }
+  },
+  "sss/insan_destegi-choice": {
+   "public": {
+    "n": 163,
+    "shares": {
+     "Acil yönlendirme": 0.215,
+     "Yönlendirme gereksiz": 0.282,
+     "İsteğe bağlı yönlendirme": 0.503
+    },
+    "best_single_feature": {
+     "feature": "length",
+     "balanced_accuracy": 0.75,
+     "option": "acil yönlendirme"
+    }
+   },
+   "private": {
+    "n": 301,
+    "distance": 0.25
+   }
+  },
+  "sss/yanit_yeterliligi-choice": {
+   "public": {
+    "n": 163,
+    "shares": {
+     "Kapsamlı çözüm": 0.282,
+     "Kısmi yönlendirme": 0.472,
+     "İlgisiz içerik": 0.245
+    },
+    "best_single_feature": {
+     "feature": "digit",
+     "balanced_accuracy": 0.643,
+     "option": "kapsamlı çözüm"
+    }
+   },
+   "private": {
+    "n": 301,
+    "distance": 0.242
+   }
+  },
+  "sss/yanit_yeterliligi-score": {
+   "public": {
+    "n": 163,
+    "shares": {
+     "0": 0.245,
+     "1": 0.466,
+     "2": 0.288
+    },
+    "best_single_feature": {
+     "feature": "digit",
+     "balanced_accuracy": 0.634,
+     "option": "2"
+    }
+   },
+   "private": {
+    "n": 301,
+    "distance": 0.237
+   }
+  }
+ },
+ "findings_open": {},
+ "duplicates_open": {
+  "exact": 0,
+  "shared_8gram_across_halves": 0
+ },
+ "blocking": [],
+ "label_findings_private": 10
+}

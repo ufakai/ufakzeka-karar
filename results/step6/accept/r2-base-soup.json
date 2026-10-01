@@ -1,0 +1,121 @@
+{
+  "arm": [
+    "r2-base-soup"
+  ],
+  "against": [
+    "r2-base-s1",
+    "r2-base-s2",
+    "r2-base-s3"
+  ],
+  "primary_heldout_macro_f1": {
+    "tasks": [
+      "hassasiyet-noul-28b86c9b",
+      "hassasiyet-noul-65a086df",
+      "hassasiyet-noul-6dfaef19",
+      "hassasiyet-noul-c4bdbbf5",
+      "insan_destegi-choice-7a9ba20b",
+      "insan_destegi-choice-eebbb2d5",
+      "yanit_yeterliligi-choice-05ff2c21",
+      "yanit_yeterliligi-choice-35fd4eb1",
+      "yanit_yeterliligi-choice-3ce2909f",
+      "yanit_yeterliligi-choice-6a332f36",
+      "yanit_yeterliligi-choice-8ada0c99",
+      "yanit_yeterliligi-choice-a1784c9f",
+      "yanit_yeterliligi-choice-ba29aa4a",
+      "yanit_yeterliligi-score-7dc5afd2"
+    ],
+    "rows_per_task": {
+      "hassasiyet-noul-28b86c9b": 241,
+      "hassasiyet-noul-65a086df": 120,
+      "hassasiyet-noul-6dfaef19": 54,
+      "hassasiyet-noul-c4bdbbf5": 57,
+      "insan_destegi-choice-7a9ba20b": 137,
+      "insan_destegi-choice-eebbb2d5": 102,
+      "yanit_yeterliligi-choice-05ff2c21": 115,
+      "yanit_yeterliligi-choice-35fd4eb1": 279,
+      "yanit_yeterliligi-choice-3ce2909f": 71,
+      "yanit_yeterliligi-choice-6a332f36": 304,
+      "yanit_yeterliligi-choice-8ada0c99": 284,
+      "yanit_yeterliligi-choice-a1784c9f": 224,
+      "yanit_yeterliligi-choice-ba29aa4a": 218,
+      "yanit_yeterliligi-score-7dc5afd2": 105
+    },
+    "seeds": {
+      "converted": 1,
+      "causal": 3
+    },
+    "difference": 0.009113468349759398,
+    "interval": [
+      -0.015311082804429348,
+      0.031014207379473534
+    ]
+  },
+  "secondaries": {
+    "brier_choice": {
+      "difference": 0.026489315742873804,
+      "interval": [
+        0.02315961866975166,
+        0.029871359334451324
+      ],
+      "p": 0.0
+    },
+    "smooth_ece_choice": {
+      "difference": 0.08556465917617007,
+      "interval": [
+        0.0739965465417128,
+        0.09233019850024048
+      ],
+      "p": 0.0
+    },
+    "brier_noul": {
+      "difference": 0.02247445695969727,
+      "interval": [
+        0.01900672160429261,
+        0.025940316120762967
+      ],
+      "p": 0.0
+    },
+    "smooth_ece_noul": {
+      "difference": 0.07765012415331381,
+      "interval": [
+        0.06552047145388404,
+        0.08506889691099048
+      ],
+      "p": 0.0
+    },
+    "brier_score": {
+      "difference": 0.053026775746724736,
+      "interval": [
+        0.04502171559399239,
+        0.06110414094086316
+      ],
+      "p": 0.0
+    },
+    "smooth_ece_score": {
+      "difference": 0.13505607831858396,
+      "interval": [
+        0.1185777865910669,
+        0.1506783948302481
+      ],
+      "p": 0.0
+    },
+    "dev_macro_f1_loss": {
+      "difference": -0.0008856682769725621,
+      "interval": [
+        -0.03779404782547669,
+        0.024779565268527953
+      ],
+      "p": 0.715
+    }
+  },
+  "primary_wins": false,
+  "secondaries_worse_after_holm": [
+    "brier_choice",
+    "brier_noul",
+    "brier_score",
+    "smooth_ece_choice",
+    "smooth_ece_noul",
+    "smooth_ece_score"
+  ],
+  "accepted": false
+}

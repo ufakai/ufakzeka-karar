@@ -1,0 +1,20 @@
+{
+  "berturk": {
+    "adding_an_option_moves_others_by": 5.960464477539063e-08,
+    "reordering_moves_scores_by": 0.0,
+    "positions_honoured": true,
+    "passes": true
+  },
+  "tabibert": {
+    "adding_an_option_moves_others_by": 2.1010637283325195e-06,
+    "reordering_moves_scores_by": 0.0,
+    "positions_honoured": true,
+    "passes": true
+  },
+  "moganbert": {
+    "adding_an_option_moves_others_by": 3.2782554626464844e-07,
+    "reordering_moves_scores_by": 0.0,
+    "positions_honoured": true,
+    "passes": true
+  }
+}

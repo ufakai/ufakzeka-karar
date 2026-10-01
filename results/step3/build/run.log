@@ -1,0 +1,50 @@
+{
+  "templates": {
+    "failed_check": 73,
+    "ready": 134
+  },
+  "template_status": {
+    "judges_disagree": 6,
+    "complete": 41,
+    "skewed": 12,
+    "answerable_blind": 31,
+    "rarely_applies": 11,
+    "low_variance": 32,
+    "active": 1
+  },
+  "held_out_cells": [
+    "hassasiyet-noul",
+    "insan_destegi-choice",
+    "yanit_yeterliligi-choice",
+    "yanit_yeterliligi-score"
+  ],
+  "held_out_templates": 30,
+  "pair_outcomes": {
+    "labelled": 6241,
+    "out_of_scope": 853,
+    "failed:LowLabelMass": 64,
+    "no_fit": 52,
+    "low_mass": 4,
+    "failed:TypeError": 1
+  },
+  "pairs_labelled_or_judged": 7215,
+  "low_mass_by_judge": {
+    "C": 4
+  },
+  "retried_by_judge": {
+    "C": 16,
+    "A": 1
+  },
+  "transient_errors": 5,
+  "rows_by_split": {
+    "train": 3083,
+    "validation": 846,
+    "heldout_task": 766
+  },
+  "rows": 4695,
+  "surplus": 235,
+  "nofit": 52,
+  "unused_rows_of_stopped_templates": 1311,
+  "spent_usd": 2.5585,
+  "usd_per_row": 0.00054
+}

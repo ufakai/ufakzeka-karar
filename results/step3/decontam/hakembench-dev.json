@@ -1,0 +1,257 @@
+{
+  "reference": "hakembench-dev-v0",
+  "per_row": [
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "d6a207bce5af5b3b16713953",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "bfe9a5f65cf7301c4511a8c4",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "da8c20814b384e803033a6e6",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "3ebe6ac51626c3d8ce1c1c58",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "a020a3b6f78bf13ed4cda425",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "5e3521bccb112c21f5224742",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "e57305b0eff2def19f6262aa",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "7bf56a86d917cec921e12d0d",
+      "rule": "covers",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "7ddd40b5cd65a46727f14882",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "e20d9777acbf528d3c45f27c",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "bb9e74b76e9b7fd02ccdf6b6",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "44d7d3ceab0f2fc035ecd97b",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "33fb2a2e60f0af8cef823eed",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "d515795a6de4af368ab66a92",
+      "rule": "covers",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "17484875c36f7c735d0ffef4",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "428152b79c04a889e0221f58",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "c188cddbacce1eb7d300677b",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "69e65b0f5377c946beae1814",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "b0205b8b7ac6be7bebdf2698",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "49873fae8762313226b8aee8",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "0bc3480d366cc61c209337b8",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "48b58f19b01b4128f46421e5",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "18f65f5f8525f045f3356fcf",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "4e89520881628af9aa73df28",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "d3533b536fc38bd767bfcbb3",
+      "rule": "covers",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "7a361191f364915754005e8b",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "a03df8b0540d64d8f1e1214e",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "acd5b1c874a00780ea25f95d",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "fa79c0c15f35e2f2d2407320",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "8461f87cad7acc024645e579",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "d81f6743035b9c62e1b30a40",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "46a64a106ef6013f409cb94c",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "39ff80f2b8815ef2cca2316e",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "f40fee6c5ced5114843a5ebb",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "cbd601098766c5ae5af05472",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "575a81c89c4538fcf8e74372",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "045a761f15b1061b38b75412",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/sss/train.jsonl",
+      "row_id": "53d830310d5fc3dfb5167931",
+      "rule": "covers",
+      "flagged": true
+    },
+    {
+      "file": "data/built/typed/webfaq_relevance/train.jsonl",
+      "row_id": "03fe3f5f41c1d78806a2f300",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/typed/webfaq_relevance/train.jsonl",
+      "row_id": "3d6ae49a2fad187fa8716f0f",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/typed/webfaq_relevance/train.jsonl",
+      "row_id": "c4348fabbd35d7b0410614c1",
+      "rule": "ngram",
+      "flagged": true
+    },
+    {
+      "file": "data/built/typed/webfaq_relevance/train.jsonl",
+      "row_id": "3b47bc6b8d35b068d03a7b1c",
+      "rule": "ngram",
+      "flagged": true
+    }
+  ]
+}

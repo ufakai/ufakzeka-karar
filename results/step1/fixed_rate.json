@@ -1,0 +1,160 @@
+{
+  "massive_tr": {
+    "berturk": {
+      "fixed_rate": 3e-05,
+      "status": "compared",
+      "systems": [
+        {
+          "beats_reference": null,
+          "difference": null,
+          "high": null,
+          "low": null,
+          "mean": 0.8427598874943545,
+          "per_seed": [
+            0.840502581485892,
+            0.8379745759741293,
+            0.8413523291815499,
+            0.8507478408398464,
+            0.8432221099903553
+          ],
+          "system": "tuned",
+          "tie": null
+        },
+        {
+          "beats_reference": false,
+          "difference": -0.015431387283090792,
+          "high": 0.007561870376166239,
+          "low": -0.02961530826151383,
+          "mean": 0.8273285002112637,
+          "per_seed": [
+            0.8291562658831441,
+            0.8397948726560202,
+            0.8223791661738975,
+            0.8362533996259165,
+            0.8090587967173405
+          ],
+          "system": "fixed",
+          "tie": false
+        }
+      ],
+      "tuned_rate": 8e-05
+    },
+    "moganbert": {
+      "fixed_rate": 3e-05,
+      "status": "compared",
+      "systems": [
+        {
+          "beats_reference": null,
+          "difference": null,
+          "high": null,
+          "low": null,
+          "mean": 0.8465008608707055,
+          "per_seed": [
+            0.8508375660406068,
+            0.8360907847322205,
+            0.84695552299814,
+            0.8473591017247156,
+            0.8512613288578454
+          ],
+          "system": "tuned",
+          "tie": null
+        },
+        {
+          "beats_reference": false,
+          "difference": -0.030597785167665648,
+          "high": -0.011853757291174473,
+          "low": -0.045871922630762625,
+          "mean": 0.8159030757030399,
+          "per_seed": [
+            0.8239296070759992,
+            0.8158103387449822,
+            0.8053094812706577,
+            0.8242589630990105,
+            0.8102069883245504
+          ],
+          "system": "fixed",
+          "tie": false
+        }
+      ],
+      "tuned_rate": 0.0003
+    },
+    "tabibert": {
+      "fixed_rate": 3e-05,
+      "status": "compared",
+      "systems": [
+        {
+          "beats_reference": null,
+          "difference": null,
+          "high": null,
+          "low": null,
+          "mean": 0.845928956260426,
+          "per_seed": [
+            0.8436194503580328,
+            0.8439061797652518,
+            0.8439643778893822,
+            0.846976622765056,
+            0.8511781505244068
+          ],
+          "system": "tuned",
+          "tie": null
+        },
+        {
+          "beats_reference": false,
+          "difference": -0.02313178129857274,
+          "high": -0.004599896826587704,
+          "low": -0.039545476010571984,
+          "mean": 0.8227971749618532,
+          "per_seed": [
+            0.8046872199159228,
+            0.8360935181654862,
+            0.8246669449441109,
+            0.8189596239757436,
+            0.8295785678080029
+          ],
+          "system": "fixed",
+          "tie": false
+        }
+      ],
+      "tuned_rate": 0.0001
+    },
+    "ufakzeka": {
+      "fixed_rate": 3e-05,
+      "status": "compared",
+      "systems": [
+        {
+          "beats_reference": null,
+          "difference": null,
+          "high": null,
+          "low": null,
+          "mean": 0.8099924808015284,
+          "per_seed": [
+            0.8194399713864511,
+            0.8109929189320012,
+            0.8220402119073857,
+            0.8094760563751052,
+            0.7880132454066989
+          ],
+          "system": "tuned",
+          "tie": null
+        },
+        {
+          "beats_reference": false,
+          "difference": -0.02515346811987973,
+          "high": -0.003841737667853516,
+          "low": -0.04192329095375648,
+          "mean": 0.7848390126816487,
+          "per_seed": [
+            0.7773542227554775,
+            0.7686598698344157,
+            0.799353646041067,
+            0.7979302249505594,
+            0.7808970998267237
+          ],
+          "system": "fixed",
+          "tie": false
+        }
+      ],
+      "tuned_rate": 8e-05
+    }
+  }
+}

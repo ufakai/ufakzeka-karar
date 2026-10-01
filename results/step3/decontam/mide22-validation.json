@@ -1,0 +1,5247 @@
+{
+  "rows_file": "data/built/typed/mide22/validation.jsonl",
+  "rows": 478,
+  "flagged": 0,
+  "clean_file": null,
+  "clean_rows": 478,
+  "thresholds": {
+    "ngram": 8,
+    "row_overlap_above": 0.5,
+    "minhash_jaccard_at_least": 0.8,
+    "set_share_above": 0.02
+  },
+  "sets": {
+    "belebele_tur_latn_test": {
+      "items": 900,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "bilmecebench_test": {
+      "items": 442,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "circumflex_tr_train": {
+      "items": 70,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "exams_tr_validation": {
+      "items": 393,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "gecturk_test": {
+      "items": 20769,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "ironytr_validation": {
+      "items": 600,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "legal_nli_tr_test": {
+      "items": 3000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "massive_tr_test": {
+      "items": 2937,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "mide22_test": {
+      "items": 1014,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "mkqa_tr_train": {
+      "items": 6758,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "mlsum_tu_test": {
+      "items": 12775,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "mnli_tr_validation_matched": {
+      "items": 10000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "news_cat_test": {
+      "items": 250,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "offenseval_tr_test": {
+      "items": 3528,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "snli_tr_test": {
+      "items": 10000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "stsb_tr_test": {
+      "items": 1379,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_apps_tr_test": {
+      "items": 3765,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_bil_tweet_news_test": {
+      "items": 150,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_code_search_net_tr_test": {
+      "items": 3000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_cosqa_tr_test": {
+      "items": 500,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_fiqa_tr_test": {
+      "items": 1706,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_gender_hate_speech_test": {
+      "items": 2000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_med_nli_tr_test": {
+      "items": 1422,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_msmarco_tr_test": {
+      "items": 31692,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_multinli_tr_test": {
+      "items": 4923,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_news_cat_test": {
+      "items": 250,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_nfcorpus_tr_test": {
+      "items": 12334,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_pos_ud_boun_test": {
+      "items": 979,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_pos_ud_imst_test": {
+      "items": 1100,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_product_reviews_test": {
+      "items": 35272,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_pubmed_rct_tr_test": {
+      "items": 1500,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_quora_tr_test": {
+      "items": 15675,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_sci_cite_tr_test": {
+      "items": 1859,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_scifact_tr_test": {
+      "items": 339,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_sick_tr_test": {
+      "items": 4927,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_snli_tr_test": {
+      "items": 9824,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_stackoverflow_qa_tr_test": {
+      "items": 1994,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_stsb_tr_test": {
+      "items": 1379,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_thesis_abstract_test": {
+      "items": 1683,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_tquad2_test": {
+      "items": 2520,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_wikiann_test": {
+      "items": 10000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_wikiner_test": {
+      "items": 1000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_wmt16_tr_test": {
+      "items": 3000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tabibench_xquad_tr_test": {
+      "items": 179,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tquad_dev": {
+      "items": 892,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "tr_wikihow_summ_test": {
+      "items": 5984,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trclaim19_train": {
+      "items": 2188,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trcola_test": {
+      "items": 1000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_cola_test": {
+      "items": 1000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_mnli_test_matched": {
+      "items": 9200,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_mnli_test_mismatched": {
+      "items": 9217,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_mrpc_test": {
+      "items": 1000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_qnli_test": {
+      "items": 10000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_qqp_test": {
+      "items": 30000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_rte_test": {
+      "items": 1000,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_sst2_test": {
+      "items": 8934,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "trglue_stsb_test": {
+      "items": 300,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "turkce_atasozleri_train": {
+      "items": 1730,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "turkish_plu_goal_inference_test": {
+      "items": 837,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "turkish_plu_next_event_prediction_test": {
+      "items": 655,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "turkish_plu_step_inference_test": {
+      "items": 612,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "turkish_plu_step_ordering_test": {
+      "items": 1021,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "turkishmmlu_test": {
+      "items": 900,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "wiki_lingua_tr_test": {
+      "items": 874,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "wmt16_tr_en_validation": {
+      "items": 1001,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "xcopa_tr_test": {
+      "items": 500,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "xfact_tr_test": {
+      "items": 169,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "xlsum_tr_test": {
+      "items": 3397,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "xnli_tr_test": {
+      "items": 5010,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    },
+    "xquad_tr_validation": {
+      "items": 1190,
+      "overlapped": 0,
+      "share": 0.0,
+      "over_limit": false
+    }
+  },
+  "contaminated_sets": [],
+  "per_row": [
+    {
+      "row_id": "c8c23479c9eae0b99fea622c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "fdcbd300513f27eab6659bd2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "49c776090ebb8bd73355ea04",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "361c084121e4dee19458d0f8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "dba9fa7bdbef6c3c1a9c0b8f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c84fec90af97b9d3851ceda1",
+      "ngram_fraction": 0.2903,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-00209"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9aa4efd150574accf5aca9f0",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b45175bc4817a4eb966a2ebf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "13b48fb5ed4c127f6fc5e34d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e41ab26fc1d0e3fa0fe53c01",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "41afa0d4378f01b057e06289",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "10c6657369b2e06f6b6c79a6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6c7f114c405f2c36771a9bab",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "06733aeee45ba315767c80d3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9e9f114bde0063e342284bbe",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5b5af1d8d2f761fac0fe030e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "615131b0f63efe013ee57b68",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b48a714b8b515e6804c99ae5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d4479b82694b07e120bee750",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7c1b906c1ae422b5d93e63d1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "49eb15bd98c8384f4230b936",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3be190755e8054f6375a57d1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0572f2892d0b4c2aa1dec3ee",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0008ea83f259b65792289e4a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ed6de550870cf1d8aa31acbe",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0bc647e8ac2bf696a816d0f1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7d2d2bdf6579b339ba94b731",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "bc423c1993882814221588e4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "880e233cb349faf998ded8a3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "53d5ed822311b32267d61864",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9d1b23d97f7807bea4e7cf4b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "da27f073a945753a144a8a62",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "fe0332d5e748c8bfc086b318",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8d07c3954199980f610b965f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "bb732ebbf71828632130d24b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f8ad27489453bf0df4cbc2d5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cc4b2bd20c5f0f8de34f2e2f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ba4881b158352b1761bab9c1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7b7b2bf378c03a6cca0a686d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "12f06b8c5f7b8d7cfc926824",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b2458f47b8865659771a2463",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b975dd77ddfbbb929663d451",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ae5d2527295e821cccab9172",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7795c7e053b5fb5d8edec900",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9dcd39585511cdba55d34120",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f55c70a99fab28f28e7c58cf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6f4f10f1ffa349fc3bb721ec",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ba7a9aa1ad9966b2a423491d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6ef834042f5fcfb894a0f27b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9d8b7a8303f642cbd753a4a6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "389a96a5f62fc65bd88b0cc3",
+      "ngram_fraction": 0.5,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-00504"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5525fcc071ec41ab0a09a7bf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2da5d6a9fbbad338a10893de",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c2d977601b07955c9f64accc",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "411f271eb387c30d02dba0a0",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "84776c2226ec1716edd1a6fb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "08db3b9f732fb153db89912e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3590509ca311a54dacc2284e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b446f2e2bae9ffec9b2dc465",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f2db9a4ec88358ab6beef4e2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ab24d31eb924522481309717",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b7da7a97c35a876bb7f009fc",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7fc44685e30760a8c2e9dfab",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "bc12e67ace9011fa82af0292",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7f59b82750100bed09734d32",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "72e862bbe6149a72dc56353b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "66c27e2f3659923e2c94dfd2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d64e14ff86d849bda3e5e556",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8b511ee24a426f4480b5c09d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "4d18d41f9290124a4b5c14fb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c3e95fb5eb60b24db0373f33",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "aeb1cf0024a68b4bd994c8e4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a58bfbe706c940452fae1413",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "48e1a3d38cbaffd27a78261f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ae72a5c2e64d2588703200e7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c407568e4cc12088374a1b17",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3f2558a8e2ba41559afb295f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7850282fe3b6844605f88df7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "77b6aef2da85d7e1ce3b29f9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1108ada43b3441ccc412f07b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "31cb1f7de5b9fb0462704e53",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "94bdec8a8bd56ede91958093",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "18d9b1498ffbdecfa1b83142",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9c9ac7ecf96f0dcd16fb3270",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d5572b1369a39e002bf7f2a6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b18574e6fabfef49e95809a8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "48cf51b8a625b8bb6c60d930",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0ec6a9d7b287fb5d9b03be19",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0ec5c47fcc3c21a3f3ec4684",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "589928a4bd3d112428173567",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "22e3a0d0eb1b0b2a3565bee6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "19831a827d729b4c55340fae",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b95740f3336cff70ff287c68",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1f7cf331cf8e63880dfbb006",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a9d83b46ea390cb7a7e2806d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "85546810d1165e142a19680b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c848a0a2224600b97fe809e7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0f0cfd3494482b4922c55fc4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1590efeff3cc2c031ccd5b5e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e1d5cb41f80e25c5148c9372",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6a26b087e6165d8a0afa9ffd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1bd7e8dbd1ef55dd20cb33d2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "aefff97c3468f78392862f3a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "aeca0a82220f0b52e12825ef",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "469ff1158fdda74ca1b95936",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "84cbeee6b2fce6164d408b2d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cfb4b2e1ee6d827564aef5c3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2c8d9ebf68d0f1a187c2600d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c58b4f810a6dd36afb278653",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3100ad11cd3b723851e10f73",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "264b57b39f889d9e8a0a830a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3614e1305d6d4b59bc8f449f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1768daa231525582f751604e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f356dd9bf09f7df78d26fbcb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3fc33c63781f9c6ab387b978",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6395f61a040fdd8844780af3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5deb307c40e5a7ca6d5959d8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "81003cb8fdaa95d2275c82bb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "76684bcade98df552393050b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d45ff5ff783b78f574a350b9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "10069cce2140f6480ffb0156",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3d8aea462df692db771780fc",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "71c5d6cc951e03ae4d146530",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ffc5dc8e43a543e929fd20f7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b8253bda622ef05e9ec82332",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "4cc8b5d1a13f8211e47ea126",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "40c5579fa3d8fab25f5146fd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "807448139fa077562325e86c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b9c5598798e6b853eafd6691",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b85da4b28d0b230d173330b0",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "05360f6d9ae3d9df8312a84d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "49fbcc82fe5582e26655caa3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ec384e306ba235a5cb472c7e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "713e29c79ce72ba98bcd42af",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cf8ea953f5a9fb5ac949c563",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5bbbf1325a7e79df5abf59d5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e6fb9e714b8940759bf1c23b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "973c793af799ccf771a83231",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9e37fea291796b29f1885420",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8610254350a819d1fba914dd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f00173959d1f96bfcdeb8353",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7812a107b042f6c4f220f527",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a6fb0dc3a2cf3b2467fd4c12",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7b0429065f5102d9a4d0e32c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d0ec76db7a9e291a0c16b678",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5ef97adc56a020ec3ca76c75",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "848d0c4be0e0880112aeb91c",
+      "ngram_fraction": 0.2381,
+      "matched_ref_count": 2,
+      "matched_refs": [
+        "mide22_test:mide22-01422",
+        "mide22_test:mide22-01488"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5fb8ce579bbb0fbdeed81797",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "488e14ee1e48159cdbd921a3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9b8eeadc8c718bf9ccebb0d6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "22486137b4cceca71d210586",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d07e92bfe26445d891e6f131",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "853db9cd143886b89db74e3a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ecbd6525086b471a9b540ce4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "829f2e895bbd2df4bc34672d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "62957bc5c550340fbb616312",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "af028f62f861f4424be760c2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f3c58b7859cc6705b6f84330",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "fb72575dd50008617d6a2437",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1c338a89f1ac267ddcfc7db5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7db06b939536ec5a0469e590",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c39704afa4b6e8c7fe0ed7a6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1710b96e09bd378289c4ac56",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d0604bab23e28d30fd8afd5d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1bc0217c366cc5042b9b7f31",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c3297952c021b7231a289441",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d960dc5ee98069f4b63d76d5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ec4c05455e061984ee75470b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "530df85f7260e31dcd9e4b2f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "93ee5abae7f3da742c6ab86b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e210ae78427a8a95d7a7c911",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "826a1778ab3cd37ee1c80c85",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b0eff6772d5fac5364655a8d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a5b39738ab71fe04fcf76a2b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "258002da2a7d69c04fc303be",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7a3dda28aa93307b564b10a2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "afe2cf678462455090360ef7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "09d3e42ccde5f3664508cef2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a191ffbeb10bcd66ead0541c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e5b3769de3e3e9dc7249f0c4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3bd1e61744cec2a876469dd3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7e663093eb8e2763e016f5ec",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "4803f11bfaaa76fe73af5877",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a14d9ae3a33ef04ff5724bcd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "51668293c9006822129e6e2e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1e918df7511db8173d9c3f88",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2d1590e6b00529a95f779c0c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "62651ccd0418a0a553abdf67",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a85688beeadb3680dfec9603",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "edb0d20504104ee4594c0da9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "25d066cf94fd66509d05d3ff",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "007466236841ee1d085ef814",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "32b0ecaa2a4c1387e32860bf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6d30cd0092999a62e5f6b2c9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "eae39a6d2ec5a9a65efa1ddf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0bbf46394765b9fb64077efb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "697197319276dead8ecd50e3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6a1ce36c951984ce9211b703",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2ee00f0bd704543249c01719",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0282bb3190ea1296c7bfbe1f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "036eee8661bb6a88207c3079",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "84a015e8b3b29079055bba55",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f06500b1ace7194d7677da61",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2813421de82a19d9f7bf0e09",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "108923ce7b8d6ba26a1a1989",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "31886bab8d9523ad2ee22809",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "44ece91dfb8cda34d8728190",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "65de76b29afa9696a387804b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0b2262563cb39ad2b9bc9d2e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b3897f7a2a479ff8b87e88cf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cb5f4375ab714012cc926884",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e6c3ea68190094ff23afa0e4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2337a63ad47195547a21f94a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ada570f4d72bf67c4b67455d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9e49fd6f3111a65009bd9941",
+      "ngram_fraction": 0.2571,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-03354"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3fa1405c500263d2e9d3e714",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d3afa14e406d011f8cb2fbb8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8aba3b59f728ce2b79f02797",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8fb8ecfecc5f2954db2871d6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6eb7461e8a7a71f1170ee35b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e3cc549ba9e11818c1809b0b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "09148e42dc27e64f9ea39b51",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "29ef73e67276c9a7e4d3c34b",
+      "ngram_fraction": 0.45,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-02284"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a7586faa8a456a5215822b0a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f475eb621d1fb853e74069c5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "59b2cef27d6f2394141f135a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8981284e29bf613f842026da",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "03153a85071f1eb092bdd78e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "056f0bcf542dcaa5bd2646e5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "57e2c41c9e70b7beb221c2af",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "eb3fc2bd6fe76cfcbfc115a1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f8a153895c9d3732a96d00cf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "37a75b42c5a814e184595a96",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8af6e545f200dac4934cf90c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9fa785513f93f9899e56acac",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8eca6a99671a34bed37ed7f9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e137a732ed7ed0eaf89ab2db",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c5653aa622abd3e72e0460c9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cb74a8e642bca9efc255c55d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "4d13b36ee85d28b9488daf16",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "511e9a0d1230120ef8715247",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "939e60a21b6d4b684ceeca6f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "73353e7c422aac9071e7ea27",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9561e40e2b553a395daabf31",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "47217431fbbe7da91b0b08af",
+      "ngram_fraction": 0.2571,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-02497"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "12d8314732180ec6398cd8b9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3cbf8ce4303da562f859abbe",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "88fc5729e59b875718dce64c",
+      "ngram_fraction": 0.3214,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-02497"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5e9ba421bed1b927f9666b09",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9e773fb2e284ce28a74cf08b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7531f0b542a304ae186dff49",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ebba18f8e5003c59a9e4f9f1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "58297d92655bd4a630e8f668",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "769235ffe07ba0cd829c6cba",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "12fd6ebd5cdb502998e51b4a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b896a26a60e44262b79e1219",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "75bd1e85ba184d23ada8eee2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "16754402b80ca9ccb9365b5b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9ae74b91543cd485b1e543c5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e21fe9a0bc252d15ffcfcd32",
+      "ngram_fraction": 0.3913,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-02549"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d167d9fbac47f726be275910",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "55ebd2e90670f23c7a65b1a1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c76d0500a9b0060c64455800",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b5d4f8811fc02f77cb4ecc32",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3cbce131748dae5a4cee8c8b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "255215c60db1cedc0dc99bf8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7374f39c5e899b6d7368f546",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2098a64fd1613054f6fb79ee",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b39519c59c1abbf6aa91f448",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "dd2a8d3b5308382e0562d00e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "721e9d6877ea49e2e8ee18eb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "dbae4a557e2f8a332467a3e4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0a6cedd829100e678849ad27",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "08789aa6d00c8acda1daee50",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f71c4cf59396fba5e288b7a8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6786c51d4d91509e5143b317",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e4a541726b13140d2af98094",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8b3c30709cb27de1333b43a4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c57bf44cc285094fafc0f1a3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6c31b2394cfcec9e9fd1f061",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d49d1afa9bdc394390081235",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "55fd65f8534e887b4b1ead5b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c669329ab540116d310fe167",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d8e7cf20d3cdbacce93dbd7c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cef676bd0076c330b63d9ef6",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e592aec2d1e72743ae011f1e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c40ae3d80786e18b5b02e44c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "91e8fd533553ad3e5f3a6d00",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a0f0b4489cc6a2185860720e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "78ca5ee65cc541550fb9111f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0163a320662c2f7fdacb4d91",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cb427d333505b5342075bd87",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c6a97abf6dc5b8a0c92e4ac0",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d962f0ccd4b73b4f3db67313",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7f84578737091a68e5c238a9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "bf528a196ad660615fa7b2b8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "373cf99943c489c6cfb90abd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "45d62825ffe73dd6536b6b0e",
+      "ngram_fraction": 0.3056,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-03134"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5aac6300205f0e5419a41d6d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0c6329f91c1cbe6f1baf1532",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "47e80378b8bcd09046891a33",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "77779f9c256a96d963b4ec93",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b8539f06442dafcf70c30f3a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8182f10b4d3f1f280b65f978",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1a9bed13587043818b6a5bad",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c71123969f270cf165c0bbe8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0f2ce7a55d0b6a69faab82f1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "832197becd86e69bb3375a1a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5f2d4f761ad642d96613fad8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e256bd868465e65cd58c8f10",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e6d8db10a06d34a17f907f31",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0580ce855ebfcbd994aaddf3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3a0905a0e198a4f12a1ad6d4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "73b2152e1c3853e5e49f9fde",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "03ff2cf28fd0d6b8c515c75d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3d3c2e4175495a7db45fae7b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "107e498065ef7c9883fea9f9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cd042d468b2288e6fb2388d3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f491b73b6971ed8b1dbf7548",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "641604185b16d1cd4bfa93b2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "62691b8bc4484e0ac2779a77",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8c923ead0b9272c58ce2ed04",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cb6212d67da735efc6774ce7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "aa6eb79da5ee769478f32b6d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "692f2af6b437443e5c28b940",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0f6659a313adbb7e7f1b51c2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f6b50f5d06d2ec792af8d5cd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a0a7d0243b303d9209488279",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0a10f065554b05ca6244a64d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "032c95b78fea46db2dc816a9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "43525634a98fda2e27439814",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "545ccc6783a65837ce34d30f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d70340261940acd1a558f8a1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7f439ca6df4cd8aa62e91ebf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c5f553d937c63de4a1b84a47",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3bb79d19c360c3e73fd62d75",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7d0c07d5916234ff75e70fb9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "36a4b26e54b0d00168e2df8d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "85f57c6a88e172dd5951d852",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8a1a34eda71fd73638c0f2c2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "978a8f245f2b722338f249e3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "35f6701c57b5d050a699cd4a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3362158309464093c4023de5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "45d09f8fd1ca7975a842f44f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9ae3122c96e8b8e057058c0f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d56ecb84d6266664834665ea",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "58a71cd9cfb7ff6f9c1c3c1c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "10df9707d59abaa666aa885a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e6deab69299942410dbaadf5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1ff947f5ddfcf3676028cc11",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d5e0c0e019960f6fa0ea5623",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9422e7c5caa2918e3b511bcd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "30c0339f7eac15de52dc9a8c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8a3fd664b76316fa09d054ca",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1d6ba0764062b8b44f7932bb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "99aa3c1d94a83a83f94d1726",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a884cbb7bfbef0a3ca3eb8ce",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e43f257f1e1834001b8adce1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "369f347fe08d469906ba55eb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6fc763be9f4a975a94b3fd55",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6de810d858bc5bc503a3a8fd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8ba35508cb05b8d39613f137",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "431d15723b36410c2cddf54a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "74a4bb5cb212d5a63be7dd0a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0a8ab9a9f149f814d194c657",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b1509ddcb6221969d1215782",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "55a20034f3753b03f32c300c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "aa1c088ee6799f0e2752aa99",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "adc45d8f050fcfe424fef028",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d187e2b30e74c3f0995c5cdf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "4798de7fd6dfc52cca53bbeb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "48a37849b6e5079ca6376f80",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8fe5003130db2bf47d7d41fc",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "fc9a688378a4bc0d4362722c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "fd5681d97a52c6865d2d9058",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "93d53985f6536161ea813917",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ae8f74de871b2781d4b99d9c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "3a109c70b87f93a79a1d0109",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2b074696f991fd3f5050c765",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2083539e6c066674f54087e1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "fe6aae5f702fc66072fbfff8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5b9e2da069de492d9cd57196",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b4154f8164ae115895a91131",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1dd2506ed90f252e4f3c4e43",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a6d4c3ead757218ac6baf66e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a87829ffc9ac5a248299e60c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "553fa6792690bd520e57871a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9cb29b2e90f845eccf9a640f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2eafa27db46989af359f521d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a5f0c31fa73a50e1e7f4c5db",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "93508fa28e595bd1e072bdbe",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2016ee1ef27407640120228a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "805364e58b42bf5d2c0509cb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6648beedfc5650fa3339f828",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "007d2835773ea84af9430672",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b3ffa2e41b6b0fffdfa7bfd4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c0390b210b54cf8748fa0598",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "bbe1019f5c0f55c30d7d0df4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f3adc838fa6709980cd727e7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "836fac79c9503fc56c84a16d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e34a9ef782c39f490b0bf22a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8d3ad426e70ea5ab8f4240e7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2aa312c0f5c9df195be00b5f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b0264d2f9b6501b31fc0d57e",
+      "ngram_fraction": 0.2857,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-04261"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "be944de5575bcca077011dd7",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "74e9c536d634a4c88b1bb006",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e005378a58aeea001b2212e9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "926f2ef1dbf48bddb85f58ac",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "34c3ec021ef0845c0db2e09c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "20bcac09425c87962f724915",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a73a74b2e205141482bf14ab",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8a19376c0fc19f132c1638fc",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "da7461293804b061c94c9775",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0adfe40aab71e939fcd7fa7a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "69b8ff5502f4c294d2b16ba5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "593ee69025565067aa188f5c",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "86c497c0e2be3b2804a6e67f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "da420d007de6e5eb6f8e1cad",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "283a858e1bf00bcc9da45efe",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cdddab225cfdc3da065fb8f3",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a0bc674ad2e71eacb80a7eba",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d2d295e497d9ebc788c107b5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c158130816767c0a6b536c7a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "de23760ba4aebdec791b1780",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "ae13e25e13816da6a3efc608",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e8fbb4a2996d982fd153048d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "dd4815ce14ec391e39d83fbd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e2a78561ca3bca3aed4e2913",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "22b872d83341fd4e6111a477",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "27ff411b953d00a625af63eb",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a7a6db67f9b2b444d4d62870",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "cf795eb6eac389bd0d65b66b",
+      "ngram_fraction": 0.4138,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-04533"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "330dde93f5f2cd1c60fbb3df",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e9e867e4a01bd09a0e1759ab",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d28d93c6fdbbf71e02434cb9",
+      "ngram_fraction": 0.3871,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-04533"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "828ce79decc89f6bcf133590",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "db1e27667b44b6d7e52d25f5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6093ceec87770e9656979f53",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "8f10a201b58a8373283c8889",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5ccb27ff0cc7a16f3a91bbf2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a71732ae6d9fd4c3b119fda9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2f4d2edb990992ea9b67859a",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c5be4d61bd021d1c1230e71d",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6211a20c99a9ed46447d9dc1",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "bfb592ef3ba19683e58b1540",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "74b8238deb007f1f3212cf66",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "adf2ce1d43c1302d20c0d332",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "013bc91f3445233f394eaebf",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "523f8d51a1532ff56da8ad57",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "87f1a718287ee2bdad7387ee",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "dd0b8bb52276f2789bc8f844",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1335f7f73808fca0f3082fb8",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "2648053ee00d873a314b0226",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b026a3cda8a05856698ee2a9",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6de35420da5725be09d4eb69",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9f7901528e8d9cf63cc6b16f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "0d3fb02f3da66e87706f508f",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "f7fb2e92afe1ad255c902ec2",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "96362469f954dfb384fb2e6e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "952cbc1d36ba968166d00613",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9083a64961b16b1b71045c56",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "b00338b4ffbf4cce4a0a1e39",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c1d6fdabbc2f13f2037668ab",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "597b264c09e16c285f5d9103",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6e861be7981b8f5a676cba12",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "c53bb6e2ca99aaf38e49d7dd",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "e5592462d2e8bf176dd65ec4",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "91449e4b907991cdaa1b94aa",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "d12b1bea35fbd1cb6a64490b",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "5e2893711923749bee243036",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "22d83ce57c5adc2b90c591e5",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "82e35e67818f330b8330f596",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "7db4525dcaa701adcf4a68ec",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "9f05d91a15747bcf6bbc128b",
+      "ngram_fraction": 0.375,
+      "matched_ref_count": 1,
+      "matched_refs": [
+        "mide22_test:mide22-04885"
+      ],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "1cdb0a7e75e78bf02c410753",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "6e50fdfbde63a98168c2ff25",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "968278b9cfd49be99be06115",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    },
+    {
+      "row_id": "a9fe7e8e651b8204e0a3a35e",
+      "ngram_fraction": 0.0,
+      "matched_ref_count": 0,
+      "matched_refs": [],
+      "covers_refs": [],
+      "minhash": [],
+      "flagged": false,
+      "reasons": []
+    }
+  ],
+  "index": "/vol/decontam/index.pkl",
+  "lsh": "/vol/decontam/lsh.pkl"
+}

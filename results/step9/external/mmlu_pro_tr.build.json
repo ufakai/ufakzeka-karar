@@ -1,0 +1,100 @@
+{
+  "set": {
+    "name": "mmlu_pro_tr",
+    "title": "MMLU-Pro-TR",
+    "repo": "bezir/MMLU-pro-TR",
+    "revision": "e9ca2d4d1bb18bb8307b7f3e0fb55830cba30dc2",
+    "url": "https://huggingface.co/datasets/bezir/MMLU-pro-TR",
+    "licence_as_shown": "license: mit (card metadata at the pinned revision); upstream TIGER-Lab/MMLU-Pro, license: mit",
+    "licence_id": "MIT",
+    "split": "test",
+    "phrasing": "choice: state = the question text; criteria = one key per option, its letter and text (\"A) ...\"), no description; instructions = \"Doğru cevap hangisi?\"",
+    "cetvel_task": null,
+    "notes": [
+      "The card says the Turkish text was machine-translated from MMLU-Pro with human oversight; it is not native Turkish.",
+      "Options: 3 to 10 per question, so every question is one pass."
+    ],
+    "gated": false
+  },
+  "cetvel": null,
+  "rows_read": 11842,
+  "rows_refused": [
+    {
+      "error": "5221: answer 9 outside 3 options"
+    },
+    {
+      "error": "848: options unreadable (options are not a list)"
+    },
+    {
+      "error": "3983: answer letter and index disagree"
+    },
+    {
+      "error": "5407: options unreadable (options are not a list)"
+    }
+  ],
+  "items_built": 11838,
+  "items_kept": 11838,
+  "options_per_question": {
+    "3": 21,
+    "4": 595,
+    "5": 51,
+    "6": 89,
+    "7": 153,
+    "8": 309,
+    "9": 782,
+    "10": 9838
+  },
+  "groups": {
+    "biology": 714,
+    "business": 773,
+    "chemistry": 1125,
+    "computer science": 397,
+    "economics": 830,
+    "engineering": 965,
+    "health": 800,
+    "history": 342,
+    "law": 1086,
+    "math": 1345,
+    "other": 913,
+    "philosophy": 479,
+    "physics": 1289,
+    "psychology": 780
+  },
+  "overlap": {
+    "rule": "bench/hakembench/common.overlapping: dropped on whole (normalised equality), covered (over half the item's tokens in 8-grams the training texts share) or near_duplicate (MinHash Jaccard 0.8 on 5-token shingles); row_ngram recorded only",
+    "training_side": "every jsonl under data/built (train, validation, held-out and r4 files), texts of the state field",
+    "files": {
+      "r4/train.jsonl": "cd0d2247975c57bc49a36cdc2c464c7d8c36e1bbffdea1dd84d19776019abefa",
+      "r4/validation.jsonl": "2abdb8fb8be83549bd942bd0b20f84d5abfdda66b22dd0fc1a71c22cb7619a8b",
+      "sss/heldout_task.jsonl": "6cde6173a3e46130505e74b034d5e0eeb2bdb23e824b5e96ea57033a7ee65b9a",
+      "sss/train.jsonl": "13b8cfaa26333aa94c1e8a99b2c2bab1ca9cf716bd693c29f4a8a0f809b95a96",
+      "sss/validation.jsonl": "79ec52288dd3ed19b8382685f9094d1fa8e3b2897563769bfe9c6162f9393fb0",
+      "synth/train.jsonl": "936b9e3cc6c3d9a475bcd4b32cfe29613700eda6e3d9d52b8823f7c4f0c4f04a",
+      "synth/validation.jsonl": "3fd6901e48255b737acfee51aafb5dd2159d4cad76c678c557cc1af6bb229fc6",
+      "typed/aym_rights/train.jsonl": "df05bb74e1d926d29158a8ec128cd77b0aa010d0dc847171520a6f2b7a7ba3d1",
+      "typed/aym_rights/validation.jsonl": "e0362e263ea2b3131d6a1e46d4eb12d5298a191a49fd76c57ac12a874ffa9dae",
+      "typed/facturk_verdict/train.jsonl": "08de188d19b40803f6fdf22cebde3591fb53d37bcf7f7025199ca0128161d9e4",
+      "typed/facturk_verdict/validation.jsonl": "dda23a6b8e2b71f3e42d5dbf630c731ba3e2fa60af9316edde8117150c4744af",
+      "typed/massive_tr/train.jsonl": "4fc712171335e00e6dfaa630bc551f5700de138c4fd3900bf48bd21c80e5a35f",
+      "typed/massive_tr/validation.jsonl": "1540dbe9bc979ac6353e2858199397d05cca99660f9dcd7f806b429c4ca533a0",
+      "typed/mide22/train.jsonl": "4909e5b50622e48764a3648282b960254f93dc4592ea1001b8c988eb054cbfbf",
+      "typed/mide22/validation.jsonl": "716177cdda3b9677f09b305a4bad1d7cba62e363958ff977ed4cef7b73dc8560",
+      "typed/offenseval_tr/train.jsonl": "3e0f8210d466c8c2c93aef3e07b2522a2798e6f2c5a9bf406291d61b8167093a",
+      "typed/offenseval_tr/validation.jsonl": "7c6bcacebc4c39c080d30d32a453ef76ba71c2ca8b2b475c4dd4ccc20d82fc52",
+      "typed/prompt_injection/train.jsonl": "40cb44313cb21d3c12cfb4d1ea5d7ed4a758bccd122949a3c4e999cb3a3f6fd7",
+      "typed/prompt_injection/validation.jsonl": "19eb18c1e8d549e4a7232a4763778ff1256afe40a9a1f93b181e31e0a9b4696c",
+      "typed/webfaq_relevance/train.jsonl": "f323f214a6d15eefede778723d476ea4a4259a4b43d423da722686b2c23ae8db",
+      "typed/webfaq_relevance/validation.jsonl": "3808a58d37ea0025b754c4b7341dda2277f0c923ecdf691d3abe4891cda16ee8"
+    },
+    "items_checked": 11838,
+    "items_touched": 0,
+    "items_dropped": 0,
+    "dropped_by_rule": {},
+    "dropped": {},
+    "touched_not_dropped": {}
+  },
+  "items_file": ".cache/karar/external/mmlu_pro_tr/items.jsonl (not committed)",
+  "items_sha256": "cf2b9f4b436b5a73fda72a568d9d1b12cce32f815b47d07c76a5d6774c591a56",
+  "built": "2026-09-27T19:55:08Z",
+  "seconds": 28.4
+}

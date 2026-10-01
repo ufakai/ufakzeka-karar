@@ -1,0 +1,586 @@
+{
+  "set": "massive_tr",
+  "dataset": {
+    "name": "massive_tr",
+    "title": "MASSIVE 1.1, tr-TR intents",
+    "repo": "AmazonScience/massive",
+    "revision": "sha256:4cba5faa11c71437928e17cb1b9b3d8b8e727e7ea363a3a9a8045e19c0491577",
+    "url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz",
+    "licence_as_shown": "cc-by-4.0",
+    "licence_id": "CC-BY-4.0",
+    "split": "test",
+    "phrasing": "choice over all 59 intents with the training wording and option names (data/typed/instrument.py), answered in passes of ten; training rows carried the right intent and nine drawn distractors",
+    "cetvel_task": null,
+    "notes": [
+      "Test split as converted by data/converters/massive_tr.py (partition test)."
+    ],
+    "gated": false
+  },
+  "items_kept_after_overlap": 2937,
+  "overlap_dropped": 0,
+  "build_file": "results/step9/external/massive_tr.build.json",
+  "limit": null,
+  "model": {
+    "run": "r3-base-s2",
+    "weights": "models/r3-base-s2/model.pt",
+    "weights_sha256": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "calibrator": "results/step7/r3-base-s2/calibrator.json",
+    "calibrator_sha256": "a7a4d40c6a478d052b35394db92d30ecbddaaf9f43ed232b1ff06f6547f17b23",
+    "calibrator_fitted_on": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8",
+    "temperatures": {
+      "form": "type",
+      "global": 1.282035163790311,
+      "type": {
+        "choice": 1.2340743633576456,
+        "noul": 1.4003216897042885,
+        "score": 1.0507197734004332
+      }
+    },
+    "path": "bench/adapters/karar.py answer, fp32 torch, CPU, batched passes",
+    "weights_sha256_in_container": "aab36f09d3b92f3c64635fe3e8bb410bff79a1e0d305e8f61026ca986975c6d8"
+  },
+  "runtime": {
+    "container": "Modal CPU, 32 physical cores (request and limit), 32768 MiB",
+    "host": "Linux x86_64 ",
+    "threads": 32,
+    "load_seconds": 12.1,
+    "prepare_seconds": 23.0,
+    "function_seconds": 2263.3,
+    "padded_tokens": 4559610,
+    "estimated_usd": 1.11,
+    "set_seconds": 754.9,
+    "set_padded_tokens": 1525426
+  },
+  "unanswered": [],
+  "results": {
+    "questions": 2937,
+    "metrics": {
+      "accuracy": {
+        "value": 0.7558733401430031,
+        "interval": [
+          0.7412240381341505,
+          0.7722250595846101
+        ]
+      },
+      "brier": {
+        "value": 0.3546477357239568,
+        "interval": [
+          0.3354234589176232,
+          0.3735280059671609
+        ]
+      },
+      "smooth_ece": {
+        "value": 0.028978082052013264,
+        "interval": [
+          0.022652099506604354,
+          0.04217427474516438
+        ]
+      },
+      "macro_f1": {
+        "value": 0.7016463650796126,
+        "interval": [
+          0.6785181860390834,
+          0.7295861117491893
+        ]
+      }
+    },
+    "random_baseline_accuracy": 0.01694915254237288,
+    "per_group_accuracy": {
+      "alarm_query": {
+        "n": 34,
+        "accuracy": 0.7058823529411765,
+        "wilson_95": [
+          0.5383109006960254,
+          0.8316536940601198
+        ]
+      },
+      "alarm_remove": {
+        "n": 21,
+        "accuracy": 0.7619047619047619,
+        "wilson_95": [
+          0.5490882614178733,
+          0.8937198704460038
+        ]
+      },
+      "alarm_set": {
+        "n": 39,
+        "accuracy": 0.6923076923076923,
+        "wilson_95": [
+          0.5357874549954498,
+          0.8143406776986681
+        ]
+      },
+      "audio_volume_down": {
+        "n": 11,
+        "accuracy": 0.8181818181818182,
+        "wilson_95": [
+          0.5230194356457672,
+          0.9486323107214162
+        ]
+      },
+      "audio_volume_mute": {
+        "n": 28,
+        "accuracy": 0.5357142857142857,
+        "wilson_95": [
+          0.35812689108225854,
+          0.704684301314922
+        ]
+      },
+      "audio_volume_other": {
+        "n": 6,
+        "accuracy": 0.5,
+        "wilson_95": [
+          0.18761630498040816,
+          0.8123836950195918
+        ]
+      },
+      "audio_volume_up": {
+        "n": 13,
+        "accuracy": 0.6153846153846154,
+        "wilson_95": [
+          0.3552289133643685,
+          0.8229029231436777
+        ]
+      },
+      "calendar_query": {
+        "n": 125,
+        "accuracy": 0.56,
+        "wilson_95": [
+          0.47248060702912603,
+          0.6439415456711146
+        ]
+      },
+      "calendar_remove": {
+        "n": 66,
+        "accuracy": 0.8484848484848485,
+        "wilson_95": [
+          0.7430709503417379,
+          0.9155636305621713
+        ]
+      },
+      "calendar_set": {
+        "n": 209,
+        "accuracy": 0.8899521531100478,
+        "wilson_95": [
+          0.8402860673053383,
+          0.9255421733801705
+        ]
+      },
+      "cooking_recipe": {
+        "n": 72,
+        "accuracy": 0.8888888888888888,
+        "wilson_95": [
+          0.7957706167789822,
+          0.9426118039448721
+        ]
+      },
+      "datetime_convert": {
+        "n": 15,
+        "accuracy": 0.2,
+        "wilson_95": [
+          0.0704754929173392,
+          0.45185448924055305
+        ]
+      },
+      "datetime_query": {
+        "n": 84,
+        "accuracy": 0.9166666666666666,
+        "wilson_95": [
+          0.8378427761701919,
+          0.9590474496011498
+        ]
+      },
+      "email_addcontact": {
+        "n": 12,
+        "accuracy": 0.6666666666666666,
+        "wilson_95": [
+          0.3906220869404939,
+          0.86187990987514
+        ]
+      },
+      "email_query": {
+        "n": 119,
+        "accuracy": 0.8067226890756303,
+        "wilson_95": [
+          0.7266474882527492,
+          0.8676144218938999
+        ]
+      },
+      "email_querycontact": {
+        "n": 26,
+        "accuracy": 0.6538461538461539,
+        "wilson_95": [
+          0.46220571041927194,
+          0.8058776976950087
+        ]
+      },
+      "email_sendemail": {
+        "n": 114,
+        "accuracy": 0.8245614035087719,
+        "wilson_95": [
+          0.7444999439278813,
+          0.8834624107688783
+        ]
+      },
+      "general_greet": {
+        "n": 1,
+        "accuracy": 0.0,
+        "wilson_95": [
+          0.0,
+          0.7934506882081973
+        ]
+      },
+      "general_joke": {
+        "n": 19,
+        "accuracy": 0.7894736842105263,
+        "wilson_95": [
+          0.5666572136911628,
+          0.9149232342638266
+        ]
+      },
+      "general_quirky": {
+        "n": 169,
+        "accuracy": 0.4556213017751479,
+        "wilson_95": [
+          0.3823544590433182,
+          0.5308608071486797
+        ]
+      },
+      "iot_cleaning": {
+        "n": 22,
+        "accuracy": 0.9090909090909091,
+        "wilson_95": [
+          0.721850529721749,
+          0.9747045712376774
+        ]
+      },
+      "iot_coffee": {
+        "n": 36,
+        "accuracy": 0.9444444444444444,
+        "wilson_95": [
+          0.8185534265532164,
+          0.9846300134744463
+        ]
+      },
+      "iot_hue_lightchange": {
+        "n": 36,
+        "accuracy": 0.8333333333333334,
+        "wilson_95": [
+          0.6810920555117621,
+          0.9212955245089851
+        ]
+      },
+      "iot_hue_lightdim": {
+        "n": 20,
+        "accuracy": 0.7,
+        "wilson_95": [
+          0.4810271799475211,
+          0.8545227559784271
+        ]
+      },
+      "iot_hue_lightoff": {
+        "n": 38,
+        "accuracy": 0.868421052631579,
+        "wilson_95": [
+          0.7267314042437727,
+          0.9424613234628749
+        ]
+      },
+      "iot_hue_lighton": {
+        "n": 3,
+        "accuracy": 0.3333333333333333,
+        "wilson_95": [
+          0.06149194402093078,
+          0.7923404011921757
+        ]
+      },
+      "iot_hue_lightup": {
+        "n": 27,
+        "accuracy": 0.6666666666666666,
+        "wilson_95": [
+          0.4782476036109926,
+          0.8135673859016506
+        ]
+      },
+      "iot_wemo_off": {
+        "n": 15,
+        "accuracy": 0.6666666666666666,
+        "wilson_95": [
+          0.4171354755711991,
+          0.8482367565633053
+        ]
+      },
+      "iot_wemo_on": {
+        "n": 10,
+        "accuracy": 0.5,
+        "wilson_95": [
+          0.23659308901147935,
+          0.7634069109885206
+        ]
+      },
+      "lists_createoradd": {
+        "n": 39,
+        "accuracy": 0.8974358974358975,
+        "wilson_95": [
+          0.7642114540654643,
+          0.9593866868357126
+        ]
+      },
+      "lists_query": {
+        "n": 50,
+        "accuracy": 0.8,
+        "wilson_95": [
+          0.6696289395351799,
+          0.8875625003576518
+        ]
+      },
+      "lists_remove": {
+        "n": 51,
+        "accuracy": 0.8627450980392157,
+        "wilson_95": [
+          0.7427830763077481,
+          0.9318889830203283
+        ]
+      },
+      "music_dislikeness": {
+        "n": 4,
+        "accuracy": 0.0,
+        "wilson_95": [
+          0.0,
+          0.4898908403969213
+        ]
+      },
+      "music_likeness": {
+        "n": 35,
+        "accuracy": 0.5142857142857142,
+        "wilson_95": [
+          0.3556880448212799,
+          0.6700576410721392
+        ]
+      },
+      "music_query": {
+        "n": 35,
+        "accuracy": 0.8,
+        "wilson_95": [
+          0.6410838679545052,
+          0.8995755358072957
+        ]
+      },
+      "music_settings": {
+        "n": 6,
+        "accuracy": 0.16666666666666666,
+        "wilson_95": [
+          0.030053369411815023,
+          0.5635028250257673
+        ]
+      },
+      "news_query": {
+        "n": 124,
+        "accuracy": 0.8306451612903226,
+        "wilson_95": [
+          0.7549391834068182,
+          0.8864802803380305
+        ]
+      },
+      "play_audiobook": {
+        "n": 41,
+        "accuracy": 0.6097560975609756,
+        "wilson_95": [
+          0.45726856816920847,
+          0.743438550299545
+        ]
+      },
+      "play_game": {
+        "n": 35,
+        "accuracy": 0.7714285714285715,
+        "wilson_95": [
+          0.6098268297026581,
+          0.8793412022723046
+        ]
+      },
+      "play_music": {
+        "n": 176,
+        "accuracy": 0.8181818181818182,
+        "wilson_95": [
+          0.7546072993975534,
+          0.8681634493313333
+        ]
+      },
+      "play_podcasts": {
+        "n": 62,
+        "accuracy": 0.7258064516129032,
+        "wilson_95": [
+          0.604074602566196,
+          0.8211893644804718
+        ]
+      },
+      "play_radio": {
+        "n": 71,
+        "accuracy": 0.7746478873239436,
+        "wilson_95": [
+          0.664848243077353,
+          0.8562533038854987
+        ]
+      },
+      "qa_currency": {
+        "n": 39,
+        "accuracy": 0.8461538461538461,
+        "wilson_95": [
+          0.7027053621962731,
+          0.927525276653139
+        ]
+      },
+      "qa_definition": {
+        "n": 57,
+        "accuracy": 0.8070175438596491,
+        "wilson_95": [
+          0.6865930964617099,
+          0.8886725306871449
+        ]
+      },
+      "qa_factoid": {
+        "n": 140,
+        "accuracy": 0.6428571428571429,
+        "wilson_95": [
+          0.560645024801149,
+          0.7174389178332878
+        ]
+      },
+      "qa_maths": {
+        "n": 25,
+        "accuracy": 0.8,
+        "wilson_95": [
+          0.6086904946512343,
+          0.9113941536925313
+        ]
+      },
+      "qa_stock": {
+        "n": 26,
+        "accuracy": 0.8846153846153846,
+        "wilson_95": [
+          0.7102409662092934,
+          0.9599675540764081
+        ]
+      },
+      "recommendation_events": {
+        "n": 43,
+        "accuracy": 0.4418604651162791,
+        "wilson_95": [
+          0.3043330974292391,
+          0.5889238565723254
+        ]
+      },
+      "recommendation_locations": {
+        "n": 31,
+        "accuracy": 0.7419354838709677,
+        "wilson_95": [
+          0.5675386404606986,
+          0.8629829416321935
+        ]
+      },
+      "recommendation_movies": {
+        "n": 20,
+        "accuracy": 0.85,
+        "wilson_95": [
+          0.6395811333571357,
+          0.9476312545132735
+        ]
+      },
+      "social_post": {
+        "n": 81,
+        "accuracy": 0.8024691358024691,
+        "wilson_95": [
+          0.7029560921798843,
+          0.8745917322694481
+        ]
+      },
+      "social_query": {
+        "n": 25,
+        "accuracy": 0.56,
+        "wilson_95": [
+          0.37067331734646203,
+          0.7333436123222912
+        ]
+      },
+      "takeaway_order": {
+        "n": 22,
+        "accuracy": 0.5909090909090909,
+        "wilson_95": [
+          0.387348183298974,
+          0.7674418391364541
+        ]
+      },
+      "takeaway_query": {
+        "n": 35,
+        "accuracy": 0.6857142857142857,
+        "wilson_95": [
+          0.5202023625560437,
+          0.8144915540584046
+        ]
+      },
+      "transport_query": {
+        "n": 51,
+        "accuracy": 0.7647058823529411,
+        "wilson_95": [
+          0.6323777472694998,
+          0.8599505122401774
+        ]
+      },
+      "transport_taxi": {
+        "n": 23,
+        "accuracy": 0.8695652173913043,
+        "wilson_95": [
+          0.6787251755146014,
+          0.9546234094181704
+        ]
+      },
+      "transport_ticket": {
+        "n": 35,
+        "accuracy": 0.6571428571428571,
+        "wilson_95": [
+          0.4915194938408475,
+          0.7916830509867624
+        ]
+      },
+      "transport_traffic": {
+        "n": 14,
+        "accuracy": 0.9285714285714286,
+        "wilson_95": [
+          0.6853129533326209,
+          0.9872777848933957
+        ]
+      },
+      "weather_query": {
+        "n": 151,
+        "accuracy": 0.9470198675496688,
+        "wilson_95": [
+          0.8989468258028391,
+          0.9729126940915916
+        ]
+      }
+    },
+    "definitions": {
+      "accuracy": "share of questions whose most probable option is the gold one",
+      "macro_f1": "unweighted mean F1 over the gold and predicted classes (bench/metrics.py)",
+      "brier": "sum over options of the squared error of the served probabilities, 0 to 2",
+      "smooth_ece": "top-label smooth ECE of the served maximum probability (relplot, arXiv 2309.12236)",
+      "intervals": "2.5 and 97.5 percentiles of 2000 bootstrap draws over items, seed 0",
+      "random_baseline_accuracy": "mean over questions of 1/k, k the number of options",
+      "per_group_accuracy": "accuracy per category with a 95 percent Wilson interval"
+    }
+  },
+  "code": {
+    "git_head": "1ae0d0ce348c7561b25eaf6d691fcec1a0e62710",
+    "tree_clean": false,
+    "code_sha256": {
+      "bench/external.py": "b173c44c8c14cb9044e54d26da9b4d7d874520be139cbc5ddaa15018ba446215",
+      "bench/modal_external.py": "3bbd3e63adbaee9db5eedb76ec50624a9c3319c082e070a58d3a75279f3b601d",
+      "bench/adapters/karar.py": "41889e5a0437093a940aec18c1d5e3d0367bd70f80f7ffbeb492891e8e52035b",
+      "model/head/pack.py": "7fc61f500f9348a495848bcd34c32dd10be0f99994c8d360606bd8fbfc2c44df",
+      "model/head/infer.py": "5bd3d5ce3112cab5350d33ac6850df3dcf08180a37b22df5d1cdaa980d924c7a",
+      "model/head/head.py": "794e3d61a6322b1c4700112a9f1ecd2de33495be5910385ef7998a7988a18f9b"
+    }
+  },
+  "rows_file": "massive_tr-r3-base-s2.rows.jsonl",
+  "rows_sha256": "614e363361638a09b54a76775b008bf193f7434a6ce116c3c11a1878c300ed38"
+}

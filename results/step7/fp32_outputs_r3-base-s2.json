@@ -1,0 +1,16 @@
+{
+  "run": "r3-base-s2",
+  "build": {
+    "sample": 45,
+    "calibration": 0,
+    "head": "/vol/round1/runs/r3-base-s2/model.pt",
+    "fp32_bytes": 735333256
+  },
+  "outputs": {
+    "rows": 18282,
+    "engines": [
+      "fp32"
+    ],
+    "seconds": 2729.4
+  }
+}

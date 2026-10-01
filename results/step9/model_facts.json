@@ -1,0 +1,45 @@
+{
+ "model_folder": "release.convert --run r5b-base-s1 --calibrator results/step7/calibrator.json",
+ "model_safetensors_sha256": "ba939e9f33445ec02bac6c5ab4e8acffa89645fc573c2efe4c25e316a9fcdaae",
+ "source_run": "r5b-base-s1",
+ "parameters": {
+  "total": 182494466,
+  "abstain": 769,
+  "backbone": 182492928,
+  "score": 769
+ },
+ "max_prefix_tokens": 448,
+ "max_option_tokens": 48,
+ "options_per_pass": 10,
+ "dtype": "float32",
+ "cpu_measure_2026-09-28": {
+  "machine": "Apple M1, 8 cores, Darwin 25.6.0",
+  "torch": "2.14.0",
+  "torch_threads": 1,
+  "measured_utc": "2026-09-28T04:31:04+00:00",
+  "model_safetensors_sha256": "ba939e9f33445ec02bac6c5ab4e8acffa89645fc573c2efe4c25e316a9fcdaae",
+  "questions": 13,
+  "timed_calls": 65,
+  "median_ms_per_question_on_demo_examples": 102.5,
+  "min_ms_per_question": 69.8,
+  "max_ms_per_question": 194.5,
+  "peak_rss_bytes": 986038272,
+  "load_average_before": [
+   1.56,
+   1.81,
+   2.47
+  ],
+  "load_average_after": [
+   1.62,
+   1.82,
+   2.46
+  ],
+  "script": "release/measure_cpu.py",
+  "note": "one machine, one torch thread, the demo's 13 questions one per call, median over 5 timed rounds after one warm-up; the load averages (1, 5, 15 minutes) show what else ran; not a benchmark"
+ },
+ "embedding_split": {
+  "embedding_matrix": 31457280,
+  "without_embedding_matrix": 151037186,
+  "note": "backbone.body.embed_tokens.weight is 40,960 x 768; ufakzeka-1 is quoted as 151M parameters (182M with embeddings) in its model card, the same convention"
+ }
+}

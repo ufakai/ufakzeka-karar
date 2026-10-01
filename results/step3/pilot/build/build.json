@@ -1,0 +1,77 @@
+{
+  "counts": {
+    "templates_written": 17,
+    "pairs": 425,
+    "kept": 205,
+    "failed:LowLabelMass": 24,
+    "answerable_blind": 49,
+    "not_applicable": 147
+  },
+  "template_problems": {
+    "unknown family 'Cevabın Soruya Uygunluğu'": 1,
+    "unknown family 'kullanıcı niyeti'": 1,
+    "unknown family 'soru_odagi'": 1
+  },
+  "unanimous_share": 0.8146,
+  "mean_off_letter_mass": {
+    "A": 0.0,
+    "C": 0.0
+  },
+  "top_option_by_task": {
+    "bilgi_turu-choice": {
+      "yontem_veya_prosedur": 2,
+      "sure_veya_zamanlama": 5,
+      "ucret_veya_maliyet": 4,
+      "teknik_nitelik": 3,
+      "mesafe_veya_konum": 1,
+      "iletisim_yonlendirme": 3,
+      "hizmet_kosulu": 2,
+      "ucretlendirme": 6,
+      "islem_adimi": 6
+    },
+    "yanit_yeterliligi-choice": {
+      "tamamen_karsiliyor": 29,
+      "yetkisiz_veya_yonlendirici": 4,
+      "kismen_karsiliyor": 11,
+      "fazlasiyla_karsiliyor": 3,
+      "karsilamiyor": 1
+    },
+    "yanit_yeterliligi-noul": {
+      "true": 19
+    },
+    "aciliyet-choice": {
+      "anlık_takip": 11,
+      "periyodik_guncelleme": 3,
+      "uzun_vadeli_kontrol": 3
+    },
+    "hedef_kitle-choice": {
+      "potansiyel_musteriler": 20,
+      "mevcut_musteriler": 3,
+      "genel_ziyaretciler": 5,
+      "mevcut_hizmet_alanlar": 6,
+      "ozel_ihtiyaci_olanlar": 1
+    },
+    "hassasiyet-noul": {
+      "true": 17
+    },
+    "hassasiyet-score": {
+      "3": 1
+    },
+    "niyet-score": {
+      "0": 4
+    },
+    "insan_destegi-choice": {
+      "dogrudan_cozum": 6,
+      "belirsiz_icerik": 1
+    },
+    "insan_destegi-noul": {
+      "false": 18
+    },
+    "insan_destegi-score": {
+      "1": 6,
+      "2": 1
+    }
+  },
+  "spent_usd": 0.1609,
+  "usd_per_kept_row": 0.00079
+}

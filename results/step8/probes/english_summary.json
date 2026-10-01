@@ -1,0 +1,117 @@
+{
+  "probe": "english",
+  "cap_per_track": 20,
+  "drawn": 192,
+  "kept": 159,
+  "kept_by_half": {
+    "private": 91,
+    "public": 68
+  },
+  "dropped": {
+    "blind answer differs": 10,
+    "meaning differs": 1,
+    "over the cap": 22
+  },
+  "dropped_share": {
+    "blind answer differs": 0.0521,
+    "meaning differs": 0.0052,
+    "over the cap": 0.1146
+  },
+  "per_track": {
+    "arama": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "over the cap": 4
+      },
+      "dropped_share": {
+        "over the cap": 0.1667
+      }
+    },
+    "dogrulama": {
+      "drawn": 24,
+      "kept": 19,
+      "dropped": {
+        "blind answer differs": 5
+      },
+      "dropped_share": {
+        "blind answer differs": 0.2083
+      }
+    },
+    "egitim": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "blind answer differs": 1,
+        "over the cap": 3
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0417,
+        "over the cap": 0.125
+      }
+    },
+    "guvenlik": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "over the cap": 4
+      },
+      "dropped_share": {
+        "over the cap": 0.1667
+      }
+    },
+    "hukuk": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "blind answer differs": 1,
+        "over the cap": 3
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0417,
+        "over the cap": 0.125
+      }
+    },
+    "moderasyon": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "over the cap": 4
+      },
+      "dropped_share": {
+        "over the cap": 0.1667
+      }
+    },
+    "spam": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "blind answer differs": 1,
+        "over the cap": 3
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0417,
+        "over the cap": 0.125
+      }
+    },
+    "sss": {
+      "drawn": 24,
+      "kept": 20,
+      "dropped": {
+        "blind answer differs": 2,
+        "meaning differs": 1,
+        "over the cap": 1
+      },
+      "dropped_share": {
+        "blind answer differs": 0.0833,
+        "meaning differs": 0.0417,
+        "over the cap": 0.0417
+      }
+    }
+  },
+  "spent_usd": 0.271128,
+  "items": {
+    "public": 68,
+    "private": 91
+  }
+}

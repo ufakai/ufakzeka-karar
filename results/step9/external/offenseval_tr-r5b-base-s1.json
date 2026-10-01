@@ -1,0 +1,125 @@
+{
+  "set": "offenseval_tr",
+  "dataset": {
+    "name": "offenseval_tr",
+    "title": "OffensEval-TR 2020, subtask A",
+    "repo": "coltekin/offenseval2020_tr",
+    "revision": "sha256:7977e96255dbc9b8d14893f1b14cbe3dec53c70358503c062c5a59720ec9c2f2",
+    "url": "https://coltekin.github.io/offensive-turkish/offenseval2020-turkish.zip",
+    "licence_as_shown": "cc-by-2.0",
+    "licence_id": "CC-BY-2.0",
+    "split": "test",
+    "phrasing": "noul, exactly the training question (data/typed/instrument.py)",
+    "cetvel_task": "offenseval_tr",
+    "notes": [
+      "Test split as converted by data/converters/offenseval_tr.py into data/raw/instrument/offenseval_tr/test.jsonl (the archive's test file with its gold labels, joined on the id)."
+    ],
+    "gated": false
+  },
+  "items_kept_after_overlap": 3528,
+  "overlap_dropped": 0,
+  "build_file": "results/step9/external/offenseval_tr.build.json",
+  "limit": null,
+  "model": {
+    "run": "r5b-base-s1",
+    "weights": "models/r5b-base-s1/model.pt",
+    "weights_sha256": "25fb92963ba1f658524de699884e3658a5ae5e582d75c55936047b5c178305bc",
+    "calibrator": "results/step7/r5b-base-s1/calibrator.json",
+    "calibrator_sha256": "2a01cbe4628ee8ecab5a9e4c19b87c3d8e812b59ad04f4a56048bc32c8b1f21a",
+    "calibrator_fitted_on": "25fb92963ba1f658524de699884e3658a5ae5e582d75c55936047b5c178305bc",
+    "temperatures": {
+      "form": "global",
+      "global": 1.2614079599045405
+    },
+    "path": "bench/adapters/karar.py answer, fp32 torch, CPU, batched passes",
+    "weights_sha256_in_container": "25fb92963ba1f658524de699884e3658a5ae5e582d75c55936047b5c178305bc"
+  },
+  "runtime": {
+    "container": "Modal CPU, 32 physical cores (request and limit), 32768 MiB",
+    "host": "Linux x86_64 ",
+    "threads": 32,
+    "load_seconds": 16.6,
+    "prepare_seconds": 32.8,
+    "function_seconds": 2816.0,
+    "padded_tokens": 4559610,
+    "estimated_usd": 1.381,
+    "set_seconds": 161.0,
+    "set_padded_tokens": 264744
+  },
+  "unanswered": [],
+  "results": {
+    "questions": 3528,
+    "metrics": {
+      "accuracy": {
+        "value": 0.8443877551020408,
+        "interval": [
+          0.8319160997732427,
+          0.8565759637188208
+        ]
+      },
+      "brier": {
+        "value": 0.22452986960201363,
+        "interval": [
+          0.21136905794169178,
+          0.2385765692363938
+        ]
+      },
+      "smooth_ece": {
+        "value": 0.019788975900742137,
+        "interval": [
+          0.015541631853589399,
+          0.030702651204256956
+        ]
+      },
+      "macro_f1": {
+        "value": 0.754736140314888,
+        "interval": [
+          0.7351424800800331,
+          0.7727767150690311
+        ]
+      }
+    },
+    "random_baseline_accuracy": 0.5,
+    "per_group_accuracy": {
+      "NOT": {
+        "n": 2812,
+        "accuracy": 0.9089615931721194,
+        "wilson_95": [
+          0.8977640333491286,
+          0.9190433166334819
+        ]
+      },
+      "OFF": {
+        "n": 716,
+        "accuracy": 0.590782122905028,
+        "wilson_95": [
+          0.5543756916404268,
+          0.62621963028231
+        ]
+      }
+    },
+    "definitions": {
+      "accuracy": "share of questions whose most probable option is the gold one",
+      "macro_f1": "unweighted mean F1 over the gold and predicted classes (bench/metrics.py)",
+      "brier": "sum over options of the squared error of the served probabilities, 0 to 2",
+      "smooth_ece": "top-label smooth ECE of the served maximum probability (relplot, arXiv 2309.12236)",
+      "intervals": "2.5 and 97.5 percentiles of 2000 bootstrap draws over items, seed 0",
+      "random_baseline_accuracy": "mean over questions of 1/k, k the number of options",
+      "per_group_accuracy": "accuracy per category with a 95 percent Wilson interval"
+    }
+  },
+  "code": {
+    "git_head": "e5851908dfa781be0755592f41a2f9a32f003369",
+    "tree_clean": false,
+    "code_sha256": {
+      "bench/external.py": "c7fb13b6a6031a2319d69b6f5dbcf9bb864f9fce9744051d7d01e71ea2c424ef",
+      "bench/modal_external.py": "8cc27ce659f78d1e9a632ed10bfb5e5cff5ce7d3eee61afdc921eb8854930c4e",
+      "bench/adapters/karar.py": "41889e5a0437093a940aec18c1d5e3d0367bd70f80f7ffbeb492891e8e52035b",
+      "model/head/pack.py": "7fc61f500f9348a495848bcd34c32dd10be0f99994c8d360606bd8fbfc2c44df",
+      "model/head/infer.py": "5bd3d5ce3112cab5350d33ac6850df3dcf08180a37b22df5d1cdaa980d924c7a",
+      "model/head/head.py": "794e3d61a6322b1c4700112a9f1ecd2de33495be5910385ef7998a7988a18f9b"
+    }
+  },
+  "rows_file": "offenseval_tr-r5b-base-s1.rows.jsonl",
+  "rows_sha256": "3a08afefdf09d20042ab0b1f1a35534f5d993ac374e55e5c0615764db9e1b922"
+}

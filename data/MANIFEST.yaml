@@ -1,0 +1,1123 @@
+# License manifest. Every data file in the repo's data roots has an entry
+# here, and `just check-licenses` fails the build when one is missing,
+# incomplete or under a license that is not on the allow-list
+# (data/licenses.py).
+#
+# Fields of an entry, all required unless marked optional:
+#   path              a file, or a folder with a trailing slash (covers everything beneath)
+#   source            the URL the data was taken from; "authored" for our own text
+#   upstream          what the data derives from and how that was checked
+#   license_as_shown  the license string exactly as the source shows it
+#   license_id        the matching id from data/licenses.py, chosen by whoever verified it
+#   verified          the date the license was read at the source, YYYY-MM-DD
+#   attribution       the credit line the license asks for
+#   use               train, bench, both, or measure (measured on, cleared for neither)
+#   sha256            optional, for single files
+#   notes             optional
+
+version: 1
+
+roots:
+  - data/raw
+  - data/built
+  - bench/items
+  - bench/hakembench/candidates
+
+entries:
+  - path: bench/items/smoke.jsonl
+    source: authored
+    upstream: original text written for this repo, derived from no other set
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-19
+    attribution: ufak AI
+    use: bench
+    notes: Smoke items. They test the harness, not a model, and are not part of HakemBench.
+
+  # The instrument. Downloaded archives and the
+  # folders converted from them. Neither is tracked by git.
+  - path: data/raw/_downloads/amazon-massive-dataset-1.1.tar.gz
+    source: https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz
+    upstream: >-
+      The MASSIVE 1.1 release archive from its publisher's bucket, the URL that the loader script of
+      huggingface.co/datasets/AmazonScience/massive downloads. The archive carries its own LICENSE
+      (Attribution 4.0 International) and a NOTICE saying MASSIVE localises SLURP, also CC BY 4.0.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-19
+    attribution: >-
+      MASSIVE, Copyright Amazon.com Inc. or its affiliates, FitzGerald et al., arXiv:2204.08582,
+      CC BY 4.0. Localised from SLURP, Bastianelli et al., EMNLP 2020, CC BY 4.0.
+    use: measure
+    sha256: 4cba5faa11c71437928e17cb1b9b3d8b8e727e7ea363a3a9a8045e19c0491577
+    notes: All 52 locales. Only 1.1/data/tr-TR.jsonl is converted.
+  - path: data/raw/_downloads/offenseval2020-turkish.zip
+    source: https://coltekin.github.io/offensive-turkish/offenseval2020-turkish.zip
+    upstream: >-
+      The author's own release of the OffensEval 2020 Turkish corpus, the URL that the loader script
+      of huggingface.co/datasets/coltekin/offenseval2020_tr downloads. The README in the archive
+      repeats the license line.
+    license_as_shown: cc-by-2.0
+    license_id: CC-BY-2.0
+    verified: 2026-09-19
+    attribution: >-
+      Çağrı Çöltekin, A Corpus of Turkish Offensive Language on Social Media, LREC 2020,
+      pages 6174-6184, CC BY 2.0.
+    use: measure
+    sha256: 7977e96255dbc9b8d14893f1b14cbe3dec53c70358503c062c5a59720ec9c2f2
+    notes: >-
+      The card's licensing section reads "The annotations are distributed under the terms of
+      Creative Commons Attribution License (CC-BY)", linked to creativecommons.org/licenses/by/2.0/.
+  - path: data/raw/instrument/massive_tr/
+    source: https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz
+    upstream: >-
+      Converted by data/converters/massive_tr.py from the archive above, locale tr-TR. Text is the
+      utt field, label the intent field, splits the partition field.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-19
+    attribution: >-
+      MASSIVE, Copyright Amazon.com Inc. or its affiliates, FitzGerald et al., arXiv:2204.08582,
+      CC BY 4.0. Localised from SLURP, Bastianelli et al., EMNLP 2020, CC BY 4.0.
+    use: train
+    notes: >-
+      Promoted to train for its train and validation splits only, on 2026-09-22 after the
+      licence was read again at the source; data/typed/instrument.py never converts a test split.
+      Instrument set, 59 intents: cooking_query has no test rows in tr-TR and is dropped.
+      In none of the Cetvel, TabiBench, TurkBench or TrGLUE test sets.
+  - path: data/raw/instrument/offenseval_tr/
+    source: https://coltekin.github.io/offensive-turkish/offenseval2020-turkish.zip
+    upstream: >-
+      Converted by data/converters/offenseval_tr.py from the archive above, subtask A. Test labels
+      are joined on the id.
+    license_as_shown: cc-by-2.0
+    license_id: CC-BY-2.0
+    verified: 2026-09-19
+    attribution: >-
+      Çağrı Çöltekin, A Corpus of Turkish Offensive Language on Social Media, LREC 2020,
+      pages 6174-6184, CC BY 2.0.
+    use: train
+    notes: >-
+      Promoted to train for its train and validation splits only, on 2026-09-22 after the
+      licence was read again at the source; data/typed/instrument.py never converts a test split. The test split is Cetvel test material and never enters training.
+      Instrument set. Validation is a tenth of train, stratified, seed 1. The test split is also a
+      Cetvel test set: it is used to evaluate the instrument only, and nothing from it enters the
+      release model's training data. Tweet text: never part of HakemBench.
+  - path: data/raw/instrument/trcola/
+    source: https://huggingface.co/datasets/turkish-nlp-suite/TrCOLA
+    upstream: >-
+      Converted by data/converters/trcola.py from the standalone TrCOLA repository at commit
+      84dc7a3641c0d6997b4970f0d4d8e26811904980. The judged sentence is the `variation` column.
+      The TrGLUE bundle that carries the same data under CC BY-SA is not used.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-19
+    attribution: >-
+      turkish-nlp-suite, TrCOLA, the Corpus of Linguistic Acceptability for Turkish,
+      https://huggingface.co/datasets/turkish-nlp-suite/TrCOLA.
+    use: measure
+    notes: >-
+      Instrument set. The card states that the unacceptable variations were written by a language
+      model and then curated by human annotators; labels follow the variation type. Not cleared
+      for release training: the writing model's output terms are unchecked.
+  - path: data/raw/instrument/mide22/
+    source: https://huggingface.co/datasets/ogozcelik/turkish-fake-news-detection
+    upstream: >-
+      Converted by data/converters/mide22.py from the MiDe22 Turkish tweet file at commit
+      6b6bb45712d746e28906913e953d5525f5c8c633.
+    license_as_shown: mit
+    license_id: MIT
+    verified: 2026-09-19
+    attribution: >-
+      Cagri Toraman, Oguzhan Ozcelik, Furkan Sahinuc, Fazli Can, "MiDe22, An Annotated Multi-Event
+      Tweet Dataset for Misinformation Detection", LREC-COLING 2024, pages 11283-11295.
+    use: train
+    notes: >-
+      Promoted to train for its train and validation splits only, on 2026-09-22 after the
+      licence was read again at the source; data/typed/instrument.py never converts a test split.
+      Instrument set. Train, validation and test carved 70/10/20 from the single source split,
+      stratified, seed 1. Five annotators. Tweet text: never part of HakemBench.
+  - path: data/raw/instrument/legal_nli_tr/
+    source: https://huggingface.co/datasets/Turkish-NLI/legal_nli_TR_V1
+    upstream: >-
+      Converted by data/converters/legal_nli_tr.py from commit
+      67baa141cf4f6634c983d77eea193c5535611e5a. The pairs are summary sections of Turkish commercial
+      court rulings collected from emsal.uyap.gov.tr.
+    license_as_shown: apache-2.0
+    license_id: Apache-2.0
+    verified: 2026-09-19
+    attribution: >-
+      Mesut Demirel and Recep Karabulut, Turkish Law NLI Dataset (legal_nli_TR_V1),
+      https://huggingface.co/datasets/Turkish-NLI/legal_nli_TR_V1.
+    use: measure
+    notes: >-
+      Instrument set. Stratified subsample, seed 1, after leak removal over the whole source.
+      Labels are rule-made from the distance between the Commercial Code articles two rulings
+      cite; no model wrote or labelled them. Closer to precedent relatedness than to NLI.
+  - path: data/built/typed/massive_tr/
+    source: https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz
+    upstream: >-
+      Typed training rows built by data/typed/instrument.py from data/raw/instrument/massive_tr/,
+      train and validation splits only, with question wording and Turkish option names written
+      by ufak AI.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-22
+    attribution: >-
+      MASSIVE, Copyright Amazon.com Inc. or its affiliates, FitzGerald et al., arXiv:2204.08582, CC BY 4.0. Localised from SLURP, Bastianelli et al., EMNLP 2020, CC BY 4.0.
+    use: train
+    notes: >-
+      Derived from a set promoted to training data. Rebuilt, not edited: `data.typed.instrument.build`.
+  - path: data/built/typed/offenseval_tr/
+    source: https://coltekin.github.io/offensive-turkish/offenseval2020-turkish.zip
+    upstream: >-
+      Typed training rows built by data/typed/instrument.py from data/raw/instrument/offenseval_tr/,
+      train and validation splits only, with question wording and Turkish option names written
+      by ufak AI.
+    license_as_shown: cc-by-2.0
+    license_id: CC-BY-2.0
+    verified: 2026-09-22
+    attribution: >-
+      Çağrı Çöltekin, A Corpus of Turkish Offensive Language on Social Media, LREC 2020, pages 6174-6184, CC BY 2.0.
+    use: train
+    notes: >-
+      Derived from a set promoted to training data. Rebuilt, not edited: `data.typed.instrument.build`.
+  - path: data/built/typed/mide22/
+    source: https://huggingface.co/datasets/ogozcelik/turkish-fake-news-detection
+    upstream: >-
+      Typed training rows built by data/typed/instrument.py from data/raw/instrument/mide22/,
+      train and validation splits only, with question wording and Turkish option names written
+      by ufak AI.
+    license_as_shown: mit
+    license_id: MIT
+    verified: 2026-09-22
+    attribution: >-
+      Cagri Toraman, Oguzhan Ozcelik, Furkan Sahinuc, Fazli Can, "MiDe22, An Annotated Multi-Event Tweet Dataset for Misinformation Detection", LREC-COLING 2024, pages 11283-11295.
+    use: train
+    notes: >-
+      Derived from a set promoted to training data. Rebuilt, not edited: `data.typed.instrument.build`.
+  - path: data/raw/_downloads/turkish-nlp-suite__TrCOLA/
+    source: https://huggingface.co/datasets/turkish-nlp-suite/TrCOLA
+    upstream: Source files at commit 84dc7a3641c0d6997b4970f0d4d8e26811904980, unedited.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-19
+    attribution: turkish-nlp-suite, TrCOLA, the Corpus of Linguistic Acceptability for Turkish.
+    use: measure
+    notes: File hashes are recorded by the converter in the dataset's meta.json.
+  - path: data/raw/_downloads/ogozcelik__turkish-fake-news-detection/
+    source: https://huggingface.co/datasets/ogozcelik/turkish-fake-news-detection
+    upstream: Source file at commit 6b6bb45712d746e28906913e953d5525f5c8c633, unedited.
+    license_as_shown: mit
+    license_id: MIT
+    verified: 2026-09-19
+    attribution: Toraman, Ozcelik, Sahinuc, Can, MiDe22, LREC-COLING 2024.
+    use: measure
+    notes: File hash is recorded by the converter in the dataset's meta.json.
+  - path: data/raw/_downloads/Turkish-NLI__legal_nli_TR_V1/
+    source: https://huggingface.co/datasets/Turkish-NLI/legal_nli_TR_V1
+    upstream: Source shards at commit 67baa141cf4f6634c983d77eea193c5535611e5a, unedited.
+    license_as_shown: apache-2.0
+    license_id: Apache-2.0
+    verified: 2026-09-19
+    attribution: Mesut Demirel and Recep Karabulut, Turkish Law NLI Dataset (legal_nli_TR_V1).
+    use: measure
+    notes: >-
+      File hashes are recorded by the converter in the dataset's meta.json. The shards may be
+      deleted after conversion to save disk; they can be fetched again at the pinned commit.
+
+  # Generated decision rows.
+  - path: data/built/sss/
+    source: https://huggingface.co/datasets/clips/mqa
+    upstream: >-
+      Question and answer pairs from the tr-faq-question and tr-cqa-question configurations of
+      clips/mqa, read from the hub's parquet export, filtered and masked for personal data by
+      data/label/texts.py. Decision questions and option wording written by various LLMs and
+      checked by rule; targets are the mean vote of two LLM judges (data/label/build.py). Split
+      from results/step3/build/rows.jsonl by data/label/promote.py.
+    license_as_shown: cc0-1.0
+    license_id: CC0-1.0
+    verified: 2026-09-23
+    attribution: >-
+      De Bruyn, Lotfi, Buhmann, Daelemans, "MFAQ: a Multilingual FAQ Dataset", MRQA 2021
+      (clips/mqa, CC0 1.0). Questions and labels by ufak AI.
+    use: train
+    notes: >-
+      Train, validation and held-out-task files. The held-out-task rows are for evaluation only.
+      The card's licence section reads "We do not own any of the text from which these data has
+      been extracted. We license the actual packaging of these data under the Creative Commons CC0
+      license", the terms of web-crawl corpora such as OSCAR: sound for training, but publishing
+      these rows as a dataset would republish web pages' text, so a public release of the rows
+      needs its own decision (with the corpus's removal-request route in the card).
+
+  # Converted sets for the empty tracks.
+  - path: data/raw/_downloads/icgcihan__Turkish_Constutional_Court_Decisions/
+    source: https://huggingface.co/datasets/icgcihan/Turkish_Constutional_Court_Decisions
+    upstream: >-
+      train.json, dev.json, README.md and "Citation for Dataset" at commit
+      347a0f83d7e5f3bd74fcdf38d0684aa126b1920c, unedited, read through the hub's file resolver.
+      test.json is never downloaded. Rulings of the Anayasa Mahkemesi on individual applications,
+      taken by the compiler from the court's decisions database (kararlarbilgibankasi.anayasa.gov.tr);
+      court decisions carry no copyright under FSEK article 31, and the compilation is CC BY 4.0.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Cihan Erdoğanyılmaz, Berkay Mengünoğul, Muhammet Balci, "Unveiling the Black Box:
+      Investigating the Interplay between AI Technologies, Explainability, and Legal Implications",
+      UBMK 2023, pages 569-574 (icgcihan/Turkish_Constutional_Court_Decisions, CC BY 4.0). Rulings
+      of the Anayasa Mahkemesi.
+    use: train
+    notes: >-
+      The card's only licence statement is its metadata line "license: cc-by-4.0"; the hub API
+      tags the repo license:cc-by-4.0. File hashes are pinned in data/typed/legal.py.
+  - path: data/built/typed/aym_rights/
+    source: https://huggingface.co/datasets/icgcihan/Turkish_Constutional_Court_Decisions
+    upstream: >-
+      Typed training rows built by data/typed/legal.py from the folder above: the court's summary
+      of the complaint (Başvuru Konusu), masked for personal data, with the right heading (Haklar)
+      as a ten-option choice. The source's train and dev files become train and validation. Question
+      wording and Turkish option names written by ufak AI.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Cihan Erdoğanyılmaz, Berkay Mengünoğul, Muhammet Balci, UBMK 2023
+      (icgcihan/Turkish_Constutional_Court_Decisions, CC BY 4.0). Rulings of the Anayasa Mahkemesi.
+      Questions by ufak AI.
+    use: train
+    notes: >-
+      Rebuilt, not edited: `python -m data.typed.legal`, which writes its counts to
+      results/step3/typed/aym_rights.json. The violation outcome is not converted.
+  - path: data/raw/_downloads/altuncu__FACTurk/
+    source: https://github.com/altuncu/FACTurk
+    upstream: >-
+      data/FACTurk.zip, LICENSE and README.md at commit b85871b4dcfaa9b0f43b037237ae4b548f6a51ed,
+      unedited. Reports scraped by the compiler from six Turkish fact-checking sites.
+    license_as_shown: MIT License, Copyright (c) 2026 Enes ALTUNCU
+    license_id: MIT
+    verified: 2026-09-23
+    attribution: >-
+      Enes Altuncu, "FACTurk: Insights into the Turkish Fact-Checking Ecosystem via a New Dataset",
+      SIU 2026, doi:10.1109/SIU71813.2026.11636583 (MIT). Fact-checks by Teyit, Doğruluk Payı,
+      Doğrula, Malumatfuruş, Yalansavar and Günün Yalanları.
+    use: train
+    notes: >-
+      The GitHub API reports the repository licence as MIT. The README says the report text
+      (`content`) was not published, but the CSV in this commit carries it for every row; it is
+      the organisations' own writing, outside what the compiler can license, and
+      data/typed/claims.py never reads it. File hashes are pinned in data/typed/claims.py.
+  - path: data/built/typed/facturk_verdict/
+    source: https://github.com/altuncu/FACTurk
+    upstream: >-
+      Typed training rows built by data/typed/claims.py from the folder above: the claim text,
+      masked for personal data, with the normalised verdict as a five-option choice. Validation is
+      a tenth carved by a hash of the claim cluster. Yalansavar's rows and pages without a verdict
+      are left out. Question wording and Turkish option names written by ufak AI.
+    license_as_shown: MIT License, Copyright (c) 2026 Enes ALTUNCU
+    license_id: MIT
+    verified: 2026-09-23
+    attribution: >-
+      Enes Altuncu, FACTurk, SIU 2026 (MIT). Fact-checks by Teyit, Doğruluk Payı, Doğrula,
+      Malumatfuruş, Yalansavar and Günün Yalanları. Questions by ufak AI.
+    use: train
+    notes: >-
+      Rebuilt, not edited: `python -m data.typed.claims`, which writes its counts to
+      results/step3/typed/facturk_verdict.json. To be decontaminated against X-FACT.
+  # Guardrails and passage relevance, converted sets.
+  # Raw downloads at pinned commits, test splits never downloaded, and the
+  # typed rows built from them by data/typed/guardrails.py and
+  # data/typed/relevance.py. Neither is tracked by git.
+  - path: data/raw/_downloads/3nesdeniz__turkish-prompt-injection-1k/
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k
+    upstream: >-
+      data/train.parquet, data/validation.parquet and README.md at commit
+      1cbd1152d9732f40148fbd5bb7cf0f58ddfe84c6, unedited; data/test.parquet not downloaded. The card
+      says the rows are expanded from human-designed attack templates and authored benign hard
+      negatives; synthetic, placeholders only.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"CC-BY-4.0 — share and adapt with attribution.\" (card, License section)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Enes Deniz, Turkish Prompt-Injection 1K, Hugging Face, 2026,
+      https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k, CC BY 4.0.
+    use: train
+    notes: File hashes are recorded in data/built/typed/prompt_injection/meta.json.
+  - path: data/raw/_downloads/3nesdeniz__turkish-conversation-prompt-injection/
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-conversation-prompt-injection
+    upstream: >-
+      data/train.parquet, data/validation.parquet, README.md and LICENSE at commit
+      29d7593984f563c4ad56876aa800b9ffd948a2fb (version 1.0.2, DOI 10.5281/zenodo.21379389),
+      unedited; the test split is kept apart in data/raw/_guard_dev/. Synthetic rows written and
+      curated by the author; the card tags language_creators machine-generated and "does not claim
+      independent human annotation".
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"Creative Commons Attribution 4.0 International (CC BY 4.0) ... You are free to share and adapt the material for any purpose, including commercial use, provided that appropriate credit is given\" (LICENSE)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-27
+    attribution: >-
+      Turkish Conversation Prompt-Injection Dataset, Enes Deniz, version 1.0.2, licensed under CC BY
+      4.0. Affiliation: AltaySec. DOI 10.5281/zenodo.21379389.
+    use: train
+    notes: >-
+      Model-written text, used from 2026-09-27: the LICENSE allows commercial use and adaptation, and in the project's
+      reading the unnamed generator's terms bind the dataset's author, not downstream users
+      (not legal advice; such questions go to a lawyer). Only data/train.parquet trains
+      (task prompt_injection-conv); data/validation.parquet is part of the guardrail dev set, a
+      measurement, never trained on. The attribution line is the one the LICENSE file recommends.
+      File hashes are pinned in data/typed/guardrails.py (CONV_SHA256).
+  - path: data/raw/_guard_dev/3nesdeniz__turkish-conversation-prompt-injection/
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-conversation-prompt-injection
+    upstream: >-
+      data/test.parquet at commit 29d7593984f563c4ad56876aa800b9ffd948a2fb (version 1.0.2, DOI
+      10.5281/zenodo.21379389), unedited; sha256 pinned in data/typed/guardrails.py.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"Creative Commons Attribution 4.0 International (CC BY 4.0) ... You are free to share and adapt the material for any purpose, including commercial use, provided that appropriate credit is given\" (LICENSE)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-27
+    attribution: >-
+      Turkish Conversation Prompt-Injection Dataset, Enes Deniz, version 1.0.2, licensed under CC BY
+      4.0. Affiliation: AltaySec. DOI 10.5281/zenodo.21379389.
+    use: measure
+    notes: >-
+      The guardrail dev set with the validation split: r5's selection reads it, nothing
+      trains on it. Not one of rule 2's benchmarks; it is kept out of training all the same.
+
+  - path: data/raw/_downloads/3nesdeniz__guardrail-hard-negatives/
+    source: https://huggingface.co/datasets/3nesdeniz/guardrail-hard-negatives
+    upstream: >-
+      data/train.parquet, data/validation.parquet and README.md at commit
+      638188743abb089708163b2408a0ef6279721869, unedited; data/test.parquet not downloaded. English
+      and Turkish rows; only rows with language "tr" are converted.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"CC-BY-4.0 — share and adapt with attribution.\" (card, License section)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Enes Deniz, Guardrail Hard Negatives (EN/TR), Hugging Face, 2026,
+      https://huggingface.co/datasets/3nesdeniz/guardrail-hard-negatives, CC BY 4.0.
+    use: train
+    notes: File hashes are recorded in data/built/typed/prompt_injection/meta.json.
+  - path: data/raw/_downloads/beratcmn__turkish-prompt-injections/
+    source: https://huggingface.co/datasets/beratcmn/turkish-prompt-injections
+    upstream: >-
+      data/train.jsonl and README.md at commit c40c38f8ca632052fbfec19e90fab31fce33eda1, unedited;
+      data/test.jsonl not downloaded. A Turkish translation of deepset/prompt-injections, whose
+      card metadata reads "license: apache-2.0" (commit 4f61ecb038e9c3fb77e21034b22511b523772cdd,
+      read 2026-09-23; its dataset_info block also carries "license: cc-by-4.0").
+    license_as_shown: "license: apache-2.0"
+    license_id: Apache-2.0
+    verified: 2026-09-23
+    attribution: >-
+      beratcmn, Turkish Prompt Injections, https://huggingface.co/datasets/beratcmn/turkish-prompt-injections,
+      Apache-2.0; translated from deepset, prompt-injections,
+      https://huggingface.co/datasets/deepset/prompt-injections, Apache-2.0.
+    use: train
+    notes: >-
+      Only the Turkish text field is used, never the original. The card does not say how the
+      translation was made.
+  - path: data/raw/_downloads/microsoft__RTP-LX/
+    source: https://github.com/microsoft/RTP-LX
+    upstream: >-
+      RTP-LX/RTP-LX.zip, LICENSE, NOTICE, README.md, rtp-lx_metadata.json and
+      scoring/rtp_lx_scoring_prompt.txt at commit 805763e2e37354ad7b24bea9f199e285008e94db,
+      unedited. The archive is password-protected with the public password its README gives; only
+      RTP_LX_TR.json is read from it, and only its prompts and prompt annotations. Turkish prompts
+      are human transcreated from RealToxicityPrompts (Apache-2.0) or written for RTP-LX, and
+      annotated by three native speakers.
+    license_as_shown: "LICENSE: MIT License, Copyright (c) Microsoft Corporation. README: \"Please see NOTICE for the third party licencing. The remaining of this work is MIT licence\". NOTICE: \"Original English corpus from RTP (https://github.com/allenai/real-toxicity-prompts/blob/master/LICENSE)\", Apache License Version 2.0."
+    license_id: MIT
+    verified: 2026-09-23
+    attribution: >-
+      de Wynter et al., "RTP-LX: Can LLMs Evaluate Toxicity in Multilingual Scenarios?", AAAI 2025,
+      https://github.com/microsoft/RTP-LX, MIT, Copyright (c) Microsoft Corporation. Translated from
+      RealToxicityPrompts, Gehman et al., Findings of EMNLP 2020, Apache-2.0.
+    use: measure
+    notes: >-
+      Held back from training: the metadata lists CC-BY-NC-4.0 without saying which part it covers, and a listed non-commercial licence keeps a set out.
+      Built as an evaluation set and used for training. For the owner's review: the NOTICE
+      also carries CC BY-SA 4.0 (Korean BEEP!, Brazilian Portuguese ToLD-Br) and CC BY-NC-SA 4.0
+      (Offensive Hebrew) components, none of them Turkish; and rtp-lx_metadata.json (version 0.0.1)
+      lists three licences, CC-BY-NC-4.0, MIT and Apache-2.0, without saying which part each
+      covers, plus a use note: "This data may not be used in any system that could cause harm, or
+      used in surveillance applications." The completions in the archive were written by a model
+      and are not used.
+
+  - path: data/raw/_downloads/PaDaS-Lab__webfaq/
+    source: https://huggingface.co/datasets/PaDaS-Lab/webfaq
+    upstream: >-
+      README.md at commit 692dd5d911a9f0172215e82e5fa1fb1fc2cc9c6e, and the tur config's parquet
+      export of that commit (tur/default/0000.parquet and 0001.parquet at refs/convert/parquet
+      commit 92be36774d8b618a7e8e8dca86092661f74e326a), unedited. FAQ pairs from schema.org
+      FAQPage markup in Common Crawl (Oct 2022 to Oct 2024). Used only to recover the site and
+      page of pairs taken from webfaq-retrieval's train split.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"The Collection of WebFAQ Datasets is shared under Creative Commons Attribution 4.0 (CC BY 4.0) license.\" (card, License section)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Dinzinger, Caspari, Ghosh Dastidar, Mitrović, Granitzer, "WebFAQ: A Multilingual Collection
+      of Natural Q&A Datasets for Dense Retrieval", arXiv:2502.20936, 2025 (PaDaS-Lab/webfaq,
+      CC BY 4.0).
+    use: both
+    notes: >-
+      The card's License section goes on: "Note: The dataset is derived from public webpages in
+      Common Crawl snapshots (2022–2024) and intended for research purposes. Each FAQ's text is
+      published by the original website under their terms. Downstream users should verify any
+      usage constraints from the original websites as well as Common Crawl's Terms of Use." The
+      same position as clips/mqa (data/built/sss/): sound for training, a public release of the
+      rows needs its own decision. The parquet shards (182 MB) may be deleted after a build and
+      fetched again at the pinned commit. Since 2026-09-25 bench/hakembench/sources.py also reads
+      them for the site and page of webfaq-retrieval test pairs (use both).
+  - path: data/raw/_downloads/PaDaS-Lab__webfaq-retrieval/
+    source: https://huggingface.co/datasets/PaDaS-Lab/webfaq-retrieval
+    upstream: >-
+      README.md, tur/queries-train.jsonl, tur/qrels-train.jsonl and tur/corpus.jsonl at commit
+      1abff20b9ea37abeec151bd8bcfa78c31a48f9fb, unedited. tur/queries-test.jsonl and
+      tur/qrels-test.jsonl are never downloaded. The corpus holds the answers of both splits; only
+      answers linked from train qrels are read into rows.
+    license_as_shown: "\"The Collection of WebFAQ Datasets is shared under Creative Commons Attribution 4.0 (CC BY 4.0) license.\" (card, License section; the card metadata has no license field)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Dinzinger, Caspari, Ghosh Dastidar, Mitrović, Granitzer, "WebFAQ: A Multilingual Collection
+      of Natural Q&A Datasets for Dense Retrieval", arXiv:2502.20936, 2025
+      (PaDaS-Lab/webfaq-retrieval, CC BY 4.0).
+    use: both
+    notes: >-
+      Its test split is MTEB's WebFAQRetrieval Turkish evaluation data. The raw corpus has no
+      splits and overlaps it, so the decontamination pass should register that test split.
+      bench/hakembench/sources.py also reads from corpus.jsonl the answers of test qrels, for
+      HakemBench candidates only (use both since 2026-09-25); the test files themselves are in
+      data/raw/_hakembench/PaDaS-Lab__webfaq-retrieval/.
+  - path: data/built/typed/prompt_injection/
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k
+    upstream: >-
+      Typed noul rows built by data/typed/guardrails.py from three raw folders above:
+      3nesdeniz__turkish-prompt-injection-1k, 3nesdeniz__guardrail-hard-negatives (Turkish rows)
+      and beratcmn__turkish-prompt-injections (the conversation set is
+      its own task).
+      Train and validation only, masked for personal data, deduplicated across sources; question
+      wording by ufak AI. Each row's source field names its raw folder, whose entry carries its
+      licence.
+    license_as_shown: "cc-by-4.0 (the two 3nesdeniz sets); apache-2.0 (beratcmn/turkish-prompt-injections)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Enes Deniz, Turkish Prompt-Injection 1K and Guardrail Hard Negatives (EN/TR), CC BY 4.0;
+      beratcmn, Turkish Prompt Injections, Apache-2.0, translated from deepset/prompt-injections,
+      Apache-2.0.
+    use: train
+    notes: >-
+      Mixed folder: CC BY 4.0 rows and Apache-2.0 rows, both allowed; the id above is that of
+      most rows (the two 3nesdeniz sets), and each row's source field leads to its own entry.
+      Labels are rule labels (the class each text was written, expanded or translated for).
+      Rebuilt, not edited: `python -m data.typed.guardrails --task prompt_injection`.
+  - path: data/built/typed/prompt_injection_conv/train.jsonl
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-conversation-prompt-injection
+    upstream: >-
+      Typed noul rows (task prompt_injection-conv) built by data/typed/guardrails.py through
+      `python -m data.label.r5 build` from data/train.parquet in
+      data/raw/_downloads/3nesdeniz__turkish-conversation-prompt-injection/, masked for personal
+      data, with the prompt_injection question wording by ufak AI; texts touching HakemBench v1.0,
+      a probe, HakemBench-dev or the dev set dropped (results/step9/r5/overlap.json).
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"Creative Commons Attribution 4.0 International (CC BY 4.0) ... You are free to share and adapt the material for any purpose, including commercial use, provided that appropriate credit is given\" (LICENSE)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-27
+    attribution: >-
+      Turkish Conversation Prompt-Injection Dataset, Enes Deniz, version 1.0.2, licensed under CC BY
+      4.0. Affiliation: AltaySec. DOI 10.5281/zenodo.21379389. Converted to typed questions by
+      ufak AI.
+    use: train
+    notes: Used for training. Labels are rule labels (the class each text was written for).
+  - path: data/built/typed/prompt_injection_conv/validation.jsonl
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-conversation-prompt-injection
+    upstream: >-
+      Typed noul rows (task prompt_injection-conv) built as the train file is, from
+      data/validation.parquet (source field in data/raw/_downloads/) and data/test.parquet
+      (source field in data/raw/_guard_dev/): 20 + 30 attacks, 80 + 90 benign.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"Creative Commons Attribution 4.0 International (CC BY 4.0) ... You are free to share and adapt the material for any purpose, including commercial use, provided that appropriate credit is given\" (LICENSE)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-27
+    attribution: >-
+      Turkish Conversation Prompt-Injection Dataset, Enes Deniz, version 1.0.2, licensed under CC BY
+      4.0. Affiliation: AltaySec. DOI 10.5281/zenodo.21379389. Converted to typed questions by
+      ufak AI.
+    use: measure
+    notes: >-
+      The guardrail dev set. It sits among the validation files so every run writes
+      predictions on it; it is never trained on and is left out of the prior weights.
+  - path: data/built/typed/prompt_injection_conv/meta.json
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-conversation-prompt-injection
+    upstream: Counts, balance and source file hashes of the two files above, written by the build.
+    license_as_shown: "license: cc-by-4.0 (card metadata)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-27
+    attribution: >-
+      Turkish Conversation Prompt-Injection Dataset, Enes Deniz, version 1.0.2, licensed under CC BY
+      4.0. Affiliation: AltaySec. DOI 10.5281/zenodo.21379389.
+    use: measure
+  - path: data/built/typed/rtplx_toxicity/
+    source: https://github.com/microsoft/RTP-LX
+    upstream: >-
+      Typed noul rows built by data/typed/guardrails.py from RTP_LX_TR.json in
+      data/raw/_downloads/microsoft__RTP-LX/: the prompts and their three-annotator majority
+      labels; question wording by ufak AI. Validation is a tenth of the prompts by a hash of the
+      text.
+    license_as_shown: "MIT License (LICENSE); NOTICE: Original English corpus from RTP, Apache License Version 2.0"
+    license_id: MIT
+    verified: 2026-09-23
+    attribution: >-
+      de Wynter et al., "RTP-LX: Can LLMs Evaluate Toxicity in Multilingual Scenarios?", AAAI 2025,
+      MIT, Copyright (c) Microsoft Corporation; from RealToxicityPrompts, Gehman et al., Findings of
+      EMNLP 2020, Apache-2.0.
+    use: measure
+    notes: >-
+      Held back from training: the metadata lists CC-BY-NC-4.0 without saying which part it covers, and a listed non-commercial licence keeps a set out.
+      An evaluation set trained on. See the raw folder's notes for the metadata file's
+      licence listing and use note. Rebuilt, not edited: `python -m data.typed.guardrails --task
+      rtplx_toxicity`.
+
+  - path: data/built/typed/webfaq_relevance/
+    source: https://huggingface.co/datasets/PaDaS-Lab/webfaq-retrieval
+    upstream: >-
+      Typed noul rows built by data/typed/relevance.py from webfaq-retrieval's Turkish train pairs,
+      joined to PaDaS-Lab/webfaq for site and page: each sampled question with its own answer and
+      one answer from another page. Filtered and masked with data/label/texts.py; question wording
+      by ufak AI.
+    license_as_shown: "The Collection of WebFAQ Datasets is shared under Creative Commons Attribution 4.0 (CC BY 4.0) license."
+    license_id: CC-BY-4.0
+    verified: 2026-09-23
+    attribution: >-
+      Dinzinger, Caspari, Ghosh Dastidar, Mitrović, Granitzer, "WebFAQ: A Multilingual Collection
+      of Natural Q&A Datasets for Dense Retrieval", arXiv:2502.20936, 2025 (PaDaS-Lab/webfaq and
+      PaDaS-Lab/webfaq-retrieval, CC BY 4.0).
+    use: train
+    notes: >-
+      Rule labels from page structure. Rebuilt, not edited: `python -m data.typed.relevance`. See
+      the raw folders' notes for the card's research-purposes note and the test-split overlap.
+
+  # Generated rows for the tracks no licensed set covers.
+  - path: data/built/synth/
+    source: authored
+    upstream: >-
+      Typed rows built by data/label/synth.py: questions and option wording written by ufak AI;
+      texts written by various LLMs to ufak AI's briefs, with fictional names and brands and every
+      link and number masked (messages, student answers, legal problems described by a lay person,
+      posts with and without factual claims), plus FACTurk claims already converted under their own
+      entry and people's questions from the clips/mqa sample (CC0 packaging, as in data/built/sss/);
+      targets are the mean vote of two LLM judges. Promoted from results/step3/synth/rows.jsonl.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-24
+    attribution: ufak AI; FACTurk claims as attributed in their own entry.
+    use: train
+    notes: >-
+      The check-worthiness rows carry FACTurk claims; their licence is FACTurk's (MIT), recorded in
+      its entry.
+
+  # The release model's added rows.
+  - path: data/built/r4/
+    source: authored
+    upstream: >-
+      Typed rows built by data/label/r4.py. Support: people's questions and answers from the
+      clips/mqa sample already in data/built/sss/ (CC0 packaging), with HakemBench's four support
+      questions in ufak AI's written wording; targets are the mean of two AI model labellers'
+      distributions. Guardrails and moderation: messages written by an AI model to ufak AI's
+      briefs (fictional names, placeholders for personal data), each labelled blind by a second
+      AI model and kept only where that label agrees with the writer's intent. Promoted from
+      results/private/step9/r4/rows.jsonl.
+    license_as_shown: CC BY 4.0, authored by ufak AI; support texts CC0-1.0 as in data/built/sss/
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-27
+    attribution: ufak AI; the support texts as attributed in the data/built/sss/ entry.
+    use: train
+
+  # HakemBench candidates from untouched test splits. The test files sit in data/raw/_hakembench/,
+  # apart from the training converters' downloads, and no training converter reads them. Built by
+  # bench/hakembench/sources.py; every candidate is checked against every file under data/built and
+  # dropped on overlap (results/step8/candidates.json).
+  - path: data/raw/_hakembench/icgcihan__Turkish_Constutional_Court_Decisions/
+    source: https://huggingface.co/datasets/icgcihan/Turkish_Constutional_Court_Decisions
+    upstream: >-
+      test.json and README.md at commit 347a0f83d7e5f3bd74fcdf38d0684aa126b1920c (the commit the
+      training rows come from, still the head on 2026-09-25), unedited, read through the hub's file
+      resolver. Rulings of the Anayasa Mahkemesi on individual applications, from the court's
+      decisions database; court decisions carry no copyright under FSEK article 31.
+    license_as_shown: "license: cc-by-4.0 (card metadata; the hub API tags the repo license:cc-by-4.0)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Cihan Erdoğanyılmaz, Berkay Mengünoğul, Muhammet Balci, "Unveiling the Black Box:
+      Investigating the Interplay between AI Technologies, Explainability, and Legal Implications",
+      UBMK 2023, pages 569-574 (icgcihan/Turkish_Constutional_Court_Decisions, CC BY 4.0). Rulings
+      of the Anayasa Mahkemesi.
+    use: bench
+    notes: >-
+      The source's test split, never used for training (rule 2). File hashes are pinned in
+      bench/hakembench/sources.py.
+  - path: data/raw/_hakembench/3nesdeniz__turkish-prompt-injection-1k/
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k
+    upstream: >-
+      data/test.parquet and README.md at commit 1cbd1152d9732f40148fbd5bb7cf0f58ddfe84c6 (the commit
+      the training rows come from, still the head on 2026-09-25), unedited. Rows expanded from
+      human-designed attack templates and authored benign hard negatives; synthetic, placeholders
+      only.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"CC-BY-4.0 — share and adapt with attribution.\" (card, License section)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Enes Deniz, Turkish Prompt-Injection 1K, Hugging Face, 2026,
+      https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k, CC BY 4.0.
+    use: bench
+    notes: >-
+      The source's test split, never used for training (rule 2). The card calls its splits
+      "scenario-isolated", yet some test texts equal a training text after normalisation; those are
+      dropped (results/step8/candidates.json). File hashes are pinned in bench/hakembench/sources.py.
+  - path: data/raw/_hakembench/3nesdeniz__guardrail-hard-negatives/
+    source: https://huggingface.co/datasets/3nesdeniz/guardrail-hard-negatives
+    upstream: >-
+      data/test.parquet and README.md at commit 638188743abb089708163b2408a0ef6279721869 (the commit
+      the training rows come from, still the head on 2026-09-25), unedited. English and Turkish
+      rows; only rows with language "tr" are converted.
+    license_as_shown: "license: cc-by-4.0 (card metadata); \"CC-BY-4.0 — share and adapt with attribution.\" (card, License section)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Enes Deniz, Guardrail Hard Negatives (EN/TR), Hugging Face, 2026,
+      https://huggingface.co/datasets/3nesdeniz/guardrail-hard-negatives, CC BY 4.0.
+    use: bench
+    notes: >-
+      The source's test split, never used for training (rule 2). File hashes are pinned in
+      bench/hakembench/sources.py.
+  - path: data/raw/_hakembench/PaDaS-Lab__webfaq-retrieval/
+    source: https://huggingface.co/datasets/PaDaS-Lab/webfaq-retrieval
+    upstream: >-
+      tur/queries-test.jsonl, tur/qrels-test.jsonl and README.md at commit
+      1abff20b9ea37abeec151bd8bcfa78c31a48f9fb (the commit the training rows come from, still the
+      head on 2026-09-25), unedited. The answers come from tur/corpus.jsonl in
+      data/raw/_downloads/PaDaS-Lab__webfaq-retrieval/, and site and page from PaDaS-Lab/webfaq in
+      data/raw/_downloads/PaDaS-Lab__webfaq/, both under their own entries.
+    license_as_shown: "\"The Collection of WebFAQ Datasets is shared under Creative Commons Attribution 4.0 (CC BY 4.0) license.\" (card, License section; the card metadata has no license field)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Dinzinger, Caspari, Ghosh Dastidar, Mitrović, Granitzer, "WebFAQ: A Multilingual Collection
+      of Natural Q&A Datasets for Dense Retrieval", arXiv:2502.20936, 2025
+      (PaDaS-Lab/webfaq-retrieval, CC BY 4.0).
+    use: bench
+    notes: >-
+      MTEB's WebFAQRetrieval Turkish evaluation data, never used for training (rule 2). The card's
+      License section goes on: "Note: The dataset is derived from public webpages in Common Crawl
+      snapshots (2022–2024) and intended for research purposes. Each FAQ's text is published by the
+      original website under their terms." The same position as the training entry: publishing
+      these texts in the public half needs its own decision.
+  - path: bench/hakembench/candidates/hukuk.jsonl
+    source: https://huggingface.co/datasets/icgcihan/Turkish_Constutional_Court_Decisions
+    upstream: >-
+      HakemBench legal candidates built by bench/hakembench/sources.py from the test split in
+      data/raw/_hakembench/icgcihan__Turkish_Constutional_Court_Decisions/: the court's summary of
+      the complaint, masked for personal data, with the aym_rights question and the right heading as
+      gold. Question wording and Turkish option names by ufak AI.
+    license_as_shown: "license: cc-by-4.0 (card metadata)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Cihan Erdoğanyılmaz, Berkay Mengünoğul, Muhammet Balci, UBMK 2023
+      (icgcihan/Turkish_Constutional_Court_Decisions, CC BY 4.0). Rulings of the Anayasa Mahkemesi.
+      Questions by ufak AI.
+    use: bench
+    notes: >-
+      Candidates, not yet checked by the owner. Public and private halves are in
+      hukuk.meta.jsonl. Rebuilt, not edited: `python -m bench.hakembench.sources`.
+  - path: bench/hakembench/candidates/hukuk.meta.jsonl
+    source: https://huggingface.co/datasets/icgcihan/Turkish_Constutional_Court_Decisions
+    upstream: >-
+      Provenance of hukuk.jsonl, one line per item: source, licence, source revision, the ruling's
+      link in the court's database as the source row id, the half and the text's sha256.
+    license_as_shown: "license: cc-by-4.0 (card metadata)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Cihan Erdoğanyılmaz, Berkay Mengünoğul, Muhammet Balci, UBMK 2023
+      (icgcihan/Turkish_Constutional_Court_Decisions, CC BY 4.0).
+    use: bench
+  - path: bench/hakembench/candidates/guvenlik.jsonl
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k
+    upstream: >-
+      HakemBench guardrail candidates built by bench/hakembench/sources.py from the Turkish test
+      rows in data/raw/_hakembench/3nesdeniz__turkish-prompt-injection-1k/ and
+      data/raw/_hakembench/3nesdeniz__guardrail-hard-negatives/, masked and deduplicated as
+      data/typed/guardrails.py does, with the prompt_injection question; gold is the class each
+      text was written for. Question wording by ufak AI.
+    license_as_shown: "license: cc-by-4.0 (card metadata of both sets)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Enes Deniz, Turkish Prompt-Injection 1K, Hugging Face, 2026,
+      https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k, CC BY 4.0. Questions
+      by ufak AI.
+    use: bench
+    notes: >-
+      Candidates, not yet checked by the owner. Each item's source set is in
+      guvenlik.meta.jsonl. Rebuilt, not edited: `python -m bench.hakembench.sources`. The
+      attribution names the set this entry's source URL points to; items from Guardrail Hard
+      Negatives take that set's own entry (release/public_build.py credits by source URL).
+  - path: bench/hakembench/candidates/guvenlik.meta.jsonl
+    source: https://huggingface.co/datasets/3nesdeniz/turkish-prompt-injection-1k
+    upstream: >-
+      Provenance of guvenlik.jsonl, one line per item: source set, licence, source revision, the
+      row's id in its test file, the half and the text's sha256.
+    license_as_shown: "license: cc-by-4.0 (card metadata of both sets)"
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Enes Deniz, Turkish Prompt-Injection 1K and Guardrail Hard Negatives (EN/TR), Hugging Face,
+      2026, CC BY 4.0.
+    use: bench
+  - path: bench/hakembench/candidates/arama.jsonl
+    source: https://huggingface.co/datasets/PaDaS-Lab/webfaq-retrieval
+    upstream: >-
+      HakemBench relevance candidates built by bench/hakembench/sources.py from webfaq-retrieval's
+      Turkish test queries and qrels, joined to PaDaS-Lab/webfaq for site and page, filtered and
+      masked as data/typed/relevance.py does: each drawn question with its own answer and one
+      answer from another test pair. Question wording by ufak AI.
+    license_as_shown: "The Collection of WebFAQ Datasets is shared under Creative Commons Attribution 4.0 (CC BY 4.0) license."
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Dinzinger, Caspari, Ghosh Dastidar, Mitrović, Granitzer, "WebFAQ: A Multilingual Collection
+      of Natural Q&A Datasets for Dense Retrieval", arXiv:2502.20936, 2025 (PaDaS-Lab/webfaq and
+      PaDaS-Lab/webfaq-retrieval, CC BY 4.0). Questions by ufak AI.
+    use: bench
+    notes: >-
+      Candidates, not yet checked by the owner. Rule labels from page structure. See the raw
+      folder's notes for the card's research-purposes note. Rebuilt, not edited:
+      `python -m bench.hakembench.sources`.
+  - path: bench/hakembench/candidates/arama.meta.jsonl
+    source: https://huggingface.co/datasets/PaDaS-Lab/webfaq-retrieval
+    upstream: >-
+      Provenance of arama.jsonl, one line per item: licence, source revision, the test query and
+      the query whose answer is the passage, the question's group, the half and the text's sha256.
+    license_as_shown: "The Collection of WebFAQ Datasets is shared under Creative Commons Attribution 4.0 (CC BY 4.0) license."
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Dinzinger, Caspari, Ghosh Dastidar, Mitrović, Granitzer, arXiv:2502.20936, 2025
+      (PaDaS-Lab/webfaq-retrieval, CC BY 4.0).
+    use: bench
+  # HakemBench. The parliamentary proceedings
+  # file, not tracked by git, and the check-worthiness candidates drawn from it.
+  - path: data/raw/_downloads/zenodo__19713325/
+    source: https://zenodo.org/records/19713325
+    upstream: >-
+      tbmm_speeches_v1_floor_core.parquet and the record's README ("README (2).md", saved as
+      README.md), unedited, from the record's file API on 2026-09-25 (DOI 10.5281/zenodo.19713325,
+      published 2026-04-23, md5 as listed by the record). 136,118 floor speeches from 1950 to 2023
+      whose speaker is linked to a member of parliament and a party. Per the README, the 1950 to
+      2018 text is from the Turkronicles corpus (Zenodo record 15766757, whose metadata lists
+      cc-by-4.0, read 2026-09-25) and the 2018 to 2023 text from the parliament's own Word
+      transcripts.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Erdem Demirtaş (University of Copenhagen), "TBMM Parliamentary Proceedings Corpus with
+      Speaker-Turn Segmentation, Party Linkage, and Validated Metadata, 1950-2023" (v1.0), Zenodo,
+      2026, doi:10.5281/zenodo.19713325, CC BY 4.0. Derived in part from Umur Togay Yazar, Mucahid
+      Kutlu and İsa Kerem Bayırlı, "Turkronicles: Diachronic Resources for the Fast Evolving Turkish
+      Language", Zenodo, 2025, doi:10.5281/zenodo.15766757, CC BY 4.0.
+    use: bench
+    notes: >-
+      The licence string is the record metadata's license id; the README's License section reads
+      "CC BY 4.0 (matches upstream Turkronicles)". The parquet's sha256 is pinned in
+      bench/hakembench/parliament.py. The README cites Turkronicles under another title ("Digitized
+      Turkish Parliamentary Debates, 1920-2020"); the attribution above uses the record's own.
+  - path: bench/hakembench/candidates/dogrulama.jsonl
+    source: https://zenodo.org/records/19713325
+    upstream: >-
+      HakemBench check-worthiness candidates built by bench/hakembench/parliament.py from the folder
+      above: one sentence per sampled speaker turn, cut from the turn's text (line breaks inside a
+      sentence become spaces; contact data masked), with the turn id and character offsets in
+      dogrulama.meta.jsonl. Question wording by ufak AI: the check-worthiness question of
+      data/label/synth.py and a four-level check-priority score. No labels yet.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Sentences from Erdem Demirtaş, TBMM Parliamentary Proceedings Corpus (v1.0), Zenodo, 2026,
+      doi:10.5281/zenodo.19713325, CC BY 4.0, in part from Turkronicles (Yazar, Kutlu and Bayırlı,
+      doi:10.5281/zenodo.15766757, CC BY 4.0). Questions by ufak AI.
+    use: bench
+    notes: >-
+      Rebuilt, not edited: `python -m bench.hakembench.parliament`, which writes its counts to
+      results/step8/hakembench/dogrulama_candidates.json. About half the items are marked private
+      in the meta file; they stay out of any public release.
+  - path: bench/hakembench/candidates/dogrulama.meta.jsonl
+    source: https://zenodo.org/records/19713325
+    upstream: >-
+      HakemBench check-worthiness candidates built by bench/hakembench/parliament.py from the folder
+      above: one sentence per sampled speaker turn, cut from the turn's text (line breaks inside a
+      sentence become spaces; contact data masked), with the turn id and character offsets in
+      dogrulama.meta.jsonl. Question wording by ufak AI: the check-worthiness question of
+      data/label/synth.py and a four-level check-priority score. No labels yet.
+    license_as_shown: cc-by-4.0
+    license_id: CC-BY-4.0
+    verified: 2026-09-25
+    attribution: >-
+      Sentences from Erdem Demirtaş, TBMM Parliamentary Proceedings Corpus (v1.0), Zenodo, 2026,
+      doi:10.5281/zenodo.19713325, CC BY 4.0, in part from Turkronicles (Yazar, Kutlu and Bayırlı,
+      doi:10.5281/zenodo.15766757, CC BY 4.0). Questions by ufak AI.
+    use: bench
+    notes: >-
+      Rebuilt, not edited: `python -m bench.hakembench.parliament`, which writes its counts to
+      results/step8/hakembench/dogrulama_candidates.json. About half the items are marked private
+      in the meta file; they stay out of any public release.
+  - path: bench/hakembench/candidates/egitim.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py: student answers at four quality levels on 40 new topics,
+      written by various LLMs to ufak AI's briefs on topics and scenes disjoint from training;
+      questions and option wording by ufak AI; the panel's votes proposed for the owner's check.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/egitim.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py: student answers at four quality levels on 40 new topics,
+      written by various LLMs to ufak AI's briefs on topics and scenes disjoint from training;
+      questions and option wording by ufak AI; the panel's votes proposed for the owner's check.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/hukuk-gen.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py: 120 new court-routing problems described by a lay person,
+      written by various LLMs to ufak AI's briefs on topics and scenes disjoint from training;
+      questions and option wording by ufak AI; the panel's votes proposed for the owner's check.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/hukuk-gen.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py: 120 new court-routing problems described by a lay person,
+      written by various LLMs to ufak AI's briefs on topics and scenes disjoint from training;
+      questions and option wording by ufak AI; the panel's votes proposed for the owner's check.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/guvenlik-gen.jsonl
+    source: authored
+    upstream: >-
+      HakemBench guardrail candidates built by bench/hakembench/guard_gen.py: prompt-injection attempts inside
+      a product and hard negatives, written by an AI model to ufak AI's instructions,
+      matched on surface features, labelled blind by the panel; fictional names, every personal detail a placeholder.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/guvenlik-gen.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench guardrail candidates built by bench/hakembench/guard_gen.py: prompt-injection attempts inside
+      a product and hard negatives, written by an AI model to ufak AI's instructions,
+      matched on surface features, labelled blind by the panel; fictional names, every personal detail a placeholder.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/spam.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py: messages of every kind, with fictional names and brands and every link and number masked,
+      written by various LLMs to ufak AI's briefs on topics and scenes disjoint from training;
+      questions and option wording by ufak AI; the panel's votes proposed for the owner's check.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/spam.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py: messages of every kind, with fictional names and brands and every link and number masked,
+      written by various LLMs to ufak AI's briefs on topics and scenes disjoint from training;
+      questions and option wording by ufak AI; the panel's votes proposed for the owner's check.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/moderasyon.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py. Public
+      half: forum replies, product reviews and comments, some offensive, written by various LLMs to ufak AI's briefs. Private half: community pages from
+      clips/mqa (CC0 packaging, page text disclaimed), filtered and masked by data/label/texts.py,
+      never in any training file. Questions by ufak AI; the panel's votes proposed for the owner's
+      check.
+    license_as_shown: CC BY 4.0, authored by ufak AI; clips/mqa cc0-1.0
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: >-
+      ufak AI; De Bruyn, Lotfi, Buhmann, Daelemans, "MFAQ: a Multilingual FAQ Dataset", MRQA 2021
+      (clips/mqa, CC0 1.0).
+    use: bench
+    notes: >-
+      Items from clips/mqa are marked private in the meta file and stay out of any public release.
+  - path: bench/hakembench/candidates/moderasyon.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py. Public
+      half: forum replies, product reviews and comments, some offensive, written by various LLMs to ufak AI's briefs. Private half: community pages from
+      clips/mqa (CC0 packaging, page text disclaimed), filtered and masked by data/label/texts.py,
+      never in any training file. Questions by ufak AI; the panel's votes proposed for the owner's
+      check.
+    license_as_shown: CC BY 4.0, authored by ufak AI; clips/mqa cc0-1.0
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: >-
+      ufak AI; De Bruyn, Lotfi, Buhmann, Daelemans, "MFAQ: a Multilingual FAQ Dataset", MRQA 2021
+      (clips/mqa, CC0 1.0).
+    use: bench
+    notes: >-
+      Items from clips/mqa are marked private in the meta file and stay out of any public release.
+  - path: bench/hakembench/candidates/sss.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py. Public
+      half: customer-support questions with answers, written by various LLMs to ufak AI's briefs. Private half: company FAQ and community pages from
+      clips/mqa (CC0 packaging, page text disclaimed), filtered and masked by data/label/texts.py,
+      never in any training file. Questions by ufak AI; the panel's votes proposed for the owner's
+      check.
+    license_as_shown: CC BY 4.0, authored by ufak AI; clips/mqa cc0-1.0
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: >-
+      ufak AI; De Bruyn, Lotfi, Buhmann, Daelemans, "MFAQ: a Multilingual FAQ Dataset", MRQA 2021
+      (clips/mqa, CC0 1.0).
+    use: bench
+    notes: >-
+      Items from clips/mqa are marked private in the meta file and stay out of any public release.
+  - path: bench/hakembench/candidates/sss.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench candidates built by bench/hakembench/generate.py. Public
+      half: customer-support questions with answers, written by various LLMs to ufak AI's briefs. Private half: company FAQ and community pages from
+      clips/mqa (CC0 packaging, page text disclaimed), filtered and masked by data/label/texts.py,
+      never in any training file. Questions by ufak AI; the panel's votes proposed for the owner's
+      check.
+    license_as_shown: CC BY 4.0, authored by ufak AI; clips/mqa cc0-1.0
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-25
+    attribution: >-
+      ufak AI; De Bruyn, Lotfi, Buhmann, Daelemans, "MFAQ: a Multilingual FAQ Dataset", MRQA 2021
+      (clips/mqa, CC0 1.0).
+    use: bench
+    notes: >-
+      Items from clips/mqa are marked private in the meta file and stay out of any public release.
+  - path: bench/hakembench/candidates/egitim-topup.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: student answers at four quality levels on 40 more new topics, one exam question each,
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/egitim-topup.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: student answers at four quality levels on 40 more new topics, one exam question each,
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/hukuk-gen-topup.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: 12 more court-routing problems described by a lay person,
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/hukuk-gen-topup.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: 12 more court-routing problems described by a lay person,
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/moderasyon-topup.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: 200 more authored comments in five new forms (four kinds),
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/moderasyon-topup.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: 200 more authored comments in five new forms (four kinds),
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/sss-topup.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: 191 more authored support question-and-answer texts in eight new sectors,
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench
+  - path: bench/hakembench/candidates/sss-topup.meta.jsonl
+    source: authored
+    upstream: >-
+      HakemBench top-up built by bench/hakembench/topup.py: 191 more authored support question-and-answer texts in eight new sectors,
+      written by an AI model to ufak AI's briefs on topics and scenes disjoint from training
+      and from the first round, with placeholders for every person, business and place;
+      questions and option wording by ufak AI; three panel votes per question in the meta file.
+    license_as_shown: CC BY 4.0, authored by ufak AI
+    license_id: LicenseRef-ufakai-authored
+    verified: 2026-09-26
+    attribution: ufak AI.
+    use: bench

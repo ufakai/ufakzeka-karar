@@ -1,0 +1,44 @@
+{
+  "runs": [
+    "r2-base-s1"
+  ],
+  "dev": "results/private/hakembench/dev_v0.jsonl",
+  "rows": 255,
+  "missing": 0,
+  "model": {
+    "accuracy": 0.6941176470588235,
+    "accuracy_interval": [
+      0.6391176470588235,
+      0.7529411764705882
+    ],
+    "macro_f1_mean_over_tasks": 0.6745014798003929,
+    "brier": 0.4283090191219927,
+    "ece_10": 0.0831271282598084,
+    "mean_confidence": 0.7525584404375039
+  },
+  "panel": {
+    "accuracy": 0.7529411764705882,
+    "accuracy_interval": [
+      0.6980392156862745,
+      0.803921568627451
+    ],
+    "macro_f1_mean_over_tasks": 0.6998339371980676,
+    "brier": 0.36990437677008203,
+    "ece_10": 0.11176499467574139,
+    "mean_confidence": 0.8627344526974853
+  },
+  "model_minus_panel_accuracy": {
+    "difference": -0.058823529411764705,
+    "interval": [
+      -0.11372549019607843,
+      -0.00784313725490196
+    ]
+  },
+  "model_minus_panel_brier": {
+    "difference": 0.05840464235191066,
+    "interval": [
+      0.003235180326296906,
+      0.11802411095113885
+    ]
+  }
+}

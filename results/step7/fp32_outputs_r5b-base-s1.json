@@ -1,0 +1,16 @@
+{
+  "run": "r5b-base-s1",
+  "build": {
+    "sample": 44,
+    "calibration": 0,
+    "head": "/vol/round1/runs/r5b-base-s1/model.pt",
+    "fp32_bytes": 735333256
+  },
+  "outputs": {
+    "rows": 19917,
+    "engines": [
+      "fp32"
+    ],
+    "seconds": 2252.7
+  }
+}

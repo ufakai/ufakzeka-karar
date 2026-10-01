@@ -1,0 +1,9 @@
+{
+  "items": 390,
+  "routing": {
+    "agreed": 280,
+    "sampled": 70,
+    "disputed": 40
+  },
+  "owner_units": 110
+}

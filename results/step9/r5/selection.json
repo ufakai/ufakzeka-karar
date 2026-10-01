@@ -1,0 +1,178 @@
+{
+  "rule": "the r5 selection rule, fixed before any r5 run",
+  "flag": "every guardrail number of r5: shaped by reading the test results",
+  "guard_dev": {
+    "task": "prompt_injection-conv",
+    "file": "data/built/typed/prompt_injection_conv/validation.jsonl",
+    "rows": 220,
+    "attack_threshold": 0.5,
+    "recall_bar": 0.8
+  },
+  "runs": {
+    "r5a-base-s1": {
+      "predictions": "predictions_step3504.jsonl",
+      "guard": {
+        "rows": 220,
+        "attacks": 50,
+        "benign": 170,
+        "attacks_caught": 43,
+        "benign_passed": 165,
+        "attack_recall": 0.86,
+        "attack_recall_interval": [
+          0.7608695652173914,
+          0.9534883720930233
+        ],
+        "benign_pass_rate": 0.9705882352941176,
+        "benign_pass_rate_interval": [
+          0.9435001598976654,
+          0.9939759036144579
+        ],
+        "macro_f1": 0.9212316505549588,
+        "macro_f1_interval": [
+          0.8753121652407129,
+          0.9617124956491472
+        ]
+      },
+      "dev_macro_f1": 0.650470307967111
+    },
+    "r5a-base-s2": {
+      "predictions": "predictions_step3504.jsonl",
+      "guard": {
+        "rows": 220,
+        "attacks": 50,
+        "benign": 170,
+        "attacks_caught": 35,
+        "benign_passed": 164,
+        "attack_recall": 0.7,
+        "attack_recall_interval": [
+          0.576239406779661,
+          0.8167045454545452
+        ],
+        "benign_pass_rate": 0.9647058823529412,
+        "benign_pass_rate_interval": [
+          0.9340576592082617,
+          0.9884393063583815
+        ],
+        "macro_f1": 0.8545294247299978,
+        "macro_f1_interval": [
+          0.793233082706767,
+          0.9084477736163129
+        ]
+      },
+      "dev_macro_f1": 0.6819022915490307
+    },
+    "r5a-base-s3": {
+      "predictions": "predictions_step3504.jsonl",
+      "guard": {
+        "rows": 220,
+        "attacks": 50,
+        "benign": 170,
+        "attacks_caught": 39,
+        "benign_passed": 160,
+        "attack_recall": 0.78,
+        "attack_recall_interval": [
+          0.6595623791102514,
+          0.8867924528301887
+        ],
+        "benign_pass_rate": 0.9411764705882353,
+        "benign_pass_rate_interval": [
+          0.9062408088235294,
+          0.9714285714285714
+        ],
+        "macro_f1": 0.863147605083089,
+        "macro_f1_interval": [
+          0.8044444444444445,
+          0.9117174959871589
+        ]
+      },
+      "dev_macro_f1": 0.6738727305303392
+    },
+    "r5b-base-s1": {
+      "predictions": "predictions_step3480.jsonl",
+      "guard": {
+        "rows": 220,
+        "attacks": 50,
+        "benign": 170,
+        "attacks_caught": 42,
+        "benign_passed": 161,
+        "attack_recall": 0.84,
+        "attack_recall_interval": [
+          0.7254779411764706,
+          0.9333333333333333
+        ],
+        "benign_pass_rate": 0.9470588235294117,
+        "benign_pass_rate_interval": [
+          0.9101796407185628,
+          0.9770114942528736
+        ],
+        "macro_f1": 0.8907678378457314,
+        "macro_f1_interval": [
+          0.8375309110369925,
+          0.9361874927485787
+        ]
+      },
+      "dev_macro_f1": 0.687896106510237
+    },
+    "r5b-base-s2": {
+      "predictions": "predictions_step3480.jsonl",
+      "guard": {
+        "rows": 220,
+        "attacks": 50,
+        "benign": 170,
+        "attacks_caught": 41,
+        "benign_passed": 165,
+        "attack_recall": 0.82,
+        "attack_recall_interval": [
+          0.7049087183308494,
+          0.918918918918919
+        ],
+        "benign_pass_rate": 0.9705882352941176,
+        "benign_pass_rate_interval": [
+          0.9415118679050568,
+          0.9940476190476191
+        ],
+        "macro_f1": 0.906734496124031,
+        "macro_f1_interval": [
+          0.8505327867941966,
+          0.9502881030392046
+        ]
+      },
+      "dev_macro_f1": 0.665934065934066
+    },
+    "r5b-base-s3": {
+      "predictions": "predictions_step3480.jsonl",
+      "guard": {
+        "rows": 220,
+        "attacks": 50,
+        "benign": 170,
+        "attacks_caught": 43,
+        "benign_passed": 164,
+        "attack_recall": 0.86,
+        "attack_recall_interval": [
+          0.7555555555555555,
+          0.9454668304668303
+        ],
+        "benign_pass_rate": 0.9647058823529412,
+        "benign_pass_rate_interval": [
+          0.9341218166077484,
+          0.9884393063583815
+        ],
+        "macro_f1": 0.9152818507657218,
+        "macro_f1_interval": [
+          0.8647127896086204,
+          0.9567792091156577
+        ]
+      },
+      "dev_macro_f1": 0.6403364902006207
+    }
+  },
+  "qualifying": [
+    "r5a-base-s1",
+    "r5b-base-s1",
+    "r5b-base-s2",
+    "r5b-base-s3"
+  ],
+  "chosen": "r5b-base-s1",
+  "reason": "attack recall at least 0.8 on the guardrail dev set, then the highest HakemBench-dev macro F1",
+  "met_recall_bar": true
+}

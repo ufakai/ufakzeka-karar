@@ -1,0 +1,80 @@
+{
+  "counts": {
+    "templates_written": 16,
+    "pairs": 320,
+    "template_low_variance": 3,
+    "template_rarely_applies": 5,
+    "answerable_blind": 32,
+    "kept": 90,
+    "not_applicable": 25,
+    "screened_out": 64,
+    "failed:LowLabelMass": 13
+  },
+  "template_problems": {},
+  "screening": {
+    "Verilen cevap temel olarak hangi türde bir bilgi sunmaktadır?": "passed",
+    "Metindeki cevap, sorulan sorunun kapsamını ve bilgi ihtiyacını ne ölçüde karşılamaktadır?": "passed",
+    "Verilen yanıt, sorulan konuyu başka bir kaynağa veya şarta yönlendirmeden doğrudan ve net bir şekilde aydınlatıyor mu?": "low_variance",
+    "Verilen cevap, iddialarını desteklemek için ne düzeyde kanıt, gerekçe veya kaynak sunuyor?": "low_variance",
+    "Metindeki sorunun ele alınması ne düzeyde bir zaman kısıtı veya aciliyet gerektirmektedir?": "rarely_applies",
+    "Verilen cevap esas olarak hangi kitleye hitap edecek şekilde hazırlanmıştır?": "passed",
+    "Metindeki konu maddi kayıp, yasal sorumluluk veya fiziksel zarar doğurabilecek bir durum içeriyor mu?": "low_variance",
+    "Metinde ele alınan problem veya sunulan çözüm; finansal kayıp, hukuki yaptırım ya da sağlık açısından ne derece kritik bir risk barındırmaktadır?": "rarely_applies",
+    "Metindeki cevap temel olarak hangi türde bir bilgi sağlamaktadır?": "passed",
+    "Metindeki soru ve cevap en çok hangi alana aittir?": "passed",
+    "Metindeki soru, kullanıcının anlık veya kritik bir durum için derhal çözüm beklediği bir talep içeriyor mu?": "rarely_applies",
+    "Kullanıcının sorudaki temel amacı ne ölçüde kişisel veya duygusal bir deneyime dayanmaktadır?": "rarely_applies",
+    "Verilen cevap esas olarak kime yönelik hazırlanmıştır?": "passed",
+    "Metindeki soru ve cevap çifti temel olarak hangi işlem veya bilgi türüne odaklanmaktadır?": "passed",
+    "Metindeki konu maddi kayıp, yasal sorumluluk veya fiziksel sağlığı doğrudan etkileyebilecek bir risk barındırıyor mu?": "rarely_applies",
+    "Soruyu soran kişinin amacı ne düzeyde eyleme veya uygulamaya dönük bir talep içermektedir?": "passed"
+  },
+  "texts_by_config": {
+    "tr-faq-question": 320,
+    "tr-cqa-question": 320
+  },
+  "unanimous_share": 0.7111,
+  "mean_off_letter_mass": {
+    "A": 0.0009,
+    "C": 0.0
+  },
+  "top_option_by_task": {
+    "bilgi_turu-choice": {
+      "İşlem adımı veya yöntem": 1,
+      "Yönlendirme veya tavsiye": 8,
+      "Sayısal veya finansal veri": 3,
+      "Tanım veya açıklama": 1,
+      "İşleyiş veya süreç": 7,
+      "Kural veya koşul": 2,
+      "Kavram tanımı": 2,
+      "Dış kaynak yönlendirmesi": 4
+    },
+    "yanit_yeterliligi-choice": {
+      "Eksiksiz": 6,
+      "Yetersiz": 4,
+      "Kısmi": 3,
+      "İlgisiz": 1
+    },
+    "hedef_kitle-choice": {
+      "Genel okuyucu kitlesi": 4,
+      "Bireysel soran kişi": 5,
+      "Benzer durumdaki herkes": 7,
+      "Topluluk geneli": 4
+    },
+    "konu-choice": {
+      "Bilişim ve internet": 8,
+      "Sağlık ve tıp": 4,
+      "Eğitim ve kariyer": 3,
+      "Erişim ve bağlantı": 1,
+      "Güvenilirlik ve lisans": 4,
+      "Üyelik ve hesap yönetimi": 2,
+      "Finansal işlemler": 1
+    },
+    "niyet-score": {
+      "1": 2,
+      "2": 3
+    }
+  },
+  "spent_usd": 0.0975,
+  "usd_per_kept_row": 0.00108
+}

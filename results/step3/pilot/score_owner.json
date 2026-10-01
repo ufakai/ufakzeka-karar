@@ -1,0 +1,107 @@
+{
+  "judges": [
+    "A",
+    "B",
+    "C"
+  ],
+  "failures": {
+    "massive_tr": 4
+  },
+  "tasks": {
+    "offenseval_tr": {
+      "A": {
+        "n": 75,
+        "accuracy": 0.9467,
+        "mean_p_gold": 0.9351
+      },
+      "B": {
+        "n": 75,
+        "accuracy": 0.96,
+        "mean_p_gold": 0.9487
+      },
+      "C": {
+        "n": 75,
+        "accuracy": 0.9333,
+        "mean_p_gold": 0.9285
+      },
+      "panel": {
+        "n": 75,
+        "accuracy": 0.96,
+        "mean_p_gold": 0.9374
+      }
+    },
+    "mide22": {
+      "A": {
+        "n": 75,
+        "accuracy": 0.48,
+        "mean_p_gold": 0.4763
+      },
+      "B": {
+        "n": 75,
+        "accuracy": 0.6133,
+        "mean_p_gold": 0.5733
+      },
+      "C": {
+        "n": 75,
+        "accuracy": 0.5333,
+        "mean_p_gold": 0.4891
+      },
+      "panel": {
+        "n": 75,
+        "accuracy": 0.5467,
+        "mean_p_gold": 0.5129
+      }
+    },
+    "massive_tr": {
+      "A": {
+        "n": 71,
+        "accuracy": 0.8732,
+        "mean_p_gold": 0.8726
+      },
+      "B": {
+        "n": 71,
+        "accuracy": 0.9296,
+        "mean_p_gold": 0.9154
+      },
+      "C": {
+        "n": 71,
+        "accuracy": 0.8873,
+        "mean_p_gold": 0.8937
+      },
+      "panel": {
+        "n": 71,
+        "accuracy": 0.9155,
+        "mean_p_gold": 0.8939
+      }
+    },
+    "trcola": {
+      "A": {
+        "n": 75,
+        "accuracy": 0.7867,
+        "mean_p_gold": 0.7823
+      },
+      "B": {
+        "n": 75,
+        "accuracy": 0.7733,
+        "mean_p_gold": 0.7633
+      },
+      "C": {
+        "n": 75,
+        "accuracy": 0.8133,
+        "mean_p_gold": 0.798
+      },
+      "panel": {
+        "n": 75,
+        "accuracy": 0.8,
+        "mean_p_gold": 0.7812
+      }
+    }
+  },
+  "overall": {
+    "A": 0.7716,
+    "B": 0.819,
+    "C": 0.7918,
+    "panel": 0.8055
+  },
+  "spent_usd": 0.2993
+}
